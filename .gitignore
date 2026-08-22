@@ -1,3 +1,4 @@
 /.quarto/
 **/*.quarto_ipynb
 /_book/
+.playwright-mcp/console-2026-08-22T16-44-57-604Z.log
