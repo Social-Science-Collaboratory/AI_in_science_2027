@@ -1,0 +1,909 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "2026 AI in Science Repository",
+    "section": "",
+    "text": "Preface\nScience has always been a social and collective endeavor. From the Manhattan Project to the Human Genome Project to the modern AI race, many of the most consequential advances in human knowledge have come not from lone investigators but from coordinated groups working toward shared problems. In the Fall 2026, 2 faculty, 1 postdoc, and 14 PhD students leveraged these principles to collectively make sense of one of the most pressing issues in contemporary research:\n\nHow is AI changing the social nature of scientific inquiry, for better and for worse?\n\n\n\n\n\n\n\nFigure 1: Structure of seminar on collective [artificial] intelligence in science.\n\n\n\nThe seminar began with an introduction to big-team science – its evolution, competitive advantages, and relevance to the current moment1–3. From there, the course became a collective investigation, wherein we worked together to understand the newly disrupted nature of each stage of our research pipelines. This includes project management, literature review, idea development, data collection, analysis, writing, and dissemination4. In an attempt to develop a balanced perspective, we alternated between deploying receptive vs. critical lens, identifying key resources, consensus statements, and areas of disagreement along the way. Ultimately, the goal was to organize our insights into the resource you are viewing right now: the 2026 AI-in-Science Repository.\nEach week followed a consistent structure (Figure 1). One component of our research pipeline would be selected for examination (e.g., data analysis). Members of the course would search for key resources for understanding the emerging role of AI. In class, we would then engage in peer-to-peer teaching – all with the goal of identify the top 3 resources to include in the final repository. Last, we used a live online voting platform to solicit, debate, and vote upon key takeaways for the week (https://pol.is/). The result is the the 2026 AI-in-Science Repository: a summary of our top resources, takeaways, and disagreements.\n\n\n\n\n1. Coles, N. A., Hamlin, J. K., Sullivan, L. L., Parker, T. H. & Altschul, D. Build up big-team science. Nature 601, 505–507 (2022).\n\n\n2. Coles, N. A., Goes Braga Takayanagi, J. F., Grant, G. L. & Basnight-Brown, D. M. The rise, impact, and imbalances of big-team psychology. Psychological Science 37, 287–297 (2026).\n\n\n3. Coles, N. A. et al. Team scientists should normalize disagreement. Science 384, 1076–1077 (2024).\n\n\n4. .",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "weeks/01-project-management-using.html",
+    "href": "weeks/01-project-management-using.html",
+    "title": "Project Management: Using AI",
+    "section": "",
+    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/01-project-management-using.html#top-resources",
+    "href": "weeks/01-project-management-using.html#top-resources",
+    "title": "Project Management: Using AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/01-project-management-using.html#key-takeaways",
+    "href": "weeks/01-project-management-using.html#key-takeaways",
+    "title": "Project Management: Using AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/01-project-management-using.html#points-of-disagreement",
+    "href": "weeks/01-project-management-using.html#points-of-disagreement",
+    "title": "Project Management: Using AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/01-project-management-using.html#open-questions",
+    "href": "weeks/01-project-management-using.html#open-questions",
+    "title": "Project Management: Using AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/02-project-management-critiquing.html",
+    "href": "weeks/02-project-management-critiquing.html",
+    "title": "Project Management: Critiquing AI",
+    "section": "",
+    "text": "Top Resources\nLens: critical — the failure modes, costs, and limits of AI at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Project Management: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/02-project-management-critiquing.html#top-resources",
+    "href": "weeks/02-project-management-critiquing.html#top-resources",
+    "title": "Project Management: Critiquing AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Project Management: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/02-project-management-critiquing.html#key-takeaways",
+    "href": "weeks/02-project-management-critiquing.html#key-takeaways",
+    "title": "Project Management: Critiquing AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Project Management: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/02-project-management-critiquing.html#failure-modes-to-watch-for",
+    "href": "weeks/02-project-management-critiquing.html#failure-modes-to-watch-for",
+    "title": "Project Management: Critiquing AI",
+    "section": "Failure Modes to Watch For",
+    "text": "Failure Modes to Watch For\n\n[concrete way this goes wrong in practice, and the signal that it has]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Project Management: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/02-project-management-critiquing.html#points-of-disagreement",
+    "href": "weeks/02-project-management-critiquing.html#points-of-disagreement",
+    "title": "Project Management: Critiquing AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Project Management: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/02-project-management-critiquing.html#open-questions",
+    "href": "weeks/02-project-management-critiquing.html#open-questions",
+    "title": "Project Management: Critiquing AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Project Management: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/03-literature-review-using.html",
+    "href": "weeks/03-literature-review-using.html",
+    "title": "Literature Review: Using AI",
+    "section": "",
+    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Literature Review: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/03-literature-review-using.html#top-resources",
+    "href": "weeks/03-literature-review-using.html#top-resources",
+    "title": "Literature Review: Using AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Literature Review: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/03-literature-review-using.html#key-takeaways",
+    "href": "weeks/03-literature-review-using.html#key-takeaways",
+    "title": "Literature Review: Using AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Literature Review: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/03-literature-review-using.html#points-of-disagreement",
+    "href": "weeks/03-literature-review-using.html#points-of-disagreement",
+    "title": "Literature Review: Using AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Literature Review: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/03-literature-review-using.html#open-questions",
+    "href": "weeks/03-literature-review-using.html#open-questions",
+    "title": "Literature Review: Using AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Literature Review: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/04-literature-review-critiquing.html",
+    "href": "weeks/04-literature-review-critiquing.html",
+    "title": "Literature Review: Critiquing AI",
+    "section": "",
+    "text": "Top Resources\nLens: critical — the failure modes, costs, and limits of AI at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Literature Review: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/04-literature-review-critiquing.html#top-resources",
+    "href": "weeks/04-literature-review-critiquing.html#top-resources",
+    "title": "Literature Review: Critiquing AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Literature Review: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/04-literature-review-critiquing.html#key-takeaways",
+    "href": "weeks/04-literature-review-critiquing.html#key-takeaways",
+    "title": "Literature Review: Critiquing AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Literature Review: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/04-literature-review-critiquing.html#failure-modes-to-watch-for",
+    "href": "weeks/04-literature-review-critiquing.html#failure-modes-to-watch-for",
+    "title": "Literature Review: Critiquing AI",
+    "section": "Failure Modes to Watch For",
+    "text": "Failure Modes to Watch For\n\n[concrete way this goes wrong in practice, and the signal that it has]",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Literature Review: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/04-literature-review-critiquing.html#points-of-disagreement",
+    "href": "weeks/04-literature-review-critiquing.html#points-of-disagreement",
+    "title": "Literature Review: Critiquing AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Literature Review: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/04-literature-review-critiquing.html#open-questions",
+    "href": "weeks/04-literature-review-critiquing.html#open-questions",
+    "title": "Literature Review: Critiquing AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Literature Review",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Literature Review: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/05-idea-development-using.html",
+    "href": "weeks/05-idea-development-using.html",
+    "title": "Idea Development: Using AI",
+    "section": "",
+    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Idea Development: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/05-idea-development-using.html#top-resources",
+    "href": "weeks/05-idea-development-using.html#top-resources",
+    "title": "Idea Development: Using AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Idea Development: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/05-idea-development-using.html#key-takeaways",
+    "href": "weeks/05-idea-development-using.html#key-takeaways",
+    "title": "Idea Development: Using AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Idea Development: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/05-idea-development-using.html#points-of-disagreement",
+    "href": "weeks/05-idea-development-using.html#points-of-disagreement",
+    "title": "Idea Development: Using AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Idea Development: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/05-idea-development-using.html#open-questions",
+    "href": "weeks/05-idea-development-using.html#open-questions",
+    "title": "Idea Development: Using AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Idea Development: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/06-idea-development-critiquing.html",
+    "href": "weeks/06-idea-development-critiquing.html",
+    "title": "Idea Development: Critiquing AI",
+    "section": "",
+    "text": "Top Resources\nLens: critical — the failure modes, costs, and limits of AI at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Idea Development: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/06-idea-development-critiquing.html#top-resources",
+    "href": "weeks/06-idea-development-critiquing.html#top-resources",
+    "title": "Idea Development: Critiquing AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Idea Development: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/06-idea-development-critiquing.html#key-takeaways",
+    "href": "weeks/06-idea-development-critiquing.html#key-takeaways",
+    "title": "Idea Development: Critiquing AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Idea Development: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/06-idea-development-critiquing.html#failure-modes-to-watch-for",
+    "href": "weeks/06-idea-development-critiquing.html#failure-modes-to-watch-for",
+    "title": "Idea Development: Critiquing AI",
+    "section": "Failure Modes to Watch For",
+    "text": "Failure Modes to Watch For\n\n[concrete way this goes wrong in practice, and the signal that it has]",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Idea Development: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/06-idea-development-critiquing.html#points-of-disagreement",
+    "href": "weeks/06-idea-development-critiquing.html#points-of-disagreement",
+    "title": "Idea Development: Critiquing AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Idea Development: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/06-idea-development-critiquing.html#open-questions",
+    "href": "weeks/06-idea-development-critiquing.html#open-questions",
+    "title": "Idea Development: Critiquing AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Idea Development",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Idea Development: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/07-data-collection-using.html",
+    "href": "weeks/07-data-collection-using.html",
+    "title": "Data Collection: Using AI",
+    "section": "",
+    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Collection: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/07-data-collection-using.html#top-resources",
+    "href": "weeks/07-data-collection-using.html#top-resources",
+    "title": "Data Collection: Using AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Collection: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/07-data-collection-using.html#key-takeaways",
+    "href": "weeks/07-data-collection-using.html#key-takeaways",
+    "title": "Data Collection: Using AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Collection: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/07-data-collection-using.html#points-of-disagreement",
+    "href": "weeks/07-data-collection-using.html#points-of-disagreement",
+    "title": "Data Collection: Using AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Collection: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/07-data-collection-using.html#open-questions",
+    "href": "weeks/07-data-collection-using.html#open-questions",
+    "title": "Data Collection: Using AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data Collection: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/08-data-collection-critiquing.html",
+    "href": "weeks/08-data-collection-critiquing.html",
+    "title": "Data Collection: Critiquing AI",
+    "section": "",
+    "text": "Top Resources\nLens: critical — the failure modes, costs, and limits of AI at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Collection: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/08-data-collection-critiquing.html#top-resources",
+    "href": "weeks/08-data-collection-critiquing.html#top-resources",
+    "title": "Data Collection: Critiquing AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Collection: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/08-data-collection-critiquing.html#key-takeaways",
+    "href": "weeks/08-data-collection-critiquing.html#key-takeaways",
+    "title": "Data Collection: Critiquing AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Collection: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/08-data-collection-critiquing.html#failure-modes-to-watch-for",
+    "href": "weeks/08-data-collection-critiquing.html#failure-modes-to-watch-for",
+    "title": "Data Collection: Critiquing AI",
+    "section": "Failure Modes to Watch For",
+    "text": "Failure Modes to Watch For\n\n[concrete way this goes wrong in practice, and the signal that it has]",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Collection: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/08-data-collection-critiquing.html#points-of-disagreement",
+    "href": "weeks/08-data-collection-critiquing.html#points-of-disagreement",
+    "title": "Data Collection: Critiquing AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Collection: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/08-data-collection-critiquing.html#open-questions",
+    "href": "weeks/08-data-collection-critiquing.html#open-questions",
+    "title": "Data Collection: Critiquing AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Data Collection",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Data Collection: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/09-analysis-using.html",
+    "href": "weeks/09-analysis-using.html",
+    "title": "Analysis: Using AI",
+    "section": "",
+    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Analysis: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/09-analysis-using.html#top-resources",
+    "href": "weeks/09-analysis-using.html#top-resources",
+    "title": "Analysis: Using AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Analysis: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/09-analysis-using.html#key-takeaways",
+    "href": "weeks/09-analysis-using.html#key-takeaways",
+    "title": "Analysis: Using AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Analysis: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/09-analysis-using.html#points-of-disagreement",
+    "href": "weeks/09-analysis-using.html#points-of-disagreement",
+    "title": "Analysis: Using AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Analysis: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/09-analysis-using.html#open-questions",
+    "href": "weeks/09-analysis-using.html#open-questions",
+    "title": "Analysis: Using AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Analysis: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/10-analysis-critiquing.html",
+    "href": "weeks/10-analysis-critiquing.html",
+    "title": "Analysis: Critiquing AI",
+    "section": "",
+    "text": "Top Resources\nLens: critical — the failure modes, costs, and limits of AI at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Analysis: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/10-analysis-critiquing.html#top-resources",
+    "href": "weeks/10-analysis-critiquing.html#top-resources",
+    "title": "Analysis: Critiquing AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Analysis: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/10-analysis-critiquing.html#key-takeaways",
+    "href": "weeks/10-analysis-critiquing.html#key-takeaways",
+    "title": "Analysis: Critiquing AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Analysis: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/10-analysis-critiquing.html#failure-modes-to-watch-for",
+    "href": "weeks/10-analysis-critiquing.html#failure-modes-to-watch-for",
+    "title": "Analysis: Critiquing AI",
+    "section": "Failure Modes to Watch For",
+    "text": "Failure Modes to Watch For\n\n[concrete way this goes wrong in practice, and the signal that it has]",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Analysis: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/10-analysis-critiquing.html#points-of-disagreement",
+    "href": "weeks/10-analysis-critiquing.html#points-of-disagreement",
+    "title": "Analysis: Critiquing AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Analysis: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/10-analysis-critiquing.html#open-questions",
+    "href": "weeks/10-analysis-critiquing.html#open-questions",
+    "title": "Analysis: Critiquing AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Analysis: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/11-writing-using.html",
+    "href": "weeks/11-writing-using.html",
+    "title": "Writing: Using AI",
+    "section": "",
+    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Writing: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/11-writing-using.html#top-resources",
+    "href": "weeks/11-writing-using.html#top-resources",
+    "title": "Writing: Using AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Writing: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/11-writing-using.html#key-takeaways",
+    "href": "weeks/11-writing-using.html#key-takeaways",
+    "title": "Writing: Using AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Writing: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/11-writing-using.html#points-of-disagreement",
+    "href": "weeks/11-writing-using.html#points-of-disagreement",
+    "title": "Writing: Using AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Writing: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/11-writing-using.html#open-questions",
+    "href": "weeks/11-writing-using.html#open-questions",
+    "title": "Writing: Using AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Writing: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/12-writing-critiquing.html",
+    "href": "weeks/12-writing-critiquing.html",
+    "title": "Writing: Critiquing AI",
+    "section": "",
+    "text": "Top Resources\nLens: critical — the failure modes, costs, and limits of AI at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Writing: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/12-writing-critiquing.html#top-resources",
+    "href": "weeks/12-writing-critiquing.html#top-resources",
+    "title": "Writing: Critiquing AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Writing: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/12-writing-critiquing.html#key-takeaways",
+    "href": "weeks/12-writing-critiquing.html#key-takeaways",
+    "title": "Writing: Critiquing AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Writing: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/12-writing-critiquing.html#failure-modes-to-watch-for",
+    "href": "weeks/12-writing-critiquing.html#failure-modes-to-watch-for",
+    "title": "Writing: Critiquing AI",
+    "section": "Failure Modes to Watch For",
+    "text": "Failure Modes to Watch For\n\n[concrete way this goes wrong in practice, and the signal that it has]",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Writing: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/12-writing-critiquing.html#points-of-disagreement",
+    "href": "weeks/12-writing-critiquing.html#points-of-disagreement",
+    "title": "Writing: Critiquing AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Writing: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/12-writing-critiquing.html#open-questions",
+    "href": "weeks/12-writing-critiquing.html#open-questions",
+    "title": "Writing: Critiquing AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Writing",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Writing: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/13-dissemination-using.html",
+    "href": "weeks/13-dissemination-using.html",
+    "title": "Dissemination: Using AI",
+    "section": "",
+    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dissemination: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/13-dissemination-using.html#top-resources",
+    "href": "weeks/13-dissemination-using.html#top-resources",
+    "title": "Dissemination: Using AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dissemination: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/13-dissemination-using.html#key-takeaways",
+    "href": "weeks/13-dissemination-using.html#key-takeaways",
+    "title": "Dissemination: Using AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dissemination: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/13-dissemination-using.html#points-of-disagreement",
+    "href": "weeks/13-dissemination-using.html#points-of-disagreement",
+    "title": "Dissemination: Using AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dissemination: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/13-dissemination-using.html#open-questions",
+    "href": "weeks/13-dissemination-using.html#open-questions",
+    "title": "Dissemination: Using AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dissemination: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/14-dissemination-critiquing.html",
+    "href": "weeks/14-dissemination-critiquing.html",
+    "title": "Dissemination: Critiquing AI",
+    "section": "",
+    "text": "Top Resources\nLens: critical — the failure modes, costs, and limits of AI at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dissemination: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/14-dissemination-critiquing.html#top-resources",
+    "href": "weeks/14-dissemination-critiquing.html#top-resources",
+    "title": "Dissemination: Critiquing AI",
+    "section": "",
+    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nThe critique it makes:\nHow strong is the evidence:",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dissemination: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/14-dissemination-critiquing.html#key-takeaways",
+    "href": "weeks/14-dissemination-critiquing.html#key-takeaways",
+    "title": "Dissemination: Critiquing AI",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dissemination: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/14-dissemination-critiquing.html#failure-modes-to-watch-for",
+    "href": "weeks/14-dissemination-critiquing.html#failure-modes-to-watch-for",
+    "title": "Dissemination: Critiquing AI",
+    "section": "Failure Modes to Watch For",
+    "text": "Failure Modes to Watch For\n\n[concrete way this goes wrong in practice, and the signal that it has]",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dissemination: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/14-dissemination-critiquing.html#points-of-disagreement",
+    "href": "weeks/14-dissemination-critiquing.html#points-of-disagreement",
+    "title": "Dissemination: Critiquing AI",
+    "section": "Points of Disagreement",
+    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dissemination: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/14-dissemination-critiquing.html#open-questions",
+    "href": "weeks/14-dissemination-critiquing.html#open-questions",
+    "title": "Dissemination: Critiquing AI",
+    "section": "Open Questions",
+    "text": "Open Questions\n\n[question the week raised but could not answer]",
+    "crumbs": [
+      "Dissemination",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dissemination: Critiquing AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/15-personal-ai-philosophy.html",
+    "href": "weeks/15-personal-ai-philosophy.html",
+    "title": "Personal AI Philosophy Statements",
+    "section": "",
+    "text": "The statements\nThe preceding chapters record where the seminar converged as a group. This chapter records where its members stand individually.\nAlongside the shared repository, participants wrote personal AI philosophy statements: short, signed accounts of how each of us intends to use — and refuse to use — AI in our own research. Each statement is reproduced in full below and is free to share, quote, or adapt.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Personal AI Philosophy Statements</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/15-personal-ai-philosophy.html#the-statements",
+    "href": "weeks/15-personal-ai-philosophy.html#the-statements",
+    "title": "Personal AI Philosophy Statements",
+    "section": "",
+    "text": "Nicholas A. Coles\n[Role, department, institution]\n[Statement.]\n\n\n[Author]\n[Role, department, institution]\n[Statement.]",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Personal AI Philosophy Statements</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/15-personal-ai-philosophy.html#where-we-agree",
+    "href": "weeks/15-personal-ai-philosophy.html#where-we-agree",
+    "title": "Personal AI Philosophy Statements",
+    "section": "Where we agree",
+    "text": "Where we agree\nCommitments that recur across the statements.\n\n[point of agreement]\n[point of agreement]\n[point of agreement]",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Personal AI Philosophy Statements</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/15-personal-ai-philosophy.html#where-we-disagree",
+    "href": "weeks/15-personal-ai-philosophy.html#where-we-disagree",
+    "title": "Personal AI Philosophy Statements",
+    "section": "Where we disagree",
+    "text": "Where we disagree\nThe substantive splits — not differences of emphasis, but positions that cannot both be right.\n\n[position vs. counter-position — and what would settle it]\n\nEach statement speaks only for its author. Disagreement between them is the point, not an error to be corrected.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Personal AI Philosophy Statements</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "1. Coles, N. A., Hamlin, J. K., Sullivan, L. L.,\nParker, T. H. & Altschul, D. Build up big-team\nscience. Nature 601, 505–507 (2022).\n\n\n2. Coles, N. A., Goes Braga Takayanagi, J. F.,\nGrant, G. L. & Basnight-Brown, D. M. The rise, impact, and\nimbalances of big-team psychology. Psychological Science\n37, 287–297 (2026).\n\n\n3. Coles, N. A. et al. Team scientists should\nnormalize disagreement. Science 384,\n1076–1077 (2024).\n\n\n4. .",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
