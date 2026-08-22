@@ -1,0 +1,11 @@
+# Preface {.unnumbered}
+
+Science has always been a social and collective endeavor. From the Manhattan Project to the Human Genome Project to the modern AI race, many of the most consequential advances in human knowledge have come not from lone investigators but from coordinated groups working toward shared problems. In the Fall 2026, 2 faculty, 1 postdoc, and 14 PhD students leveraged these principles to collectively make sense of one of the most pressing issues in contemporary research:
+
+> *How is AI changing the social nature of scientific inquiry, for better and for worse?*
+
+![Structure of seminar on collective [artificial] intelligence in science.](ClassStructure.png){#fig-seminar-structure fig-align="left"}
+
+The seminar began with an introduction to big-team science – its evolution, competitive advantages, and relevance to the current moment[@Coles2022; @Coles2026; @Coles2024]. From there, the course became a collective investigation, wherein we worked together to understand the newly disrupted nature of each stage of our research pipelines. This includes project management, literature review, idea development, data collection, analysis, writing, and dissemination[@Baumgartner2023]. In an attempt to develop a balanced perspective, we alternated between deploying receptive vs. critical lens, identifying key resources, consensus statements, and areas of disagreement along the way. Ultimately, the goal was to organize our insights into the resource you are viewing right now: the 2026 AI-in-Science Repository.
+
+Each week followed a consistent structure (@fig-seminar-structure). One component of our research pipeline would be selected for examination (e.g., data analysis). Members of the course would search for key resources for understanding the emerging role of AI. In class, we would then engage in peer-to-peer teaching -- all with the goal of identify the top 3 resources to include in the final repository. Last, we used a live online voting platform to solicit, debate, and vote upon key takeaways for the week ([https://pol.is/](https://pol.is/signin)). The result is the the 2026 AI-in-Science Repository: a summary of our top resources, takeaways, and disagreements.
