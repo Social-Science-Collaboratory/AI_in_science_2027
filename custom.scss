@@ -1,0 +1,71 @@
+/*-- scss:rules --*/
+
+// Auto-minimizing sidebar navigation.
+//
+// The sidebar recedes when it is not the focus of attention (while scrolling,
+// or when the pointer is away from the left edge) and returns on hover, focus,
+// keyboard navigation, or a pointer approach. The grid column stays reserved,
+// so the body text never reflows.
+
+@media (min-width: 992px) {
+  #quarto-sidebar {
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+
+  body.sidebar-idle #quarto-sidebar {
+    opacity: 0.2;
+    transform: translateX(-0.75rem);
+  }
+
+  // A generous invisible target along the left edge, so the sidebar comes back
+  // before the pointer has to land precisely on it.
+  body.sidebar-idle #quarto-sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -2.5rem;
+    width: 2.5rem;
+  }
+
+  body.sidebar-idle #quarto-sidebar:hover,
+  body.sidebar-idle #quarto-sidebar:focus-within {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #quarto-sidebar {
+    transition: none;
+  }
+}
+
+// Sidebar tools (source, download, share) kept in a single row, but broken onto
+// their own line beneath the book title rather than floating alongside it.
+#quarto-sidebar .sidebar-title {
+  display: block;
+}
+
+#quarto-sidebar .sidebar-tools-main,
+#quarto-sidebar .sidebar-tools-main.tools-wide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  float: none;
+  width: 100%;
+  gap: 0.6rem;
+  margin: 0.4rem 0 0 0;
+}
+
+// Drop the leading utility padding so the icons line up with the book title.
+#quarto-sidebar .sidebar-tools-main .quarto-navigation-tool {
+  padding-left: 0 !important;
+}
+
+// The share tool is wrapped in a .dropdown; make it align with its siblings.
+#quarto-sidebar .sidebar-tools-main .dropdown {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,44 @@
+# Personal AI Philosophy Statements {#sec-philosophies}
+
+> *Having examined the research pipeline together, where does each of us now
+> stand?*
+
+The preceding chapters record where the seminar converged as a group. This
+chapter records where its members stand individually.
+
+Alongside the shared repository, participants wrote personal AI philosophy
+statements: short, signed accounts of how each of us intends to use — and refuse
+to use — AI in our own research. Each statement is reproduced in full below and
+is free to share, quote, or adapt.
+
+## The statements
+
+### Nicholas A. Coles
+
+*[Role, department, institution]*
+
+*[Statement.]*
+
+### *[Author]*
+
+*[Role, department, institution]*
+
+*[Statement.]*
+
+## Where we agree
+
+Commitments that recur across the statements.
+
+1. *[point of agreement]*
+2. *[point of agreement]*
+3. *[point of agreement]*
+
+## Where we disagree
+
+The substantive splits — not differences of emphasis, but positions that cannot
+both be right.
+
+- *[position vs. counter-position — and what would settle it]*
+
+Each statement speaks only for its author. Disagreement between them is the
+point, not an error to be corrected.

@@ -1,0 +1,30 @@
+<script>
+// Quarto 1.9 still emits the pre-rebrand Twitter share item. Rewrite it to X.
+(function () {
+  var items = document.querySelectorAll(
+    'a[href^="https://twitter.com/intent/tweet"]'
+  );
+  items.forEach(function (a) {
+    // Keep Quarto's |url| placeholder intact — it substitutes the real URL later.
+    a.setAttribute(
+      "href",
+      a.getAttribute("href").replace(
+        "https://twitter.com/intent/tweet",
+        "https://x.com/intent/post"
+      )
+    );
+
+    var icon = a.querySelector("i.bi-twitter");
+    if (icon) {
+      icon.classList.remove("bi-twitter");
+      icon.classList.add("bi-twitter-x");
+    }
+
+    a.childNodes.forEach(function (node) {
+      if (node.nodeType === Node.TEXT_NODE && node.nodeValue.indexOf("Twitter") !== -1) {
+        node.nodeValue = node.nodeValue.replace("Twitter", "X");
+      }
+    });
+  });
+})();
+</script>

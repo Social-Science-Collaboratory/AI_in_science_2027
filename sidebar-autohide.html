@@ -1,0 +1,60 @@
+<script>
+// Fades the sidebar navigation back when the reader is not using it.
+// Paired with the `.sidebar-idle` rules in custom.scss.
+(function () {
+  var DESKTOP = "(min-width: 992px)";
+  var IDLE_DELAY = 2000;    // ms of no sidebar interest before receding
+  var EDGE_SLACK = 60;      // px past the sidebar's right edge that still counts
+
+  var sidebar = document.getElementById("quarto-sidebar");
+  if (!sidebar) return;
+
+  var timer = null;
+
+  function desktop() {
+    return window.matchMedia(DESKTOP).matches;
+  }
+
+  function wake() {
+    document.body.classList.remove("sidebar-idle");
+    if (timer) clearTimeout(timer);
+    if (!desktop()) return;
+    timer = setTimeout(function () {
+      document.body.classList.add("sidebar-idle");
+    }, IDLE_DELAY);
+  }
+
+  function sleepNow() {
+    if (timer) clearTimeout(timer);
+    if (desktop()) document.body.classList.add("sidebar-idle");
+  }
+
+  // Pointer near the left edge keeps the sidebar up; anywhere else lets it go.
+  document.addEventListener("mousemove", function (e) {
+    if (!desktop()) return;
+    if (e.clientX <= sidebar.getBoundingClientRect().right + EDGE_SLACK) {
+      wake();
+    } else if (!document.body.classList.contains("sidebar-idle")) {
+      sleepNow();
+    }
+  }, { passive: true });
+
+  // Reading the page means you are not reading the nav.
+  window.addEventListener("scroll", sleepNow, { passive: true });
+
+  // Keyboard users tabbing into the nav should always see it.
+  sidebar.addEventListener("focusin", wake);
+
+  // Drop back to the normal always-visible sidebar on narrow screens.
+  window.matchMedia(DESKTOP).addEventListener("change", function (m) {
+    if (!m.matches) {
+      if (timer) clearTimeout(timer);
+      document.body.classList.remove("sidebar-idle");
+    } else {
+      wake();
+    }
+  });
+
+  wake();
+})();
+</script>

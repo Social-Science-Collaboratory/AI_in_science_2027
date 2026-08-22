@@ -12,9 +12,15 @@ book:
       affiliations:
         - name: "Department of Psychology"
   date: "8/22/2026"
+  repo-url: https://github.com/Social-Science-Collaboratory/AI_in_science_2026
+  repo-branch: main
+  repo-actions: [edit, source, issue]
+  downloads: [pdf]
+  sharing: [twitter, linkedin, facebook]
+  sidebar:
+    collapse-level: 1
   chapters:
     - index.qmd
-    - intro.qmd
     - part: "Project Management"
       chapters:
         - weeks/01-project-management-using.qmd
@@ -43,12 +49,10 @@ book:
       chapters:
         - weeks/13-dissemination-using.qmd
         - weeks/14-dissemination-critiquing.qmd
-    - part: "Personal AI Philosophy Statements"
-      chapters:
-        - philosophies/index.qmd
-        - philosophies/coles.qmd
-    - summary.qmd
+    - weeks/15-personal-ai-philosophy.qmd
     - references.qmd
+
+number-sections: false
 
 bibliography: references.bib
 csl: nature.csl
@@ -56,8 +60,12 @@ csl: nature.csl
 format:
   html:
     theme:
-      - lux
+      - flatly
       - brand
+      - custom.scss
+    include-after-body:
+      - sidebar-autohide.html
+      - share-x.html
   pdf:
     documentclass: scrreprt
 
