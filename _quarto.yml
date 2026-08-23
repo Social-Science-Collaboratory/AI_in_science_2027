@@ -1,8 +1,14 @@
 project:
   type: book
+  # scale-ladder/ is a figure package, not a chapter: its R, data and standalone
+  # draft are sourced by index.qmd, never rendered as pages of the book.
+  render:
+    - index.qmd
+    - weeks/*.qmd
+    - references.qmd
 
 book:
-  title: "2026 AI in Science Repository"
+  title: "2027 Guide to AI in Science"
   author:
     - name: "Nicholas A. Coles"
       email: "ncoles@ufl.edu"
@@ -12,7 +18,7 @@ book:
       affiliations:
         - name: "Department of Psychology"
   date: "8/22/2026"
-  repo-url: https://github.com/Social-Science-Collaboratory/AI_in_science_2026
+  repo-url: https://github.com/Social-Science-Collaboratory/AI_in_science_2027
   repo-branch: main
   repo-actions: [edit, source, issue]
   downloads: [pdf]
@@ -66,8 +72,10 @@ format:
     include-after-body:
       - sidebar-autohide.html
       - share-x.html
+    fig-dpi: 300
   pdf:
     documentclass: scrreprt
+    fig-format: pdf
 
 
 

@@ -1,0 +1,56 @@
+---
+# Standalone working draft. This file is excluded from the book render (see
+# `project: render:` in ../_quarto.yml); the book calls scale_ladder_plot()
+# directly from index.qmd. Render it on its own with:
+#   quarto render scale-ladder/figure-scale-ladder.qmd
+# Its bibliography is held out of the book's references pending review.
+title: "The AI race is a hiring race"
+bibliography: figure_references_for_review.bib
+format:
+  pdf:
+    fig-width: 7.5
+    fig-height: 2.4
+    keep-tex: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+source("R/scale-ladder.R")   # defines has_cairo() and scale_ladder_plot()
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
+                      dev = if (has_cairo()) "cairo_pdf" else "pdf")
+```
+
+```{r}
+#| label: fig-scale-ladder
+#| fig-cap: "Author counts on flagship model reports, 2018--2025. One square is one credited person; each block's area is its author list."
+scale_ladder_plot(fig_width = 7.5)
+```
+
+Eight names wrote the paper that started this [@vaswani2017attention]. Eight
+years later a single flagship report credits 3,291 [@gemini2025gemini25] --- more
+than the 2,932 on the ATLAS paper that announced the Higgs [@atlas2012higgs], and
+past the 1,004 on LIGO's first detection [@ligo2016observation].
+
+The series is not monotonic. Gemini 1.5 [@gemini2024gemini15] credits roughly
+two thirds as many people as Gemini 1.0 [@gemini2023gemini], and DeepSeek-V3
+reached the frontier on under 200 [@deepseek2024v3].
+
+Nor is the disclosure itself stable, and the instability runs in both
+directions. Where a list is published, it keeps growing after release: Gemini
+1.0's contributor list stood at 939 names in December 2023 and at 1,350 by the
+2025 revision, so the same report answers the question differently depending on
+when you ask. Where a list is not published, the arXiv byline can invent one ---
+OpenAI's GPT-5 system card carries no author list anywhere in its 61 pages, yet
+its arXiv record names 483 people [@openai2025gpt5]. Anthropic
+[@anthropic2024claude3], xAI [@xai2024grok2] and Gemini 3 [@google2025gemini3]
+publish neither, and cannot be plotted.
+
+## Data provenance
+
+Every count is pinned to the original release (arXiv v1) and counts unique named
+individuals; an institutional byline is not counted as a person. All sixteen rows
+were checked against primary sources on 2026-08-23. `data/verification-log.md`
+records what was checked against what, and flags the three rows that still want a
+human eye --- GPT-4, whose v1 count is derived rather than enumerated, GPT-5,
+whose count exists only in arXiv metadata, and the GPT-1 date.

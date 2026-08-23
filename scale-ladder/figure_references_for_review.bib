@@ -1,0 +1,262 @@
+% AI Race Observatory — sources for author counts on flagship model reports.
+%
+% Every count is pinned to the ORIGINAL release (arXiv v1), and counts unique
+% named individuals only: an institutional byline is not a person, and where
+% the byline is institutional the contributions appendix is what was counted.
+% The url field pins each entry to v1, since the arXiv DOI always resolves to
+% the latest revision. Verified 2026-08-23 — see data/verification-log.md.
+%
+% Two entries carry no DOI because none exists: the GPT-1 and GPT-2 preprints
+% live only on OpenAI's CDN.
+
+@inproceedings{vaswani2017attention,
+  title     = {Attention Is All You Need},
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  booktitle = {Advances in Neural Information Processing Systems 30},
+  year      = {2017},
+  eprint    = {1706.03762},
+  doi     = {10.48550/arXiv.1706.03762},
+  url     = {https://arxiv.org/abs/1706.03762v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {8 named authors on the arXiv v1 title page}
+}
+
+@techreport{radford2018improving,
+  title       = {Improving Language Understanding by Generative Pre-Training},
+  author      = {Radford, Alec and Narasimhan, Karthik and Salimans, Tim and Sutskever, Ilya},
+  institution = {OpenAI},
+  year        = {2018},
+  url         = {https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf},
+  note        = {4 authors; never posted to arXiv; no DOI exists}
+}
+
+@techreport{radford2019language,
+  title       = {Language Models are Unsupervised Multitask Learners},
+  author      = {Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
+  institution = {OpenAI},
+  year        = {2019},
+  url         = {https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf},
+  note        = {6 authors; no DOI exists}
+}
+
+@article{brown2020language,
+  title   = {Language Models are Few-Shot Learners},
+  author  = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and others},
+  journal = {arXiv preprint},
+  year    = {2020},
+  eprint  = {2005.14165},
+  doi     = {10.48550/arXiv.2005.14165},
+  url     = {https://arxiv.org/abs/2005.14165v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {31 named authors on the arXiv v1 title page}
+}
+
+@article{chowdhery2022palm,
+  title   = {{PaLM}: Scaling Language Modeling with Pathways},
+  author  = {Chowdhery, Aakanksha and Narang, Sharan and Devlin, Jacob and others},
+  journal = {arXiv preprint},
+  year    = {2022},
+  eprint  = {2204.02311},
+  doi     = {10.48550/arXiv.2204.02311},
+  url     = {https://arxiv.org/abs/2204.02311v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {67 named authors on the arXiv v1 title page}
+}
+
+@article{touvron2023llama,
+  title   = {{LLaMA}: Open and Efficient Foundation Language Models},
+  author  = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and others},
+  journal = {arXiv preprint},
+  year    = {2023},
+  eprint  = {2302.13971},
+  doi     = {10.48550/arXiv.2302.13971},
+  url     = {https://arxiv.org/abs/2302.13971v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {14 named authors on the arXiv v1 title page}
+}
+
+@article{openai2023gpt4,
+  title   = {{GPT-4} Technical Report},
+  author  = {{OpenAI}},
+  journal = {arXiv preprint},
+  year    = {2023},
+  eprint  = {2303.08774},
+  doi     = {10.48550/arXiv.2303.08774},
+  url     = {https://arxiv.org/abs/2303.08774v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {institutional byline; 278 named people in the v1 contributions appendix (derived)}
+}
+
+@article{touvron2023llama2,
+  title   = {{Llama 2}: Open Foundation and Fine-Tuned Chat Models},
+  author  = {Touvron, Hugo and Martin, Louis and Stone, Kevin and others},
+  journal = {arXiv preprint},
+  year    = {2023},
+  eprint  = {2307.09288},
+  doi     = {10.48550/arXiv.2307.09288},
+  url     = {https://arxiv.org/abs/2307.09288v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {68 named authors on the arXiv v1 title page}
+}
+
+@article{gemini2023gemini,
+  title   = {{Gemini}: A Family of Highly Capable Multimodal Models},
+  author  = {{Gemini Team, Google}},
+  journal = {arXiv preprint},
+  year    = {2023},
+  eprint  = {2312.11805},
+  doi     = {10.48550/arXiv.2312.11805},
+  url     = {https://arxiv.org/abs/2312.11805v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {institutional byline; 939 unique names in the v1 contributions appendix}
+}
+
+@article{gemini2024gemini15,
+  title   = {{Gemini 1.5}: Unlocking Multimodal Understanding Across Millions of Tokens of Context},
+  author  = {{Gemini Team, Google}},
+  journal = {arXiv preprint},
+  year    = {2024},
+  eprint  = {2403.05530},
+  doi     = {10.48550/arXiv.2403.05530},
+  url     = {https://arxiv.org/abs/2403.05530v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {institutional byline; 669 unique names in the v1 contributions appendix}
+}
+
+@article{dubey2024llama3,
+  title   = {The {Llama 3} Herd of Models},
+  author  = {{Llama Team, AI @ Meta}},
+  journal = {arXiv preprint},
+  year    = {2024},
+  eprint  = {2407.21783},
+  doi     = {10.48550/arXiv.2407.21783},
+  url     = {https://arxiv.org/abs/2407.21783v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  note    = {institutional byline; 529 unique names in the v1 contributors appendix}
+}
+
+@article{deepseek2024v3,
+  title   = {{DeepSeek-V3} Technical Report},
+  author  = {{DeepSeek-AI}},
+  journal = {arXiv preprint},
+  year    = {2024},
+  eprint  = {2412.19437},
+  doi     = {10.48550/arXiv.2412.19437},
+  url     = {https://arxiv.org/abs/2412.19437v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {institutional byline; 197 unique names in the v1 Appendix A}
+}
+
+@article{qwen2025qwen3,
+  title   = {{Qwen3} Technical Report},
+  author  = {{Qwen Team}},
+  journal = {arXiv preprint},
+  year    = {2025},
+  eprint  = {2505.09388},
+  doi     = {10.48550/arXiv.2505.09388},
+  url     = {https://arxiv.org/abs/2505.09388v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {institutional byline; 176 unique names in v1 section 6 (arXiv byline lists only the 60 core contributors)}
+}
+
+@article{moonshot2025kimik2,
+  title   = {{Kimi K2}: Open Agentic Intelligence},
+  author  = {{Kimi Team, Moonshot AI}},
+  journal = {arXiv preprint},
+  year    = {2025},
+  eprint  = {2507.20534},
+  doi     = {10.48550/arXiv.2507.20534},
+  url     = {https://arxiv.org/abs/2507.20534v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  note    = {institutional byline; 168 names in the v1 Appendix A}
+}
+
+@article{gemini2025gemini25,
+  title   = {{Gemini 2.5}: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities},
+  author  = {{Gemini Team, Google}},
+  journal = {arXiv preprint},
+  year    = {2025},
+  eprint  = {2507.06261},
+  doi     = {10.48550/arXiv.2507.06261},
+  url     = {https://arxiv.org/abs/2507.06261v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {institutional byline; 3291 unique names in the v1 contributors list}
+}
+
+% --- the blanks: no contributor list published ----------------------------
+
+@misc{anthropic2024claude3,
+  title        = {The {Claude 3} Model Family: Opus, Sonnet, Haiku},
+  author       = {{Anthropic}},
+  year         = {2024},
+  howpublished = {Model card},
+  note         = {credited to the company; no named contributor list}
+}
+
+@misc{xai2024grok2,
+  title        = {{Grok} Model Cards},
+  author       = {{xAI}},
+  year         = {2024},
+  howpublished = {Model / safety cards},
+  note         = {no research report and no contributor names published}
+}
+
+@article{openai2025gpt5,
+  title   = {{OpenAI GPT-5} System Card},
+  author  = {{OpenAI}},
+  journal = {arXiv preprint},
+  year    = {2025},
+  eprint  = {2601.03267},
+  doi     = {10.48550/arXiv.2601.03267},
+  url     = {https://arxiv.org/abs/2601.03267v1},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note    = {institutional byline; the document carries no author list, 483 names from arXiv v1 metadata only}
+}
+
+@misc{google2025gemini3,
+  title        = {{Gemini 3}},
+  author       = {{Google DeepMind}},
+  year         = {2025},
+  howpublished = {Product announcement},
+  note         = {no contributor list published at release}
+}
+
+% --- reference anchors used in annotation ---------------------------------
+
+@article{atlas2012higgs,
+  title   = {Observation of a New Particle in the Search for the Standard Model Higgs Boson with the {ATLAS} Detector at the {LHC}},
+  author  = {{ATLAS Collaboration}},
+  journal = {Physics Letters B},
+  volume  = {716},
+  number  = {1},
+  pages   = {1--29},
+  year    = {2012},
+  doi     = {10.1016/j.physletb.2012.08.020},
+  note    = {2,932 authors}
+}
+
+@article{ligo2016observation,
+  title   = {Observation of Gravitational Waves from a Binary Black Hole Merger},
+  author  = {{LIGO Scientific Collaboration and Virgo Collaboration}},
+  journal = {Physical Review Letters},
+  volume  = {116},
+  number  = {6},
+  pages   = {061102},
+  year    = {2016},
+  doi     = {10.1103/PhysRevLett.116.061102},
+  note    = {1,004 authors}
+}

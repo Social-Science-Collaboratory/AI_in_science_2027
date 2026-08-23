@@ -1,11 +1,28 @@
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+source("scale-ladder/R/scale-ladder.R")
+```
+
 # Preface {.unnumbered}
 
-Science has always been a social and collective endeavor[@merton1996social]. Furthermore, from the Manhattan Project to the modern AI race, many of the most consequential advances in human knowledge have come not from lone investigators – but from big teams of scientists[@Coles2022]. In Fall of 2026, faculty, graduate students, and postdocs across multiple departments at the University of Florida leveraged these principles in a Fall 2026 seminar, titled Collective \[Artificial\] Intelligence in Science. Our goal? Leverage our own collective intelligence to rapidly make sense of one of the most pressing issues in contemporary research:
+AI is radically redefining the nature of scientific inquiry — for better and for worse. 
 
-> **How is AI changing the nature of science, for better and for worse?**
+In Fall 2026, faculty, graduate students, and postdocs across multiple departments at the University of Florida came together to understand this urgent development. In a seminar titled *Collective [Artificial] Intelligence in Science*, we documented and discussed how AI is changing each component of our research workflow. This includes project management, idea development, data analysis, writing, and dissemination. To push our understanding, we alternated between the perspective of an AI zealot and an AI critic – identifying key resources, consensus statements, and areas of disagreement along the way. The result is the **2027 Guide to AI in Science**.
 
-![Structure of the University of Florida Fall 2026 seminar, titled Collective \[Artificial\] Intelligence in Science.](ClassStructure.png){#fig-seminar-structure fig-align="left"}
+The seminar began with an introduction to big-team science – its rise[@Coles2022], competitive advantages[@Coles2026], and relevance to the current moment. For instance, the paper describing OpenAI’s GPT-1 had 4 authors; the paper describing GPT-3 had 31 authors; and the paper describing GPT-5 had 483 authors (@fig-scale-ladder). From there, the course itself became a large-scale collaboration, dedicated to understanding how these AI advancements are shaping science.
 
-The seminar began with an introduction to big-team science – its evolution, competitive advantages, and relevance to the current moment[@Wuchty2007; @Coles2026]. From there, the course became a collective investigation, wherein we worked together to understand the newly disrupted nature of each stage of our research pipelines. This includes project management, literature review, idea development, data collection, analysis, writing, and dissemination[@Baumgartner2023]. To maintain balanced perspective, we alternated between deploying receptive vs. critical lens – identifying key resources, consensus statements, and areas of disagreement along the way. Throughout the semester, we organized our key insights into the resource you are viewing now: the 2027 Edition of the AI-in-Science Repository. This repository was used to teach a MasterClass on AI in Science at the University of Florida — at which time it was also made openly-available for all.
+```{r}
+#| label: fig-scale-ladder
+#| fig-cap: "Credited co-authors on flagship AI model reports from OpenAI, Google, and Meta, 2018--2025. One square is one credited person; each block's area is its author list."
+#| fig-width: 7.5
+#| fig-height: 2.4
+#| fig-align: left
+scale_ladder_plot(fig_width = 7.5)
+```
 
-To develop this repository, each week followed a consistent structure (@fig-seminar-structure). First, we would select a component of the research pipeline to examine (e.g., data analysis). Next, we would spend one week compiling resources for understanding the emerging role of AI in that part of the research pipeline. In class, we engaged in peer-to-peer teaching – all with the goal of identifying the top 3 resources to include in the repository. Last, we used a live onlined voting platform to solicit, debate, and vote upon key takeaways for the week ([https://pol.is/](https://pol.is/signin)). The result is the 2027 Edition of the AI-in-Science Repository: a summary of our top resources, takeaways, and disagreements.
+
+Each week followed a consistent structure (@fig-seminar-structure). First, we would select a component of the research pipeline to examine (e.g., data analysis). Next, we would spend one week compiling resources for understanding the emerging role of AI in that part of the research pipeline. In class, we engaged in peer-to-peer teaching – all with the goal of identifying the top 3 resources to include in the guide. Last, we used a live onlined voting platform to solicit, debate, and vote upon key takeaways for the week ([https://pol.is/](https://pol.is/signin)). The result is the **2027 Guide to AI in Science**: a summary of our top resources, takeaways, and disagreements.
+
+![Structure of the University of Florida Fall 2026 seminar, titled Collective \[Artificial\] Intelligence in Science.](ClassStructure.png){#fig-seminar-structure fig-align="left" width="85%"}

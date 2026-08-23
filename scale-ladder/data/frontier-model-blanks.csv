@@ -1,0 +1,4 @@
+model,lab,reason,detail,bibkey
+Claude 3 → 4,Anthropic,no author list,Model cards and system cards are credited to the company; no named contributor list is published.,anthropic2024claude3
+Grok 2 → 4,xAI,no technical report,Safety/model cards only; no research report and no contributor names.,xai2024grok2
+Gemini 3,Google DeepMind,no technical report,Launched by blog post; no contributor list published at release.,google2025gemini3
