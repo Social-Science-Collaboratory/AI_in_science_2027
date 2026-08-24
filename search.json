@@ -14,7 +14,7 @@
     "href": "weeks/01-project-management-using.html",
     "title": "Project Management: Using AI",
     "section": "",
-    "text": "Top Resources\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\nThe three resources the seminar voted to carry forward.",
+    "text": "The Case\nLens: receptive — what AI makes newly possible at this stage of the research pipeline.\n[Open with one concrete situation — a real project, told in a paragraph or two. Something a reader in this seminar would recognize: a multi-site study whose coordination overhead outgrew the science, a lab notebook nobody kept current, a grant timeline that slipped. Establish what the coordination problem actually cost before naming any tool.]\n[Then the turn into the week: what an AI-assisted version of this situation would look like, and which of the questions below it raises. This paragraph is the transition — it should leave the reader holding a specific question that the resources and the votes then answer.]",
     "crumbs": [
       "Project Management",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
@@ -24,30 +24,41 @@
     "objectID": "weeks/01-project-management-using.html#top-resources",
     "href": "weeks/01-project-management-using.html#top-resources",
     "title": "Project Management: Using AI",
-    "section": "",
-    "text": "1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
+    "section": "Top Resources",
+    "text": "Top Resources\nThe three resources the seminar voted to carry forward, in the order they appear in Figure 1.1.\n\n1. [Resource title]\n[Author(s), year — paper, tool, thread, talk, or documentation] · Identified by [student name]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n2. [Resource title]\n[Author(s), year] · Identified by [student name]\nWhat it is:\nWhy it made the cut:\nWho it is for:\n\n\n3. [Resource title]\n[Author(s), year] · Identified by [student name]\nWhat it is:\nWhy it made the cut:\nWho it is for:",
     "crumbs": [
       "Project Management",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
     ]
   },
   {
-    "objectID": "weeks/01-project-management-using.html#key-takeaways",
-    "href": "weeks/01-project-management-using.html#key-takeaways",
+    "objectID": "weeks/01-project-management-using.html#where-we-agreed",
+    "href": "weeks/01-project-management-using.html#where-we-agreed",
     "title": "Project Management: Using AI",
-    "section": "Key Takeaways",
-    "text": "Key Takeaways\nStatements that reached consensus in the Polis session.\n\n[takeaway]\n[takeaway]\n[takeaway]",
+    "section": "Where We Agreed",
+    "text": "Where We Agreed\nThe statements that reached consensus in the Polis session — the upper bars of Figure 1.1.\n[One short paragraph framing what the agreement has in common. If the consensus statements share a shape — say, agreement on disclosure but not on delegation — name it here rather than leaving the reader to infer it.]\n\n[consensus statement — % agreeing]\n[consensus statement — % agreeing]",
     "crumbs": [
       "Project Management",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
     ]
   },
   {
-    "objectID": "weeks/01-project-management-using.html#points-of-disagreement",
-    "href": "weeks/01-project-management-using.html#points-of-disagreement",
+    "objectID": "weeks/01-project-management-using.html#where-we-did-not",
+    "href": "weeks/01-project-management-using.html#where-we-did-not",
     "title": "Project Management: Using AI",
-    "section": "Points of Disagreement",
-    "text": "Points of Disagreement\nWhere the group did not converge, and what evidence would move it.\n\n[position vs. counter-position — and what would settle it]",
+    "section": "Where We Did Not",
+    "text": "Where We Did Not\nThe statements that split the group — the lower bars of Figure 1.1.\n[One short paragraph on the nature of the disagreement. Whether it is empirical (we disagree about what is true) or normative (we disagree about what is acceptable) is the useful distinction, because only the first kind is settled by evidence.]\n\n[position vs. counter-position — and what evidence would move it]\n[position vs. counter-position — and what evidence would move it]",
+    "crumbs": [
+      "Project Management",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
+    ]
+  },
+  {
+    "objectID": "weeks/01-project-management-using.html#back-to-the-case",
+    "href": "weeks/01-project-management-using.html#back-to-the-case",
+    "title": "Project Management: Using AI",
+    "section": "Back to The Case",
+    "text": "Back to The Case\n[Return to the opening situation and re-run it against what the week established. What would the group’s consensus have changed about how that project was managed? What would it not have changed? Where the group disagreed, say plainly that the case does not settle it either.]\n[Close on the handoff to Project Management: Critiquing AI — this chapter took the receptive lens; the next one takes the critical one on the same stage of the pipeline.]",
     "crumbs": [
       "Project Management",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Project Management: Using AI</span>"
