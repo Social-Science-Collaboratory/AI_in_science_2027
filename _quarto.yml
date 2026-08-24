@@ -1,11 +1,16 @@
 project:
   type: book
-  # scale-ladder/ is a figure package, not a chapter: its R, data and standalone
-  # draft are sourced by index.qmd, never rendered as pages of the book.
+  # scale-ladder/ and week-summary/ are figure packages, not chapters: their R,
+  # data and standalone drafts are sourced by the chapters, never rendered as
+  # pages of the book.
   render:
     - index.qmd
     - weeks/*.qmd
     - references.qmd
+  # Chunks run from the project root, not from the chapter's own folder, so a
+  # chapter in weeks/ can source("week-summary/R/week-summary.R") by the same
+  # root-relative path index.qmd uses.
+  execute-dir: project
 
 book:
   title: "2027 Guide to AI in Science"

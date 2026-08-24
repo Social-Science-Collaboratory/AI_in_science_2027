@@ -13,3 +13,8 @@ Rplots.pdf
 /scale-ladder/figure-scale-ladder.pdf
 /scale-ladder/figure-scale-ladder_files/
 /scale-ladder/figure-scale-ladder.tex
+
+# knitr figure dirs left beside a chapter when quarto renders it on its own
+# (the book's own copies live under _book/)
+/index_files/
+/weeks/*_files/
