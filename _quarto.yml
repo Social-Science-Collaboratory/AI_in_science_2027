@@ -61,7 +61,7 @@ book:
     - name: "Sofia C. Villanueva"
       affiliations:
         - name: "Department of Psychology"
-  date: "8/22/2026"
+  date: "8/31/2026"
   repo-url: https://github.com/Social-Science-Collaboratory/AI_in_science_2027
   repo-branch: main
   repo-actions: [edit, source, issue]
