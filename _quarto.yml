@@ -69,33 +69,36 @@ book:
   sharing: [twitter, linkedin, facebook]
   sidebar:
     collapse-level: 1
+  # Chapter files are numbered by their seminar week in the syllabus, so the
+  # numbering starts at 02: week 1 (Aug 20) was the Foundations session, which
+  # the preface covers. weeks/NN- therefore always equals syllabus week NN.
   chapters:
     - index.qmd
     - part: "Ideation and Project Management"
       chapters:
-        - weeks/01-project-management-using.qmd
-        - weeks/02-project-management-critiquing.qmd
+        - weeks/02-project-management-using.qmd
+        - weeks/03-project-management-critiquing.qmd
     - part: "Literature Review and Synthesis"
       chapters:
-        - weeks/03-literature-review-using.qmd
-        - weeks/04-literature-review-critiquing.qmd
+        - weeks/04-literature-review-using.qmd
+        - weeks/05-literature-review-critiquing.qmd
     - part: "Data Collection and Generation"
       chapters:
-        - weeks/05-data-collection-using.qmd
-        - weeks/06-data-collection-critiquing.qmd
+        - weeks/06-data-collection-using.qmd
+        - weeks/07-data-collection-critiquing.qmd
     - part: "Analysis and Modeling"
       chapters:
-        - weeks/07-analysis-using.qmd
-        - weeks/08-analysis-critiquing.qmd
+        - weeks/08-analysis-using.qmd
+        - weeks/09-analysis-critiquing.qmd
     - part: "Writing and Communication"
       chapters:
-        - weeks/09-writing-using.qmd
-        - weeks/10-writing-critiquing.qmd
+        - weeks/10-writing-using.qmd
+        - weeks/11-writing-critiquing.qmd
     - part: "Review, Outreach, and Dissemination"
       chapters:
-        - weeks/11-dissemination-using.qmd
-        - weeks/12-dissemination-critiquing.qmd
-    - weeks/13-personal-ai-philosophy.qmd
+        - weeks/12-dissemination-using.qmd
+        - weeks/13-dissemination-critiquing.qmd
+    - weeks/14-personal-ai-philosophy.qmd
     - references.qmd
 
 number-sections: false

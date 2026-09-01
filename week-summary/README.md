@@ -30,7 +30,7 @@ for a red-green colourblind reader.
 
 ```r
 source("week-summary/R/week-summary.R")            # setup chunk
-week_summary_plot(week = 1, fig_width = 12, fig_height = 5.5)
+week_summary_plot(week = 2, fig_width = 12, fig_height = 5.5)
 ```
 
 Pass `week_summary_plot()` **the same width and height you give the chunk**.
@@ -95,18 +95,18 @@ glyph at all.
 week-summary/
 ├─ R/week-summary.R                the figure, in ggplot2 + cowplot
 ├─ data/
-│  ├─ week-01-statements.csv       week 1 discussion points
-│  └─ week-01-resources.csv        week 1 resources
+│  ├─ week-02-statements.csv       week 2 discussion points
+│  └─ week-02-resources.csv        week 2 resources
 └─ figures/
-   ├─ week-01-summary.png          300 dpi raster, for proofing
-   └─ week-01-summary.pdf          vector twin
+   ├─ week-02-summary.png          300 dpi raster, for proofing
+   └─ week-02-summary.pdf          vector twin
 ```
 
 ## Where a week's data comes from
 
 Both CSVs are transcriptions of two Polis sessions per week — one to discuss,
 one to vote on resources — plus the shared sheet where students post what they
-found. For week 1 those were:
+found. For week 2 those were:
 
 | source | link |
 | --- | --- |
@@ -151,7 +151,7 @@ and lets Quarto draw the figure at chunk size. They are for proofing, slides,
 and posters:
 
 ```
-Rscript R/week-summary.R 1      # writes figures/week-01-summary.{png,pdf}
+Rscript R/week-summary.R 2      # writes figures/week-02-summary.{png,pdf}
 ```
 
 Requires `ggplot2`, `dplyr`, `tidyr`, `forcats`, `readr`, `cowplot`, and

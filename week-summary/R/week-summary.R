@@ -278,7 +278,7 @@ vector_pdf_device <- function() {
 
 if (sys.nframe() == 0L) {
   args <- commandArgs(trailingOnly = TRUE)
-  week <- if (length(args)) as.integer(args[1]) else 1L
+  week <- if (length(args)) as.integer(args[1]) else 2L
 
   fig  <- week_summary_plot(week)
   stem <- week_summary_path("figures", paste0(week_slug(week), "-summary"))
