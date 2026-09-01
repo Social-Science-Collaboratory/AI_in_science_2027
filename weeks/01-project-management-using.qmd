@@ -20,14 +20,14 @@ Many researchers' first contact with AI tools is in the realm of ideation or pro
 
 ```{r}
 #| label: fig-checkin-workflow
-#| fig-cap: "A seminar participant shared an LLM-assisted workflow to compile past meeting notes from their trainee, review progress, and suggest future directions."
+#| fig-cap: "A seminar participant shared an LLM-assisted workflow to compile past meeting notes from their trainee (Panel A), review progress (Panel B), and mock a figure illustrating future directions (Panel C)."
 #| fig-width: 12
 #| fig-height: 11.63
 #| fig-align: center
 checkin_workflow_plot()
 ```
 
-As illustrated by the most popular weekly resources, AI increasingly being used to expand ideation and project management capabilities (@fig-week-01-summary). For example, as early as 2025, researchers documented that LLMs were capable of generating research ideas that were judged more novel (but slightly less feasible) than human experts[@ICLR2025_ea94957d]. The performance of these LLMs can be further improved via causal graphs. More specifically, LLMs can efficiently extract causal relation pairs from published articles. This allows the subsequent deployment of algorithms designed to predict missing links in this causal chain[@tong2024automating]. Similarly, LLMs can be used to *generate* theories based on pre-existing swaths of qualitative data [@schmitt2016] – an AI-for-data-analysis theme we continued to explore later in the seminar (see Chapter X).
+As illustrated by the most popular weekly resources, AI increasingly being used to expand ideation and project management capabilities (@fig-week-01-summary). For example, as early as 2025, researchers documented that LLMs were capable of generating research ideas that were judged more novel (but slightly less feasible) than human experts[@ICLR2025_ea94957d]. The performance of these LLMs can be further improved via causal graphs. More specifically, LLMs can efficiently extract causal relation pairs from published articles. This allows the subsequent deployment of algorithms designed to predict missing links in this causal chain[@tong2024automating]. Similarly, LLMs can be used to *generate* theories based on pre-existing swaths of qualitative data [@schmitt2016] – an AI-for-data-analysis theme we continued to explore later in the seminar (see @sec-analysis-using).
 
 # Areas of consensus – and dissensus
 
