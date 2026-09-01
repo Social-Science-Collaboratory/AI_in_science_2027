@@ -95,19 +95,54 @@ glyph at all.
 week-summary/
 ├─ R/week-summary.R                the figure, in ggplot2 + cowplot
 ├─ data/
-│  ├─ week-01-statements.csv       week 1 discussion points  (PLACEHOLDER)
-│  └─ week-01-resources.csv        week 1 resources          (PLACEHOLDER)
+│  ├─ week-01-statements.csv       week 1 discussion points
+│  └─ week-01-resources.csv        week 1 resources
 └─ figures/
    ├─ week-01-summary.png          300 dpi raster, for proofing
    └─ week-01-summary.pdf          vector twin
 ```
 
-**Week 1's data is a wireframe.** The bars, titles, and names in
-`data/week-01-*.csv` are bracketed layout stand-ins — `[Consensus statement 1]`,
-`[Student name]` — chosen to be unmistakable as placeholders rather than
-plausible as findings. The chapter carries a callout saying so. Replace the two
-CSVs with the real Polis results and vote, and both the figure and the callout
-should go.
+## Where a week's data comes from
+
+Both CSVs are transcriptions of two Polis sessions per week — one to discuss,
+one to vote on resources — plus the shared sheet where students post what they
+found. For week 1 those were:
+
+| source | link |
+| --- | --- |
+| discussion report | <https://pol.is/report/r8mvdhhepjcxwkyyf52cs> |
+| resource vote report | <https://pol.is/report/r44s8jkj3fwapwdmbjxsx> |
+| resource sheet | [Google Sheets](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=2097835206) |
+
+Polis exports without a login, which is what makes the numbers checkable:
+
+```
+https://pol.is/api/v3/reportExport/<report-id>/comments.csv   # per-statement agree/disagree
+https://pol.is/api/v3/reportExport/<report-id>/votes.csv      # one row per vote, incl. passes
+https://pol.is/api/v3/reportExport/<report-id>/summary.csv    # n voters, n statements, n groups
+```
+
+`agree` in `week-NN-statements.csv` is the **agree share of agree-and-disagree
+votes** — passes excluded, not counted as disagreement. That choice matters,
+because Polis participants pass often and statements submitted late in a session
+collect far fewer votes than the seed statements. Counting passes as
+disagreement would drag every late statement toward zero for a reason that has
+nothing to do with what anyone thought. The chapter states the convention and
+prints raw counts next to every percentage, which is the honest way to publish a
+percentage computed on a denominator of nine.
+
+### Statements are wrapped, not shortened
+
+The left panel draws the axis label exactly as the CSV gives it, with no
+wrapping of its own, so a verbatim Polis statement would run off the panel. Put
+literal newlines inside the quoted field — wrap at about 46 characters, to no
+more than three lines — rather than paraphrasing the statement shorter. The
+group voted on specific words and the figure should show them.
+
+Resource `title`, by contrast, is drawn on one unwrapped line, so it *does* need
+to be short (about 40 characters). Give the full title in the chapter prose. The
+`body` wraps automatically but only has room for about three lines: keep it near
+100 characters, or the credit line collides with the next resource's title.
 
 ## Regenerating
 

@@ -19,7 +19,46 @@ book:
       email: "ncoles@ufl.edu"
       affiliations:
         - name: "Bureau of Economic and Business Research"
-    - name: "Alaukik, Abhay"
+    - name: "Abhay Alaukik"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Majed Abdu Arishi"
+      affiliations:
+        - name: "Department of Civil and Coastal Engineering"
+    - name: "Annabel V. Dang"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Jungjae Im"
+      affiliations:
+        - name: "Department of Marketing"
+    - name: "Nabiha Iqbal"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Minyi Jiang"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Rui Jin"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Zhongchi Li"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Sooyeon Park"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Mariana Goncalves Rebello"
+      affiliations:
+        - name: "School of Special Education, School Psychology, and Early Childhood Studies"
+    - name: "Jihyun Soh"
+      affiliations:
+        - name: "Department of Advertising"
+    - name: "Paola J. Sullivan"
+      affiliations:
+        - name: "Department of Family, Youth and Community Sciences"
+    - name: "Lyra Grace Toohey"
+      affiliations:
+        - name: "Department of Psychology"
+    - name: "Sofia C. Villanueva"
       affiliations:
         - name: "Department of Psychology"
   date: "8/22/2026"
@@ -32,35 +71,31 @@ book:
     collapse-level: 1
   chapters:
     - index.qmd
-    - part: "Project Management"
+    - part: "Ideation and Project Management"
       chapters:
         - weeks/01-project-management-using.qmd
         - weeks/02-project-management-critiquing.qmd
-    - part: "Literature Review"
+    - part: "Literature Review and Synthesis"
       chapters:
         - weeks/03-literature-review-using.qmd
         - weeks/04-literature-review-critiquing.qmd
-    - part: "Idea Development"
+    - part: "Data Collection and Generation"
       chapters:
-        - weeks/05-idea-development-using.qmd
-        - weeks/06-idea-development-critiquing.qmd
-    - part: "Data Collection"
+        - weeks/05-data-collection-using.qmd
+        - weeks/06-data-collection-critiquing.qmd
+    - part: "Analysis and Modeling"
       chapters:
-        - weeks/07-data-collection-using.qmd
-        - weeks/08-data-collection-critiquing.qmd
-    - part: "Analysis"
+        - weeks/07-analysis-using.qmd
+        - weeks/08-analysis-critiquing.qmd
+    - part: "Writing and Communication"
       chapters:
-        - weeks/09-analysis-using.qmd
-        - weeks/10-analysis-critiquing.qmd
-    - part: "Writing"
+        - weeks/09-writing-using.qmd
+        - weeks/10-writing-critiquing.qmd
+    - part: "Review, Outreach, and Dissemination"
       chapters:
-        - weeks/11-writing-using.qmd
-        - weeks/12-writing-critiquing.qmd
-    - part: "Dissemination"
-      chapters:
-        - weeks/13-dissemination-using.qmd
-        - weeks/14-dissemination-critiquing.qmd
-    - weeks/15-personal-ai-philosophy.qmd
+        - weeks/11-dissemination-using.qmd
+        - weeks/12-dissemination-critiquing.qmd
+    - weeks/13-personal-ai-philosophy.qmd
     - references.qmd
 
 number-sections: false
