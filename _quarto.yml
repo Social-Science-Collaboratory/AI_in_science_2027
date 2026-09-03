@@ -104,6 +104,9 @@ book:
 
 number-sections: false
 
+crossref:
+  chapters: false
+
 bibliography: references.bib
 csl: nature.csl
 
