@@ -7,6 +7,9 @@ source("checkin-workflow/R/checkin-workflow.R")
 ```
 
 # Ideation and Project Management: Using AI {#sec-project-management-using}
+
+This week's seminar discussion and top-voted resources are summarized below (@fig-week-02-summary).
+
 ```{r}
 #| label: fig-week-02-summary
 #| fig-cap: "Overview of Week 2 of the Fall 2026 Collective [Artificial] Intelligence Seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants."
