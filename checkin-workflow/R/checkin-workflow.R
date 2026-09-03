@@ -113,13 +113,14 @@ draw_panel <- function(img, label, x, y, cell_w, img_w, img_h, label_height) {
 draw_mock_watermark <- function(x, y, width, height,
                                 angle = 30, span = 0.70, alpha = 0.15) {
   # Size the word to the panel rather than to a hard-coded point size, so it
-  # still fits if the panel is regenerated at another aspect. "MOCK FIGURE" in
-  # bold is about 7.15 em wide and 0.72 em tall; rotating that box by `angle`
-  # spreads it over both axes, and the binding constraint is whichever axis
-  # runs out first. Solving only for width (the obvious version) overflows the
-  # short axis and clips the letters against the panel edge.
+  # still fits if the panel is regenerated at another aspect. "MOCK FIGURE FOR
+  # TRAINEE" in bold is about 14.2 em wide and 0.72 em tall; rotating that box
+  # by `angle` spreads it over both axes, and the binding constraint is
+  # whichever axis runs out first. Solving only for width (the obvious
+  # version) overflows the short axis and clips the letters against the panel
+  # edge.
   a <- angle * pi / 180
-  em_w <- 7.15
+  em_w <- 14.2
   em_h <- 0.72
   fit_w <- span * width  / (em_w * cos(a) + em_h * sin(a))
   fit_h <- span * height / (em_w * sin(a) + em_h * cos(a))
@@ -133,7 +134,7 @@ draw_mock_watermark <- function(x, y, width, height,
   on.exit(popViewport())
 
   grid.text(
-    "MOCK FIGURE",
+    "MOCK FIGURE FOR TRAINEE",
     x = unit(0.5, "npc"), y = unit(0.5, "npc"),
     rot = angle,
     gp = gpar(
