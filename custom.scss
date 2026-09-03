@@ -69,3 +69,35 @@
   display: flex;
   align-items: center;
 }
+
+// Superscript-numbered author affiliations on the title page (overrides the
+// two-column author/affiliation grid from title-metadata.html): authors run
+// together in a byline with superscript numbers, and each unique affiliation
+// is listed once, numbered, below -- rather than repeating full department
+// names next to every author who shares one.
+#title-block-header.quarto-title-block.default {
+  .quarto-title-meta-authors {
+    .byline {
+      font-size: 1.05em;
+      line-height: 1.5;
+    }
+
+    sup {
+      margin-left: 0.05em;
+    }
+  }
+
+  .quarto-title-meta-affiliations .quarto-title-meta-contents {
+    p.affiliation {
+      // Hanging indent so a long affiliation name that wraps to a second
+      // line stays aligned under the name, not under the superscript.
+      padding-left: 1.1em;
+      text-indent: -1.1em;
+      margin-bottom: 0.35em;
+
+      sup {
+        margin-right: 0.3em;
+      }
+    }
+  }
+}

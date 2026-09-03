@@ -19,6 +19,7 @@ book:
       email: "ncoles@ufl.edu"
       affiliations:
         - name: "Bureau of Economic and Business Research"
+        - name: "Department of Psychology"
     - name: "Abhay Alaukik"
       affiliations:
         - name: "Department of Psychology"
@@ -61,7 +62,7 @@ book:
     - name: "Sofia C. Villanueva"
       affiliations:
         - name: "Department of Psychology"
-  date: "8/31/2026"
+  date: today
   repo-url: https://github.com/Social-Science-Collaboratory/AI_in_science_2027
   repo-branch: main
   repo-actions: [edit, source, issue]
@@ -115,6 +116,8 @@ format:
     include-after-body:
       - sidebar-autohide.html
       - share-x.html
+    template-partials:
+      - title-metadata.html
     fig-dpi: 300
   pdf:
     documentclass: scrreprt
