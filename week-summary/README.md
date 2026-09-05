@@ -1,6 +1,6 @@
 # Week summary — the opening figure for every content chapter
 
-Self-contained figure package living inside the 2027 Guide to AI in Science.
+Self-contained figure package living inside the 2027 UF Guide to AI in Science.
 One figure, drawn fifteen times: it opens every content chapter (weeks 1–14),
 and is deliberately *not* used by the preface or by the personal-AI-philosophy
 chapter, neither of which has a Polis session or a resource vote behind it.
@@ -14,7 +14,7 @@ diverging bar: disagreement runs left of zero, agreement right. The two live in
 one picture on purpose. A week's consensus and its fault lines are the same
 vote read in two directions, and splitting them into two charts would let a
 reader see one without the other. Statements are drawn in CSV order, top to
-bottom, so sorting the CSV by `agree` is what produces the wedge.
+bottom, so sorting the CSV by agree share is what produces the wedge.
 
 **Right — "Top resources."** The three resources the seminar voted forward, each
 with a QR code to the thing itself and a credit line naming the student who
@@ -59,7 +59,13 @@ code changes, no new figure.
 | column | meaning |
 | --- | --- |
 | `statement` | the statement as put to the group |
-| `agree` | percent agreeing (0–100); the bar's other half is `100 - agree` |
+| `agrees` | number of agree votes on that Polis statement |
+| `disagrees` | number of disagree votes on that Polis statement |
+
+Record the **counts**, not a percentage. The bar is derived — `agrees /
+(agrees + disagrees)` — so there is no hand-typed number that can drift away
+from the vote it claims to summarize. See "Where a week's data comes from"
+below for why passes are not in that denominator.
 
 `week-NN-resources.csv`
 
@@ -96,7 +102,9 @@ week-summary/
 ├─ R/week-summary.R                the figure, in ggplot2 + cowplot
 ├─ data/
 │  ├─ week-02-statements.csv       week 2 discussion points
-│  └─ week-02-resources.csv        week 2 resources
+│  ├─ week-02-resources.csv        week 2 resources
+│  ├─ week-03-statements.csv       week 3 discussion points
+│  └─ week-03-resources.csv        week 3 resources
 └─ figures/
    ├─ week-02-summary.png          300 dpi raster, for proofing
    └─ week-02-summary.pdf          vector twin
@@ -106,13 +114,13 @@ week-summary/
 
 Both CSVs are transcriptions of two Polis sessions per week — one to discuss,
 one to vote on resources — plus the shared sheet where students post what they
-found. For week 2 those were:
+found. Note that the shared sheet numbers its tabs one behind the book: the tab
+headed "Week 2 · Critiquing" is this book's chapter 3.
 
-| source | link |
-| --- | --- |
-| discussion report | <https://pol.is/report/r8mvdhhepjcxwkyyf52cs> |
-| resource vote report | <https://pol.is/report/r44s8jkj3fwapwdmbjxsx> |
-| resource sheet | [Google Sheets](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=2097835206) |
+| week | discussion report | resource vote report | resource sheet tab |
+| --- | --- | --- | --- |
+| 2 | [r8mvdhhepjcxwkyyf52cs](https://pol.is/report/r8mvdhhepjcxwkyyf52cs) | [r44s8jkj3fwapwdmbjxsx](https://pol.is/report/r44s8jkj3fwapwdmbjxsx) | [gid=2097835206](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=2097835206) |
+| 3 | [r9z3jc52kbd6ux7vhdeu5](https://pol.is/report/r9z3jc52kbd6ux7vhdeu5) | not yet published | [gid=506079777](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=506079777) |
 
 Polis exports without a login, which is what makes the numbers checkable:
 
@@ -122,14 +130,26 @@ https://pol.is/api/v3/reportExport/<report-id>/votes.csv      # one row per vote
 https://pol.is/api/v3/reportExport/<report-id>/summary.csv    # n voters, n statements, n groups
 ```
 
-`agree` in `week-NN-statements.csv` is the **agree share of agree-and-disagree
-votes** — passes excluded, not counted as disagreement. That choice matters,
-because Polis participants pass often and statements submitted late in a session
-collect far fewer votes than the seed statements. Counting passes as
-disagreement would drag every late statement toward zero for a reason that has
-nothing to do with what anyone thought. The chapter states the convention and
-prints raw counts next to every percentage, which is the honest way to publish a
-percentage computed on a denominator of nine.
+`agrees` and `disagrees` are copied straight from `comments.csv` (they agree
+exactly with a tally of `votes.csv`, which is worth re-running as a check). The
+bar is the **agree share of agree-and-disagree votes** — passes excluded, not
+counted as disagreement. That choice matters, because Polis participants pass
+often and statements submitted late in a session collect far fewer votes than
+the seed statements. Counting passes as disagreement would drag every late
+statement toward zero for a reason that has nothing to do with what anyone
+thought.
+
+The flip side is that a bar can sit on a denominator of nine, and the figure
+does not show it. The counts are in the CSV so the reader can find them, but a
+chapter quoting a percentage in prose should give the counts with it.
+
+### Ranking resources uses raw agree counts
+
+Statements and resources are ranked on different quantities, and the difference
+is deliberate. Resource votes are mostly passes — a participant who has not
+read a paper passes on it — so an agree *share* rewards a resource that two
+people saw and one liked over a resource that five people saw and four liked.
+The three resources drawn are the three with the most agree votes.
 
 ### Statements are wrapped, not shortened
 

@@ -75,11 +75,11 @@ gutter    <- 0.04   # gap between a QR code and its text block
 # 2. Data -------------------------------------------------------------------
 # One pair of CSVs per week, named by zero-padded week number.
 #
-#   week-NN-statements.csv   statement, agree      (agree = percent agreeing)
+#   week-NN-statements.csv   statement, agrees, disagrees   (raw vote counts)
 #   week-NN-resources.csv    title, url, body, credit
 #
 # Statements are plotted in file order, top to bottom -- so the CSV is the
-# running order, and sorting it by `agree` is what produces the wedge shape.
+# running order, and sorting it by agree share is what produces the wedge.
 
 week_slug <- function(week) sprintf("week-%02d", as.integer(week))
 
@@ -87,8 +87,22 @@ read_statements <- function(week) {
   path <- week_summary_path("data", paste0(week_slug(week), "-statements.csv"))
   if (!file.exists(path)) stop("no statements file for week ", week, ": ", path)
 
-  read_csv(path, show_col_types = FALSE) |>
+  raw <- read_csv(path, show_col_types = FALSE)
+
+  if (any(raw$agrees + raw$disagrees == 0)) {
+    stop("statement with no agree or disagree votes in ", path)
+  }
+
+  # The percentage is DERIVED from the counts, never transcribed alongside
+  # them. A Polis pass is a non-vote, not a disagreement -- participants pass
+  # often, and statements submitted late in a session collect far fewer votes
+  # than the seed statements -- so the denominator is agrees + disagrees.
+  # Deriving it here is what stops a hand-typed percentage from drifting away
+  # from the counts the CSV records.
+  raw |>
     mutate(
+      votes     = agrees + disagrees,
+      agree     = 100 * agrees / votes,
       disagree  = 100 - agree,
       # fct_inorder keeps the CSV's order; fct_rev because ggplot draws the
       # first level at the BOTTOM of a discrete y axis.

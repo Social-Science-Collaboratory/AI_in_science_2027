@@ -1,15 +1,15 @@
-statement,agree
+statement,agrees,disagrees
 "Everybody has access to the same AI capabilities.
 Competitiveness comes down to asking better
 questions and pipelines for channeling those
-capabilities.",91
+capabilities.",10,1
 "An LLM is a legitimate second coder in
 qualitative research and should count toward
-intercoder reliability.",89
+intercoder reliability.",8,1
 "We should treat fully autonomous AI scientists
 making Nobel-worthy discoveries by 2050 as a
-serious goal worth funding.",50
+serious goal worth funding.",5,5
 "AI can engage in more flexible forms of
-thinking than typical humans.",50
+thinking than typical humans.",4,4
 "The institution of science would be better with
-more AI agents and fewer human agents.",40
+more AI agents and fewer human agents.",2,4

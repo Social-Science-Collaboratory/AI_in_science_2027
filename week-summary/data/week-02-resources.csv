@@ -1,4 +1,4 @@
 title,url,body,credit
 Can LLMs Generate Novel Research Ideas?,https://openreview.net/pdf?id=M23dTGWCZy,Over 100 NLP researchers judged LLM-generated ideas more novel than their own - but no more feasible.,Annabel V. Dang
-Automating Hypothesis Generation with AI,https://www.nature.com/articles/s41599-024-03407-5,"An LLM mined causal links from 43,312 psychology papers. Its hypotheses matched PhD students on novelty.",Nabiha Iqbal
+Automating Hypothesis Generation with AI,https://www.nature.com/articles/s41599-024-03407-5,"A causal graph from 43,312 psychology papers matched doctoral students on novelty; the LLM alone did not.",Nabiha Iqbal
 Generative Grounded Theory with AI,https://myscp.onlinelibrary.wiley.com/doi/10.1002/jcpy.70036,"A seven-step framework for inductive theory building, one prompt per stage - AI as bounded co-theorist.",Jungjae Im

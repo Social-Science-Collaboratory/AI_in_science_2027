@@ -1,7 +1,7 @@
 # Scale ladder — co-authors on flagship AI model reports
 
 Self-contained figure package for the AI Race Observatory, living inside the
-2027 Guide to AI in Science book.
+2027 UF Guide to AI in Science book.
 
 ## How the book uses it
 

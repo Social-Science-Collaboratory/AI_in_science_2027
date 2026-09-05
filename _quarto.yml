@@ -13,7 +13,7 @@ project:
   execute-dir: project
 
 book:
-  title: "2027 Guide to AI in Science"
+  title: "2027 UF Guide to AI in Science"
   author:
     - name: "Nicholas A. Coles"
       email: "ncoles@ufl.edu"
