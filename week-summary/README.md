@@ -106,10 +106,12 @@ week-summary/
 │  ├─ week-03-statements.csv       week 3 discussion points
 │  ├─ week-03-resources.csv        week 3 resources
 │  ├─ week-04-statements.csv       week 4 discussion points
-│  └─ week-04-resources.csv        week 4 resources
+│  ├─ week-04-resources.csv        week 4 resources
+│  ├─ week-05-statements.csv       week 5 discussion points
+│  └─ week-05-resources.csv        week 5 resources
 └─ figures/
-   ├─ week-02-summary.png          300 dpi raster, for proofing
-   └─ week-02-summary.pdf          vector twin
+   ├─ week-NN-summary.png          300 dpi raster, for proofing
+   └─ week-NN-summary.pdf          vector twin
 ```
 
 ## Where a week's data comes from
@@ -126,6 +128,7 @@ looks like it matches the week number.
 | 2 | [r8mvdhhepjcxwkyyf52cs](https://pol.is/report/r8mvdhhepjcxwkyyf52cs) | [r44s8jkj3fwapwdmbjxsx](https://pol.is/report/r44s8jkj3fwapwdmbjxsx) | [gid=2097835206](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=2097835206) |
 | 3 | [r9z3jc52kbd6ux7vhdeu5](https://pol.is/report/r9z3jc52kbd6ux7vhdeu5) | not yet published | [gid=506079777](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=506079777) |
 | 4 | [r3ufehuivwarjk7rex96d](https://pol.is/report/r3ufehuivwarjk7rex96d) | not yet published | [gid=21606442](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=21606442) |
+| 5 | [r8v6s8jef4cjctcmncfna](https://pol.is/report/r8v6s8jef4cjctcmncfna) | not yet published | [gid=1933270104](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=1933270104) |
 
 Polis exports without a login, which is what makes the numbers checkable:
 
