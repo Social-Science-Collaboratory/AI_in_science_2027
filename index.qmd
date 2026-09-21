@@ -2,7 +2,7 @@
 #| label: setup
 #| include: false
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-source("scale-ladder/R/scale-ladder.R")
+source("figure-packages/scale-ladder/R/scale-ladder.R")
 ```
 
 ::: {.callout-note icon=false title="This was written by humans."}
@@ -27,4 +27,4 @@ scale_ladder_plot(fig_width = 7.5)
 
 After reviewing this backdrop, the course itself became a large-scale collaboration, dedicated to understanding how AI is changing the nature of science. Each week followed a consistent structure (@fig-seminar-structure). First, we would select a component of the research pipeline to examine (e.g., data analysis). Second, we would spend one week compiling resources for understanding the emerging role of AI in that part of the research pipeline. Third, we would engage in peer-to-peer teaching. Last, we would use a live online voting platform to solicit, debate, and vote upon key resources and takeaways for the week[@Coles2024; @dalkey1963delphi]. Through these exercises, seminar participants received hands on experience with large-scale collaboration[@Baumgartner2023]. Along the way, not only developed and debated their *personal* philosophy statements -- but also the general direction of AI at UF. Their results culminate into this **2027 UF Guide to AI in Science**: a summary of our top resources, takeaways, and disagreements.
 
-![Structure of the UF Fall 2026 seminar, titled Collective \[Artificial\] Intelligence in Science.](ClassStructure.png){#fig-seminar-structure fig-align="left" width="100%"}
+![Structure of the UF Fall 2026 seminar, titled Collective \[Artificial\] Intelligence in Science.](figure-packages/class-structure/figures/class-structure.png){#fig-seminar-structure fig-align="left" width="100%"}

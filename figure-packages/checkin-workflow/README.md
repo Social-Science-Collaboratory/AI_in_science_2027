@@ -62,7 +62,7 @@ short axis and clips the M and K against the panel edge.
 ## Usage
 
 ```r
-source("checkin-workflow/R/checkin-workflow.R")
+source("figure-packages/checkin-workflow/R/checkin-workflow.R")
 checkin_workflow_plot()          # draw into the current device
 checkin_workflow_save()          # write figures/checkin-workflow.{png,pdf}
 checkin_workflow_layout()$height # fig-height the calling chunk should declare

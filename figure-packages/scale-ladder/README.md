@@ -8,7 +8,7 @@ Self-contained figure package for the AI Race Observatory, living inside the
 `index.qmd` sources the R and calls the plot function directly:
 
 ```r
-source("scale-ladder/R/scale-ladder.R")   # setup chunk
+source("figure-packages/scale-ladder/R/scale-ladder.R")   # setup chunk
 scale_ladder_plot(fig_width = 7.5)        # chunk labelled fig-scale-ladder
 ```
 
@@ -34,7 +34,7 @@ The R resolves its own paths (see `scale_ladder_root` at the top of
 sourced from the project root or run from inside this folder.
 
 This folder is excluded from the book render via `project: render:` in
-`../_quarto.yml`, so `figure-scale-ladder.qmd` does not become a stray page.
+`../../_quarto.yml`, so `figure-scale-ladder.qmd` does not become a stray page.
 
 **The bibliography is deliberately not wired in.** `figure_references_for_review.bib`
 is held separate from the book's `references.bib` pending a source review, which

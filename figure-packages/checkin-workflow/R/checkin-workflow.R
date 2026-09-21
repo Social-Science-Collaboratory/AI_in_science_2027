@@ -19,9 +19,10 @@ library(grid)
 # Panel sources, in layout order. Paths are project-root relative because
 # _quarto.yml sets execute-dir: project.
 CHECKIN_PANELS <- c(
-  A = "checkin-workflow/images/panel-a-checkin-repo.png",
-  B = "checkin-workflow/images/panel-b-llm-query.png",
-  C = "checkin-workflow/images/panel-c-mobility-prepost-mockup.png"
+  A = "figure-packages/checkin-workflow/images/panel-a-checkin-repo.png",
+  B = "figure-packages/checkin-workflow/images/panel-b-llm-query.png",
+  C = paste0("figure-packages/checkin-workflow/images/",
+             "panel-c-mobility-prepost-mockup.png")
 )
 
 # Panel captions, drawn on the figure beside each bold letter. Kept here rather
@@ -226,8 +227,10 @@ checkin_workflow_plot <- function(width = 12, watermark = TRUE, ...) {
 }
 
 
-#' Write standalone PNG and PDF copies into checkin-workflow/figures/
-checkin_workflow_save <- function(width = 12, dir = "checkin-workflow/figures") {
+#' Write standalone PNG and PDF copies into the package's figures/ folder
+checkin_workflow_save <- function(
+    width = 12,
+    dir = "figure-packages/checkin-workflow/figures") {
   lay <- checkin_workflow_layout(width = width)
   dir.create(dir, showWarnings = FALSE, recursive = TRUE)
 

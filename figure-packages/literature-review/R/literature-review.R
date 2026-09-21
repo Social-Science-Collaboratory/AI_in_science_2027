@@ -9,17 +9,17 @@
 #   A  the workflow diagram, drawn for the seminar
 #   B  a screenshot of that workflow running
 #
-# Same construction as checkin-workflow/R/checkin-workflow.R: panels are placed
-# with grid rather than composited into a bitmap, so the labels stay vector in
-# the PDF build. Only png and grid are needed.
+# Same construction as figure-packages/checkin-workflow/R/checkin-workflow.R:
+# panels are placed with grid rather than composited into a bitmap, so the
+# labels stay vector in the PDF build. Only png and grid are needed.
 
 library(grid)
 
 # Panel sources, in layout order. Paths are project-root relative because
 # _quarto.yml sets execute-dir: project.
 LITREVIEW_PANELS <- c(
-  A = "literature-review/images/panel-a-workflow.png",
-  B = "literature-review/images/panel-b-demo.png"
+  A = "figure-packages/literature-review/images/panel-a-workflow.png",
+  B = "figure-packages/literature-review/images/panel-b-demo.png"
 )
 
 # Panel captions, drawn on the figure beside each bold letter. Kept here rather
@@ -145,8 +145,10 @@ literature_review_plot <- function(width = 12, ...) {
 }
 
 
-#' Write standalone PNG and PDF copies into literature-review/figures/
-literature_review_save <- function(width = 12, dir = "literature-review/figures") {
+#' Write standalone PNG and PDF copies into the package's figures/ folder
+literature_review_save <- function(
+    width = 12,
+    dir = "figure-packages/literature-review/figures") {
   lay <- literature_review_layout(width = width)
   dir.create(dir, showWarnings = FALSE, recursive = TRUE)
 

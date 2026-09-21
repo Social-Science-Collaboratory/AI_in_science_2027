@@ -6,13 +6,17 @@
 # macOS finder cruft
 .DS_Store
 
+# draw.io writes a dotfile backup beside the diagram it is editing
+.$*.bkp
+
 # stray R device output
 Rplots.pdf
 
-# output of rendering scale-ladder/figure-scale-ladder.qmd on its own
-/scale-ladder/figure-scale-ladder.pdf
-/scale-ladder/figure-scale-ladder_files/
-/scale-ladder/figure-scale-ladder.tex
+# output of rendering figure-packages/scale-ladder/figure-scale-ladder.qmd
+# on its own
+/figure-packages/scale-ladder/figure-scale-ladder.pdf
+/figure-packages/scale-ladder/figure-scale-ladder_files/
+/figure-packages/scale-ladder/figure-scale-ladder.tex
 
 # knitr figure dirs left beside a chapter when quarto renders it on its own
 # (the book's own copies live under _book/)

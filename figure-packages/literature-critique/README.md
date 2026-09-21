@@ -62,7 +62,7 @@ panel B's label is the terse one of the three.
 ## Usage
 
 ```r
-source("literature-critique/R/literature-critique.R")
+source("figure-packages/literature-critique/R/literature-critique.R")
 literature_critique_plot()            # fig-width 12, fig-height 13.77
 literature_critique_save()            # writes figures/literature-critique.{png,pdf}
 literature_critique_layout()$height   # fig-height the calling chunk should declare

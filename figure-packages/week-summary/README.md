@@ -29,7 +29,7 @@ for a red-green colourblind reader.
 ## How a chapter uses it
 
 ```r
-source("week-summary/R/week-summary.R")            # setup chunk
+source("figure-packages/week-summary/R/week-summary.R")            # setup chunk
 week_summary_plot(week = 2, fig_width = 12, fig_height = 5.5)
 ```
 
@@ -40,14 +40,14 @@ differ, so the function converts one into the other using the figure's aspect
 ratio. Give it dimensions that don't match the chunk and the codes render
 oblong, which is the one failure here that still scans and so goes unnoticed.
 
-Chunks run from the project root (`execute-dir: project` in `../_quarto.yml`),
+Chunks run from the project root (`execute-dir: project` in `../../_quarto.yml`),
 so the root-relative `source()` path above works from `weeks/` as well as from
 the root. The R also resolves its own paths (see `week_summary_root` at the top
 of `R/week-summary.R`), so `data/` and `figures/` work whether the script is
 sourced from the project root or run from inside this folder.
 
 This folder is excluded from the book render via `project: render:` in
-`../_quarto.yml`, so nothing here becomes a stray page.
+`../../_quarto.yml`, so nothing here becomes a stray page.
 
 ## Adding a week
 

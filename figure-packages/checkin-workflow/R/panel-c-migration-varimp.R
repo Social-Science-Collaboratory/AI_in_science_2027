@@ -258,6 +258,8 @@ fig <- ggplot(mapping = aes(y = ypos)) +
 # margins) so panel C spans the same width as row 1 of the multipanel, rather
 # than sitting centred and narrow. The original mockup was 10.5 x 8.6; only
 # these output dimensions differ from that script.
-ggsave("checkin-workflow/images/panel-c-simulated-figure.png", fig,
+ggsave(file.path("figure-packages/checkin-workflow/images",
+                 "panel-c-simulated-figure.png"), fig,
        width = 11.76, height = 7.0, dpi = 300, bg = "white")
-cat("saved checkin-workflow/images/panel-c-simulated-figure.png\n")
+cat("saved figure-packages/checkin-workflow/images/",
+    "panel-c-simulated-figure.png\n", sep = "")

@@ -1,8 +1,8 @@
 ---
 # Standalone working draft. This file is excluded from the book render (see
-# `project: render:` in ../_quarto.yml); the book calls scale_ladder_plot()
+# `project: render:` in ../../_quarto.yml); the book calls scale_ladder_plot()
 # directly from index.qmd. Render it on its own with:
-#   quarto render scale-ladder/figure-scale-ladder.qmd
+#   quarto render figure-packages/scale-ladder/figure-scale-ladder.qmd
 # Its bibliography is held out of the book's references pending review.
 title: "The AI race is a hiring race"
 bibliography: figure_references_for_review.bib

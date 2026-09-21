@@ -10,18 +10,18 @@
 #           B  the hazards between a literature search and the truth
 #   row 2   C  the exchange between AI and the literature it is fed
 #
-# Same construction as checkin-workflow/R/checkin-workflow.R: panels are placed
-# with grid rather than composited into a bitmap, so the labels stay vector in
-# the PDF build. Only png and grid are needed.
+# Same construction as figure-packages/checkin-workflow/R/checkin-workflow.R:
+# panels are placed with grid rather than composited into a bitmap, so the
+# labels stay vector in the PDF build. Only png and grid are needed.
 
 library(grid)
 
 # Panel sources, in layout order. Paths are project-root relative because
 # _quarto.yml sets execute-dir: project.
 LITCRITIQUE_PANELS <- c(
-  A = "literature-critique/images/panel-a-insight-mountain.png",
-  B = "literature-critique/images/panel-b-path-to-truth.png",
-  C = "literature-critique/images/panel-c-hand-that-feeds.png"
+  A = "figure-packages/literature-critique/images/panel-a-insight-mountain.png",
+  B = "figure-packages/literature-critique/images/panel-b-path-to-truth.png",
+  C = "figure-packages/literature-critique/images/panel-c-hand-that-feeds.png"
 )
 
 # Panel captions, drawn on the figure beside each bold letter. Kept here rather
@@ -207,9 +207,10 @@ literature_critique_plot <- function(width = 12, ...) {
 }
 
 
-#' Write standalone PNG and PDF copies into literature-critique/figures/
-literature_critique_save <- function(width = 12,
-                                     dir = "literature-critique/figures") {
+#' Write standalone PNG and PDF copies into the package's figures/ folder
+literature_critique_save <- function(
+    width = 12,
+    dir = "figure-packages/literature-critique/figures") {
   lay <- literature_critique_layout(width = width)
   dir.create(dir, showWarnings = FALSE, recursive = TRUE)
 

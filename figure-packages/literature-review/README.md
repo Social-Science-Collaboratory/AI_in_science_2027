@@ -6,7 +6,7 @@ construction as `checkin-workflow/`: two supplied PNGs placed side by side with
 the book's PDF build.
 
 ```r
-source("literature-review/R/literature-review.R")   # setup chunk
+source("figure-packages/literature-review/R/literature-review.R")   # setup chunk
 literature_review_plot()                            # fig-width 12, fig-height 4.59
 ```
 
@@ -44,7 +44,7 @@ The book does not use `figures/` — it calls `literature_review_plot()` and let
 Quarto draw the figure at chunk size. They are for proofing and slides:
 
 ```r
-source("literature-review/R/literature-review.R")
+source("figure-packages/literature-review/R/literature-review.R")
 literature_review_save()      # writes figures/literature-review.{png,pdf}
 ```
 

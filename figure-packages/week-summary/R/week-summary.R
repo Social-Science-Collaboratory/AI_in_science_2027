@@ -27,10 +27,10 @@ library(grid)
 
 
 # 0. Where am I? ------------------------------------------------------------
-# Same trick as scale-ladder/R/scale-ladder.R: the book sources this from the
-# project root, but `Rscript R/week-summary.R` runs it from inside this folder.
-# Find this file and treat its parent as the package root so data/ and figures/
-# resolve either way.
+# Same trick as figure-packages/scale-ladder/R/scale-ladder.R: the book sources
+# this from the project root, but `Rscript R/week-summary.R` runs it from inside
+# this folder. Find this file and treat its parent as the package root so data/
+# and figures/ resolve either way.
 
 week_summary_root <- local({
   this <- NULL

@@ -2,8 +2,8 @@
 #| label: setup
 #| include: false
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-source("week-summary/R/week-summary.R")
-source("literature-critique/R/literature-critique.R")
+source("figure-packages/week-summary/R/week-summary.R")
+source("figure-packages/literature-critique/R/literature-critique.R")
 ```
 
 # Literature Review and Synthesis: Critiquing AI {#sec-literature-review-critiquing}

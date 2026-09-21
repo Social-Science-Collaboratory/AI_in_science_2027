@@ -1,15 +1,16 @@
 project:
   type: book
-  # scale-ladder/, week-summary/, checkin-workflow/ and literature-review/ are
-  # figure packages, not chapters: their R, data and standalone drafts are
-  # sourced by the chapters, never rendered as pages of the book.
+  # figure-packages/ holds the figure packages -- not chapters: their R, data
+  # and standalone drafts are sourced by the chapters, never rendered as pages
+  # of the book. theme/ holds the SCSS and the HTML partials the format below
+  # pulls in.
   render:
     - index.qmd
     - weeks/*.qmd
     - references.qmd
   # Chunks run from the project root, not from the chapter's own folder, so a
-  # chapter in weeks/ can source("week-summary/R/week-summary.R") by the same
-  # root-relative path index.qmd uses.
+  # chapter in weeks/ can source a figure package by the same root-relative
+  # path index.qmd uses -- "figure-packages/week-summary/R/week-summary.R".
   execute-dir: project
   # The Weeks 2-3 podcast is served from the site itself rather than linked as
   # a release asset: GitHub Pages sets audio/mp4 and honours range requests, so
@@ -127,12 +128,12 @@ format:
     theme:
       - flatly
       - brand
-      - custom.scss
+      - theme/custom.scss
     include-after-body:
-      - sidebar-autohide.html
-      - share-x.html
+      - theme/sidebar-autohide.html
+      - theme/share-x.html
     template-partials:
-      - title-metadata.html
+      - theme/title-metadata.html
     fig-dpi: 300
     # No right-hand table of contents: every chapter is a single scroll with at
     # most one `##`, so the TOC only ever listed the page's own title. Dropping

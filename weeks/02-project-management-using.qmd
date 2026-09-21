@@ -2,8 +2,8 @@
 #| label: setup
 #| include: false
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-source("week-summary/R/week-summary.R")
-source("checkin-workflow/R/checkin-workflow.R")
+source("figure-packages/week-summary/R/week-summary.R")
+source("figure-packages/checkin-workflow/R/checkin-workflow.R")
 ```
 
 # Ideation and Project Management: Using AI {#sec-project-management-using}
