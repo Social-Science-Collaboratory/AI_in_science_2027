@@ -9,7 +9,7 @@ source("figure-packages/literature-review/R/literature-review.R")
 # Literature Review and Synthesis: Using AI {#sec-literature-review-using}
 
 ::: {.callout-note icon="false" title="This content was identified, synthesized, and written by humans."}
-📚 But we also like this AI-generated review (TBD) of the benefits and drawbacks of AI for literature review and synthesis.
+📚 But we also like this [AI-generated review](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-literature-review-w4-w5.pdf) (22 pages, PDF) of the benefits and drawbacks of AI for literature review and synthesis, generated with ChatGPT[@openai2026chatgpt] and Consensus[@consensus2026].
 :::
 
 LLMs have an unprecedented capacity to conduct and assist with literature reviews — making them arguably one of the most essential additions to the modern-day research workflow (@fig-week-04-summary). This week, an in-class demo focused on how the "days of research assistants, Google Alerts, and journal subscriptions" are being replaced by AI-assisted workflows (@fig-week-04-literature-review). For example, armed with markdown files for organizing search strategies, key insights, and overarching project goals, one demo deployed Claude[@anthropic2026claude] to (a) search, screen, and organize resources, (b) extract key insights, connections, and themes, (c) brief the PI on recent developments, and (d) adjust the project vision based on PI feedback (@fig-week-04-literature-review, Panel B). This process runs automatically each week, allowing this researcher to sort through an increasingly growing and unmanageable scientific literature with more efficiency than ever before.

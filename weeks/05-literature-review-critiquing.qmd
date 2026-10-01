@@ -9,7 +9,7 @@ source("figure-packages/literature-critique/R/literature-critique.R")
 # Literature Review and Synthesis: Critiquing AI {#sec-literature-review-critiquing}
 
 ::: {.callout-note icon="false" title="This content was identified, synthesized, and written by humans."}
-📚 But we also like this AI-generated review (TBD) of the benefits and drawbacks of AI for literature review and synthesis.
+📚 But we also like this [AI-generated review](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-literature-review-w4-w5.pdf) (22 pages, PDF) of the benefits and drawbacks of AI for literature review and synthesis, generated with ChatGPT[@openai2026chatgpt] and Consensus[@consensus2026].
 :::
 
 In May 2025, leaders from the United States government released a 73-page report on how to better address childhood chronic disease. Infamously, this report ended up containing signs of overreliance on AI for literature review and synthesis. More specifically, the report contained broken links, several mischaracterizations of papers, and references to 7 studies that did not exist[@kennard2025maha]. As we review below, the United States government is not the only major institution making such errors when synthesizing information – with similar reports emerging from academia[@topaz2026fabricated], consulting firms[@brake2025deloitte], and legal institutions alike[@charlotin2026hallucination]. This served as the basis of Week 5 of the Fall 2026 Collective \[Artificial\] Intelligence Seminar (@fig-week-05-summary).
