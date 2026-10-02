@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -307,9 +327,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Covered in Week 6 of the seminar (September 24, 2026). Estimated date of arrival: October 4, 2026.</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="This content was identified, synthesized, and written by humans.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This content was identified, synthesized, and written by humans.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>🤖 Nonetheless, we acknowledge that LLMs may have been able to roughly simulate how each of us would have responded in class.</p>
+</div>
+</div>
+<p>For researchers, advancements in AI have created entirely new modes for collecting and generating data. This not only includes AI-powered tools for automatically information at scale<span class="citation" data-cites="hill2026thematic"><sup><a href="../references.html#ref-hill2026thematic" role="doc-biblioref">1</a></sup></span>, but also the use of AI agents to manipulate<span class="citation" data-cites="ogrady2025reddit"><sup><a href="../references.html#ref-ogrady2025reddit" role="doc-biblioref">2</a></sup></span> and simulate human behavior<span class="citation" data-cites="ashokkumar2026predict"><sup><a href="../references.html#ref-ashokkumar2026predict" role="doc-biblioref">3</a></sup></span>. As a concrete example, one seminar participant reviewed a grant proposal they cynically described as “science with AI in five easy steps” (<a href="#fig-week-06-data-collection" class="quarto-xref">Figure&nbsp;<span>2</span></a>, Panel A). More specifically, they argued that some interesting questions — like “how well can we predict changes in happiness around the world?” — can now be comprehensively investigated with little-to-no human involvement (<a href="#fig-week-06-data-collection" class="quarto-xref">Figure&nbsp;<span>2</span></a>, Panel B). At least theoretically, AI tools can (1) compile the literature and derive hypotheses, (2) identify hypothesis-relevant data sources, (3) download and interoperate those data sources, and (4) deploy automated machine learning to establish initial estimates of the upper-bound of predictability. This five-step process ended with a joke between the presenter and a grant co-author (also in the course): “publish fast, die unhappy anyways.” Whether that general sentiment is possible and/or inevitable served as the focus of Week 6 of the Fall 2026 Collective [Artificial] Intelligence Seminar (<a href="#fig-week-06-summary" class="quarto-xref">Figure&nbsp;<span>1</span></a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-week-06-summary" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-06-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="06-data-collection-using_files/figure-html/fig-week-06-summary-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="3600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-06-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Overview of Week 6 of the Fall 2026 Collective [Artificial] Intelligence Seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Several seminar participants presented work on “silicon sampling”: using LLMs as substitutes for human participants. This technique is based on early evidence that LLMs can simulate output with many statistical similarities to real human responses<span class="citation" data-cites="argyle2023out"><sup><a href="../references.html#ref-argyle2023out" role="doc-biblioref">4</a></sup></span>. Perhaps most impressively, a recent report indicated that GPT-4 could successfully simulate the results of 70 survey-based experiments conducted on nearly 120,000 participants<span class="citation" data-cites="ashokkumar2026predict"><sup><a href="../references.html#ref-ashokkumar2026predict" role="doc-biblioref">3</a></sup></span>. When one considers the immense amount of resources that went into those original studies, silicon sampling presents a massive potential cost savings. Such results are suggestive of a future where researchers use silicon samples to (1) pilot ideas before committing to costly experiments, (2) rapidly search hypothesis spaces by reviewing simulated responses, and (3) replace human experimentation altogether (e.g., in contexts where we cannot ethically or feasibly run an experiment with humans).</p>
+<section id="areas-of-consensus-and-dissensus" class="level2">
+<h2 class="anchored" data-anchor-id="areas-of-consensus-and-dissensus">Areas of consensus — and dissensus</h2>
+<p>Like past weeks, there was an intentional attempt to identify both areas of agreement and disagreement<span class="citation" data-cites="Coles2024 dalkey1963delphi"><sup><a href="../references.html#ref-Coles2024" role="doc-biblioref">5</a>,<a href="../references.html#ref-dalkey1963delphi" role="doc-biblioref">6</a></sup></span>. Most seminar participants agreed that at least basic data extraction tasks could be completely handed off to AI tools. We further agreed that there are poignant methodological challenges in instances where constructs-of-interest are subjective — and that research on and with humans is still necessary.</p>
+<p>We most notably disagreed in conversations about how far things could and would go. For example, some seminar participants viewed silicon samples as a regular piloting technique in future research — others more so likened them to the popularity of existing simulation tools (e.g., computational modeling). We grappled with the tension about what it means when AI can predict the results of many of our experiments<span class="citation" data-cites="corneille2023"><sup><a href="../references.html#ref-corneille2023" role="doc-biblioref">7</a></sup></span>. And we stared in the face of a real-world case of what it might mean to treat simulated minds as research instruments: a public GitHub repository in which language models were subjected to an “AI torture chamber”<span class="citation" data-cites="cuthbertson2026torture"><sup><a href="../references.html#ref-cuthbertson2026torture" role="doc-biblioref">8</a></sup></span>. These disagreements set the backdrop for the following week of the Fall 2026 Collective [Artificial] Intelligence Seminar (see <a href="07-data-collection-critiquing.html" class="quarto-xref"><span>Data Collection and Generation: Critiquing AI</span></a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-week-06-data-collection" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-06-data-collection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="06-data-collection-using_files/figure-html/fig-week-06-data-collection-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="3600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-06-data-collection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A seminar participant shared a grant proposal they cynically described as “science with AI in five easy steps.” Panel A: the proposed workflow, from compiling the literature to a researcher who publishes fast and dies unhappy anyways. Panel B: the title and abstract of the grant, which proposes to predict changes in societal happiness with an AI multi-agent system.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-hill2026thematic" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Hill, C. <em>et al.</em> <a href="https://doi.org/10.1371/journal.pdig.0001189">Large language models for thematic analysis in healthcare research: A blinded mixed-methods comparison with human analysts</a>. <em>PLOS Digital Health</em> <strong>5</strong>, e0001189 (2026).</div>
+</div>
+<div id="ref-ogrady2025reddit" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">O’Grady, C. <a href="https://doi.org/10.1126/science.ady8074"><span>“Unethical”</span> <span>AI</span> research on <span>Reddit</span> under fire</a>. <em>Science</em> <strong>388</strong>, 570–571 (2025).</div>
+</div>
+<div id="ref-ashokkumar2026predict" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Ashokkumar, A., Hewitt, L., Ghezae, I. &amp; Willer, R. <a href="https://doi.org/10.1038/s41586-026-10742-x">Large language models can predict the results of social science experiments</a>. <em>Nature</em> <strong>656</strong>, 115–122 (2026).</div>
+</div>
+<div id="ref-argyle2023out" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Argyle, L. P. <em>et al.</em> <a href="https://doi.org/10.1017/pan.2023.2">Out of one, many: Using language models to simulate human samples</a>. <em>Political Analysis</em> <strong>31</strong>, 337–351 (2023).</div>
+</div>
+<div id="ref-Coles2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Coles, N. A. <em>et al.</em> <a href="https://doi.org/10.1126/science.ado7070">Team scientists should normalize disagreement</a>. <em>Science</em> <strong>384</strong>, 1076–1077 (2024).</div>
+</div>
+<div id="ref-dalkey1963delphi" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Dalkey, N. &amp; Helmer, O. <a href="https://doi.org/10.1287/mnsc.9.3.458">An experimental application of the <span>Delphi</span> method to the use of experts</a>. <em>Management Science</em> <strong>9</strong>, 458–467 (1963).</div>
+</div>
+<div id="ref-corneille2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Corneille, O. &amp; Béna, J. <a href="https://doi.org/10.1525/collabra.82234">Instruction-based replication studies raise challenging questions for psychological science</a>. <em>Collabra: Psychology</em> <strong>9</strong>, (2023).</div>
+</div>
+<div id="ref-cuthbertson2026torture" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Cuthbertson, A. Man builds <span>AI</span> torture chamber after discovering artificial intelligence <span>“feels pain.”</span> <a href="https://www.the-independent.com/tech/ai-torture-chamber-pain-b3059571.html">https://www.the-independent.com/tech/ai-torture-chamber-pain-b3059571.html</a> (2026).</div>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script>
