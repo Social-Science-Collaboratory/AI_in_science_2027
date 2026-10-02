@@ -263,36 +263,17 @@ week_summary_plot <- function(week,
 
 
 # 6. Standalone export ------------------------------------------------------
-# `Rscript R/week-summary.R [week]` writes figures/week-NN-summary.{png,pdf}.
+# `Rscript R/week-summary.R [week]` writes figures/week-NN-summary.png.
 # The book does not use these -- it calls week_summary_plot() and lets Quarto
 # draw the figure -- so they are for proofing, slides, and posters.
-
-# Pick a PDF device that can actually draw text.
-#
-# `capabilities("cairo")` is NOT the test: on a macOS R built against cairo but
-# running without XQuartz it reports TRUE, and cairo_pdf then dies at open time
-# with "failed to load cairo DLL". grSoftVersion() reports the version string of
-# the cairo that actually loaded, so an empty string is the honest answer.
-# quartz's PDF type is the native macOS fallback; the stock device is last.
-vector_pdf_device <- function() {
-  cairo_ok <- suppressWarnings(
-    tryCatch(nzchar(grSoftVersion()[["cairo"]]), error = function(e) FALSE)
-  )
-  if (isTRUE(cairo_ok)) return(grDevices::cairo_pdf)
-
-  if (isTRUE(capabilities("aqua"))) {
-    return(function(filename, width, height, ...) {
-      grDevices::quartz(file = filename, type = "pdf",
-                        width = width, height = height, bg = "white")
-    })
-  }
-
-  grDevices::pdf
-}
 
 if (sys.nframe() == 0L) {
   args <- commandArgs(trailingOnly = TRUE)
   week <- if (length(args)) as.integer(args[1]) else 2L
+
+  # Rscript opens a default pdf device on first draw and leaves Rplots.pdf
+  # behind; a null device keeps the export to the PNG alone.
+  grDevices::pdf(NULL)
 
   fig  <- week_summary_plot(week)
   stem <- week_summary_path("figures", paste0(week_slug(week), "-summary"))
@@ -300,8 +281,5 @@ if (sys.nframe() == 0L) {
   ggsave(paste0(stem, ".png"), fig,
          width = default_width, height = default_height, dpi = 300, bg = "white")
 
-  ggsave(paste0(stem, ".pdf"), fig,
-         width = default_width, height = default_height, device = vector_pdf_device())
-
-  message("wrote ", stem, ".png and .pdf")
+  message("wrote ", stem, ".png")
 }

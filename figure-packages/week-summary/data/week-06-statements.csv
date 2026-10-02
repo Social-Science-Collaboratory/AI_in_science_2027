@@ -1,0 +1,17 @@
+statement,agrees,disagrees
+"For subjective judgments (like politeness or
+empathy), there is no single right answer, so AI
+ratings should be compared to the range of
+human views, not one gold standard.",6,0
+"For routine text coding (e.g., applying a set
+codebook to interviews), LLMs are now good
+enough to replace trained human coders.",4,1
+"Because AI models represent some groups poorly
+(e.g., older adults), simulated participants will
+do more harm than good for diversity in research.",5,2
+"Within 10 years, most survey experiments in
+psychology will be tested on simulated
+participants before (or instead of) real ones.",4,3
+"If AI can accurately predict an experiment's
+result, running that experiment on humans
+adds little new knowledge.",1,6

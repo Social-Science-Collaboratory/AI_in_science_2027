@@ -1,0 +1,4 @@
+title,url,body,credit
+Can LLMs Predict Social Science Results?,https://www.nature.com/articles/s41586-026-10742-x,"GPT-4 predicted results of 70 experiments (119,000+ people) about as well as human forecasters, but overstated effect sizes.",Nabiha Iqbal and Minyi Jiang
+Multi-Perspective LLM Annotations,https://arxiv.org/abs/2603.21404,"For subjective ratings like politeness, groups truly disagree: it targets scarce human labels where the LLM misjudges most.",Rui Jin
+Out of One: Silicon Samples,https://www.cambridge.org/core/journals/political-analysis/article/out-of-one-many-using-language-models-to-simulate-human-samples/035D7C8A55B237942FB6DBAD7CAA4E49,"GPT-3 given real respondents' backstories yields simulated samples that mirror human response patterns.",Sooyeon Park and Zhongchi Li
