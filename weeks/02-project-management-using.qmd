@@ -8,7 +8,7 @@ source("figure-packages/checkin-workflow/R/checkin-workflow.R")
 
 # Ideation and Project Management: Using AI {#sec-project-management-using}
 
-::: {.callout-note icon=false title="This was written by humans."}
+::: {.callout-note icon="false" title="This was written by humans."}
 🎧 But we also like this [podcast](https://social-science-collaboratory.github.io/AI_in_science_2027/media/cognitive-debt-w2-w3.m4a) (20:36) of the entire 2-week unit on Ideation and Project Management, generated with Gemini Notebook[@google2026notebook].
 
 ```{=html}
@@ -18,7 +18,7 @@ source("figure-packages/checkin-workflow/R/checkin-workflow.R")
 ```
 :::
 
-Many researchers' first contact with AI tools is in the realm of ideation or project management (@fig-week-02-summary). For example, an in-class demo focused on an AI-assisted workflow for managing research trainee projects. More specifically, one seminar participant has their trainees submit weekly updates to a folder shared with the LLM, Claude[@anthropic2026claude] (@fig-checkin-workflow, Panel A). This allows them to later prompt the model with questions about past conversations, challenges, decisions, and solutions (@fig-checkin-workflow, Panel B). Specifically, the seminar participant demonstrated how Claude can be used to efficiently take stock of a trainee's progress, have a conversation with the LLM about potential future directions, and generate a simulated figure to send back to the trainee to convey next steps (@fig-checkin-workflow, Panel C).
+Many researchers' first contact with AI tools is in the realm of ideation or project management (@fig-week-02-summary). The Fall 2026 Collective \[Artificial\] Intelligence Seminar thus kicked off with an in-class demo focused on an AI-assisted workflow for managing research trainee projects. More specifically, a seminar participant described how trainees submit weekly updates to a folder shared with the LLM, Claude[@anthropic2026claude] (@fig-checkin-workflow, Panel A). This allows them to later prompt the model with questions about past conversations, challenges, decisions, and solutions (@fig-checkin-workflow, Panel B). Specifically, the seminar participant demonstrated how Claude can be used to efficiently take stock of a trainee's progress, have a conversation with the LLM about potential future directions, and generate a simulated figure to send back to the trainee to convey next steps (@fig-checkin-workflow, Panel C). Applied to every trainee in the lab, Claude was essentially being used to track, manage, and develop an entire collaborative portfolio of research projects.
 
 ```{r}
 #| label: fig-week-02-summary
@@ -29,15 +29,15 @@ Many researchers' first contact with AI tools is in the realm of ideation or pro
 week_summary_plot(week = 2, fig_width = 12, fig_height = 5.5)
 ```
 
-The resources compiled by seminar participants illustrate that AI is a tool that is increasingly being used to expand ideation and project management capabilities (@fig-week-02-summary). For example, as early as 2025, researchers documented that LLMs were capable of generating research ideas that were judged more novel than those of human experts[@ICLR2025_ea94957d]. These capabilities can be further improved by integrating causal discovery algorithms. More specifically, LLMs can efficiently extract which causal relationships have been reported in past research. When mapped across studies, causal discovery algorithms can be used to identify gaps in causal network maps — i.e., potential future research directions[@tong2024automating]. Such results highlight the increasing sophistication with which researchers are deploying AI to organize information, extract ideas, and even develop theory[@schmitt2026].
+The resources compiled by seminar participants illustrate that AI is a tool that is increasingly being used to expand researchers' ideation and project management capabilities (@fig-week-02-summary). For example, as early as 2025, researchers documented that LLMs were capable of generating research ideas that were judged more novel than those of human experts[@ICLR2025_ea94957d]. Since then, researchers have developed numerous techniques for further improving such abilities. For example, LLMs can efficiently extract which causal relationships have been reported in past research. When mapped across studies, LLMs can subsequently deploy causal discovery algorithms to identify gaps in causal network maps — i.e., potential future research directions[@tong2024automating]. Such results highlight the increasing sophistication with which researchers are deploying AI to organize information, extract ideas, and – in some cases – even develop theory[@schmitt2026].
 
 ## Areas of consensus — and dissensus
 
-Disagreement is common when researchers collaborate[@Coles2024; @dalkey1963delphi] — and our seminar discussion was marked by both consensus and dissensus.
+Using live polling, discussion, and the deployment of computational democracy algorithms, seminar discussions were designed to identify both areas of consensus and dissensus [@Coles2024; @dalkey1963delphi].
 
-In terms of consensus, there was broad agreement that LLMs can assist with ideation, project management, and the organization of information. There was also broad agreement that this is changing the nature of competition in science — placing more emphasis on who can better leverage these tools for ideation and execution.
+In terms of consensus, there was broad agreement that LLMs can assist with ideation, project management, and information organization. There was also broad agreement that LLMs are rapidly changing the nature of competition in science — placing more emphasis on who can better leverage these tools for ideation and execution.
 
-Yet, there was clear disagreement about how far things should go. Seminar participants strongly disagreed about whether AI is reliably superior at ideation, whether the institution of science should shift to more AI-led work, and whether humanity should strive for fully autonomous AI scientists. These disagreements echo throughout the scientific landscape, with recent back-to-back *Nature* pieces on both the capabilities[@yamada2026automation] and limitations[@nature2026humans] of science with fewer humans and more AI. These limitations became the focus of the following week of the Fall 2026 Collective [Artificial] Intelligence Seminar (see @sec-project-management-critiquing).
+Yet, there was clear disagreement about how far things should go. Seminar participants strongly disagreed about whether AI is reliably superior at ideation, whether the institution of science should shift to more AI-led work, and whether humanity should strive for fully autonomous AI scientists. These disagreements echo throughout the scientific landscape, with recent back-to-back *Nature* pieces on both the capabilities[@yamada2026automation] and limitations[@nature2026humans] of science with fewer humans and more AI. These limitations became the focus of Week 3 of the Fall 2026 Collective \[Artificial\] Intelligence Seminar (see @sec-project-management-critiquing).
 
 ```{r}
 #| label: fig-checkin-workflow
