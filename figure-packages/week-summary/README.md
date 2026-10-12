@@ -110,7 +110,9 @@ week-summary/
 │  ├─ week-05-statements.csv       week 5 discussion points
 │  ├─ week-05-resources.csv        week 5 resources
 │  ├─ week-06-statements.csv       week 6 discussion points
-│  └─ week-06-resources.csv        week 6 resources
+│  ├─ week-06-resources.csv        week 6 resources
+│  ├─ week-07-statements.csv       week 7 discussion points
+│  └─ week-07-resources.csv        week 7 resources
 └─ figures/
    └─ week-NN-summary.png          300 dpi raster, for proofing
 ```
@@ -131,6 +133,7 @@ looks like it matches the week number.
 | 4 | [r3ufehuivwarjk7rex96d](https://pol.is/report/r3ufehuivwarjk7rex96d) | not yet published | [gid=21606442](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=21606442) |
 | 5 | [r8v6s8jef4cjctcmncfna](https://pol.is/report/r8v6s8jef4cjctcmncfna) | not yet published | [gid=1933270104](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=1933270104) |
 | 6 | [pol.is/6ncmz42nce](https://pol.is/6ncmz42nce) (no report yet) | [pol.is/3fetjrsr3d](https://pol.is/3fetjrsr3d) (no report yet) | tab "Wk 5 Use Data" |
+| 7 | [r8rav2rbxe8r9renuku3x](https://pol.is/report/r8rav2rbxe8r9renuku3x) | [pol.is/6kzczb6kwn](https://pol.is/6kzczb6kwn) (no report yet) | [gid=1379349204](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=1379349204) |
 
 Polis exports without a login, which is what makes the numbers checkable:
 
