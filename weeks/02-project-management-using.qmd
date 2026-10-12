@@ -33,7 +33,7 @@ The resources compiled by seminar participants illustrate that AI is a tool that
 
 ## Areas of consensus — and dissensus
 
-Using live polling, discussion, and the deployment of computational democracy algorithms, seminar discussions were designed to identify both areas of consensus and dissensus [@Coles2024; @dalkey1963delphi].
+Using live polling, discussion, and the deployment of computational democracy algorithms, seminar discussions were designed to identify both areas of consensus and dissensus[@Coles2024; @dalkey1963delphi].
 
 In terms of consensus, there was broad agreement that LLMs can assist with ideation, project management, and information organization. There was also broad agreement that LLMs are rapidly changing the nature of competition in science — placing more emphasis on who can better leverage these tools for ideation and execution.
 
