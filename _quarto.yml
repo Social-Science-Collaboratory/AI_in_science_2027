@@ -84,6 +84,8 @@ book:
   # Chapter files are numbered by their seminar week in the syllabus, so the
   # numbering starts at 02: week 1 (Aug 20) was the Foundations session, which
   # the preface covers. weeks/NN- therefore always equals syllabus week NN.
+  # From Analysis and Modeling on, each topic gets one week and one chapter,
+  # not a using/critiquing pair, so those chapters stand alone without a part.
   chapters:
     # The front page carries the book's own title, not a chapter title, so it
     # has no `title:` of its own; without one the sidebar would fall back to
@@ -102,19 +104,12 @@ book:
       chapters:
         - weeks/06-data-collection-using.qmd
         - weeks/07-data-collection-critiquing.qmd
-    - part: "Analysis and Modeling"
-      chapters:
-        - weeks/08-analysis-using.qmd
-        - weeks/09-analysis-critiquing.qmd
-    - part: "Writing and Communication"
-      chapters:
-        - weeks/10-writing-using.qmd
-        - weeks/11-writing-critiquing.qmd
-    - part: "Ethics and Outreach"
-      chapters:
-        - weeks/12-dissemination-using.qmd
-        - weeks/13-dissemination-critiquing.qmd
-    - weeks/14-personal-ai-philosophy.qmd
+    - weeks/08-analysis.qmd
+    - weeks/09-ethics-who-does-science.qmd
+    - weeks/10-writing.qmd
+    - weeks/11-ethics-what-should-count.qmd
+    - weeks/12-outreach.qmd
+    - weeks/13-epilogue.qmd
     - references.qmd
 
 number-sections: false
