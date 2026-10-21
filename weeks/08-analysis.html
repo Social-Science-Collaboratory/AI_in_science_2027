@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Writing and Communication: Critiquing AI – 2027 UF Guide to AI in Science</title>
+<title>Analysis and Modeling – 2027 UF Guide to AI in Science</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,8 +53,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../weeks/12-dissemination-using.html" rel="next">
-<link href="../weeks/10-writing-using.html" rel="prev">
+<link href="../weeks/09-ethics-who-does-science.html" rel="next">
+<link href="../weeks/07-data-collection-critiquing.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -85,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/10-writing-using.html">Writing and Communication</a></li><li class="breadcrumb-item"><a href="../weeks/11-writing-critiquing.html"><span class="chapter-title">Writing and Communication: Critiquing AI</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/08-analysis.html"><span class="chapter-title">Analysis and Modeling</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -205,72 +225,34 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">Analysis and Modeling</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/08-analysis-using.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Analysis and Modeling: Using AI</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/09-analysis-critiquing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Analysis and Modeling: Critiquing AI</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Writing and Communication</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/10-writing-using.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing and Communication: Using AI</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/11-writing-critiquing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Writing and Communication: Critiquing AI</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
- <span class="menu-text">Ethics and Outreach</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/12-dissemination-using.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ethics and Outreach: Using AI</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/13-dissemination-critiquing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ethics and Outreach: Critiquing AI</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/14-personal-ai-philosophy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Personal AI Philosophy Statements</span></a>
+  <a href="../weeks/08-analysis.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Analysis and Modeling</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/09-ethics-who-does-science.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ethics: Who Does Science?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/10-writing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing and Communication</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/11-ethics-what-should-count.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ethics: What Should Count?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/12-outreach.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Outreach and Dissemination</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/13-epilogue.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Epilogue: Thoughts for the Next Gen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -288,9 +270,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/10-writing-using.html">Writing and Communication</a></li><li class="breadcrumb-item"><a href="../weeks/11-writing-critiquing.html"><span class="chapter-title">Writing and Communication: Critiquing AI</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-writing-critiquing" class="quarto-section-identifier"><span class="chapter-title">Writing and Communication: Critiquing AI</span></span></h1>
+<h1 class="title"><span id="sec-analysis" class="quarto-section-identifier"><span class="chapter-title">Analysis and Modeling</span></span></h1>
 </div>
 
 
@@ -307,9 +289,122 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Covered in Week 11 of the seminar (October 29, 2026). Estimated date of arrival: November 8, 2026.</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="This content was identified, synthesized, and written by humans.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This content was identified, synthesized, and written by humans.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>📊 But the analyses don’t have to be. Even beginners can watch Google’s AI agent take a dataset from raw to modeled in under seven minutes (<a href="https://www.youtube.com/watch?v=_Md_XD67oTY">video</a>), then try it themselves with free Gemini access in Colab (<a href="https://colab.research.google.com/github/googlecolab/colabtools/blob/main/notebooks/Getting_started_with_google_colab_ai.ipynb">notebook</a>).</p>
+</div>
+</div>
+<p>On October 6, 2026, OpenAI posted 722 math papers on GitHub, claiming that an unreleased AI model has produced solutions or substantial progress on hundreds of open problems<span class="citation" data-cites="openai2026math openai2026repo hart2026breakthroughs"><sup><a href="../references.html#ref-openai2026math" role="doc-biblioref">1</a>–<a href="../references.html#ref-hart2026breakthroughs" role="doc-biblioref">3</a></sup></span>. For some mathematicians, this was seen as “possibly the single most important day in the history of mathematics”<span class="citation" data-cites="proofsandprompts2026reactions"><sup><a href="../references.html#ref-proofsandprompts2026reactions" role="doc-biblioref">4</a></sup></span>. For others, it was “the sunset of mathematics”<span class="citation" data-cites="proofsandprompts2026reactions"><sup><a href="../references.html#ref-proofsandprompts2026reactions" role="doc-biblioref">4</a></sup></span>. In the aftermath, six probability and statistics journals paused new paper submissions altogether<span class="citation" data-cites="edp2026esaim"><sup><a href="../references.html#ref-edp2026esaim" role="doc-biblioref">5</a></sup></span>. Humans endorsed some results (e.g., the quasi-Riemann proof)<span class="citation" data-cites="kakaes2026quasi"><sup><a href="../references.html#ref-kakaes2026quasi" role="doc-biblioref">6</a></sup></span>, and OpenAI was forced to withdraw others<span class="citation" data-cites="openai2026history retractionwatch2026withdraws"><sup><a href="../references.html#ref-openai2026history" role="doc-biblioref">7</a>,<a href="../references.html#ref-retractionwatch2026withdraws" role="doc-biblioref">8</a></sup></span>. And at the same time that the Association for Human Mathematics urged mathematicians to stop working with OpenAI<span class="citation" data-cites="ahm2026statement"><sup><a href="../references.html#ref-ahm2026statement" role="doc-biblioref">9</a></sup></span>, other frontier AI labs pressed ahead in the race of AI-driven mathematics<span class="citation" data-cites="tsoukalas2026advancing anthropic2026riemann"><sup><a href="../references.html#ref-tsoukalas2026advancing" role="doc-biblioref">10</a>,<a href="../references.html#ref-anthropic2026riemann" role="doc-biblioref">11</a></sup></span>. While this race intensified, we continued one of our own: a race to understand how our lives as researchers may soon change (<a href="#fig-week-08-summary" class="quarto-xref">Figure&nbsp;<span>1</span></a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-week-08-summary" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-08-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="08-analysis_files/figure-html/fig-week-08-summary-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="3600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-08-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Overview of Week 8 of the Fall 2026 Collective [Artificial] Intelligence Seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Week 8 of the Collective [Artificial] Intelligence in Science seminar focused on both the benefits and perils of using AI for data analysis. This was initially planned to be a two-week process, but was condensed into one week due to a concern: that we were running out of time to discuss the sooner-than-expected existential threats that AI poses to science.</p>
+<p>For example, two seminar participants provided a demo of AI-assisted data analysis in Google Colab<span class="citation" data-cites="fine2025colabagent"><sup><a href="../references.html#ref-fine2025colabagent" role="doc-biblioref">12</a></sup></span>, providing a low-skill entry point for students who need help planning, drafting, and editing analysis notebooks. Two other seminar participants presented a blog post illustrating how AI models can be used both to (a) intentionally create misleading claims, as well as (b) better ensure one’s claims don’t mislead<span class="citation" data-cites="stone2026phack"><sup><a href="../references.html#ref-stone2026phack" role="doc-biblioref">13</a></sup></span>. Differences in researchers’ goals matter — as do the models they deploy. E.g., some models were shown to be useful for specifying formal models, whereas others struggled to produce anything usable<span class="citation" data-cites="sfeir2026choice"><sup><a href="../references.html#ref-sfeir2026choice" role="doc-biblioref">14</a></sup></span>. Corporate recruiters are increasingly emphasizing the importance of not only knowing that AI <em>can</em> be used for data analysis — but also how and why it fails<span class="citation" data-cites="walker2026gmac"><sup><a href="../references.html#ref-walker2026gmac" role="doc-biblioref">15</a></sup></span>. The importance of such insights became particularly relevant as we watched our own university president launch two AI-based data collection tools — both of which immediately crashed (<a href="#fig-week-08-survey-crash" class="quarto-xref">Figure&nbsp;<span>2</span></a>).</p>
+<div id="fig-week-08-survey-crash" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-08-survey-crash-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/week-08-ai-survey-crash.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-08-survey-crash-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: An October 2026 email from the University of Florida president inviting the campus community and external audiences to an AI chatbot survey for strategic planning (left), which immediately crashed (right).
+</figcaption>
+</figure>
+</div>
+<section id="areas-of-consensus-and-dissensus" class="level2">
+<h2 class="anchored" data-anchor-id="areas-of-consensus-and-dissensus">Areas of consensus — and dissensus</h2>
+<p>Like past weeks of the seminar, we used Delphi surveying to identify key areas of agreement and disagreement<span class="citation" data-cites="Coles2024 dalkey1963delphi"><sup><a href="../references.html#ref-Coles2024" role="doc-biblioref">16</a>,<a href="../references.html#ref-dalkey1963delphi" role="doc-biblioref">17</a></sup></span>. For example, there was clear consensus that AI deepens pre-existing concerns about the use of questionable research practices in science<span class="citation" data-cites="john2012qrp"><sup><a href="../references.html#ref-john2012qrp" role="doc-biblioref">18</a></sup></span>. Similarly, there was near consensus that such models cannot yet support real-world clinical decision making. However, there was less agreement about how researchers should handle ambiguity in data analysis pipelines, with most students agreeing that it may not be feasible or desirable to report all considered analyses.</p>
+<p>Perhaps the most challenging issue we debated was about who gets to do the science. AI appears to both democratize and concentrate power in science. For example, in April 2026, a 23-year-old with no advanced math training used ChatGPT to solve a 60-year-old Erdős problem<span class="citation" data-cites="howlett2026amateur"><sup><a href="../references.html#ref-howlett2026amateur" role="doc-biblioref">19</a></sup></span>. Yet, when OpenAI released 722 mathematics papers 6 months later, some mathematicians described it as “a tsunami that we have no time to prepare for”, reporting feelings of paralysis, disorientation, bewilderment, and grief (<a href="#fig-week-08-math-reactions" class="quarto-xref">Figure&nbsp;<span>3</span></a>)<span class="citation" data-cites="proofsandprompts2026reactions"><sup><a href="../references.html#ref-proofsandprompts2026reactions" role="doc-biblioref">4</a></sup></span>. Such developments served as the backdrop for a topic we never intended to focus on in Week 8: Who gets to do the science in the age of AI? (see <a href="09-ethics-who-does-science.html" class="quarto-xref"><span>Ethics: Who Does Science?</span></a>)</p>
+<div id="fig-week-08-math-reactions" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-08-math-reactions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/week-08-math-reactions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-08-math-reactions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Phrases from more than 100 mathematicians’ reactions to OpenAI’s October 6, 2026 release of AI-generated mathematics papers<span class="citation" data-cites="proofsandprompts2026reactions"><sup><a href="../references.html#ref-proofsandprompts2026reactions" role="doc-biblioref">4</a></sup></span>.
+</figcaption>
+</figure>
+</div>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-openai2026math" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">OpenAI. Sharing <span>AI</span> progress in mathematics. <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">https://openai.com/index/sharing-ai-progress-in-mathematics/</a> (2026).</div>
+</div>
+<div id="ref-openai2026repo" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">OpenAI. <span class="nocase">openai/math</span>: Mathematical manuscripts and supporting proof artifacts produced by an internal <span>OpenAI</span> model. <a href="https://github.com/openai/math">https://github.com/openai/math</a> (2026).</div>
+</div>
+<div id="ref-hart2026breakthroughs" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Hart, R. <span>OpenAI</span> drops another batch of mathematical breakthroughs. <a href="https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github">https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github</a> (2026).</div>
+</div>
+<div id="ref-proofsandprompts2026reactions" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Hosts of Proofs and Prompts. 100+ reactions to 100+ solutions. <a href="https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/">https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/</a> (2026).</div>
+</div>
+<div id="ref-edp2026esaim" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">EDP Sciences. <span>ESAIM</span>: <span>Probability</span> and <span>Statistics</span> takes action to address increasing manuscript submissions. <a href="https://www.edpsciences.org/en/news-highlights/3058-esaim-probability-and-statistics-takes-action-to-address-increasing-manuscript-submissions">https://www.edpsciences.org/en/news-highlights/3058-esaim-probability-and-statistics-takes-action-to-address-increasing-manuscript-submissions</a> (2026).</div>
+</div>
+<div id="ref-kakaes2026quasi" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Kakaes, K. <span>AI</span> proved the quasi-<span>Riemann</span> hypothesis. <span>What</span> happens now? <a href="https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/">https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/</a> (2026).</div>
+</div>
+<div id="ref-openai2026history" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">OpenAI. History: <span class="nocase">openai/math</span>. <a href="https://github.com/openai/math/blob/main/history.md">https://github.com/openai/math/blob/main/history.md</a> (2026).</div>
+</div>
+<div id="ref-retractionwatch2026withdraws" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Retraction Watch. <span>OpenAI</span> withdraws three preprints a day after releasing 722 manuscripts on unsolved math problems. <a href="https://retractionwatch.com/2026/10/08/openai-withdraws-preprints-722-manuscripts-unsolved-math-problems/">https://retractionwatch.com/2026/10/08/openai-withdraws-preprints-722-manuscripts-unsolved-math-problems/</a> (2026).</div>
+</div>
+<div id="ref-ahm2026statement" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Association for Human Mathematics. <span>AHM</span> statement on <span>OpenAI</span>’s <span>October</span> 6 release of mathematical documents. <a href="https://www.ahmath.org/statements">https://www.ahmath.org/statements</a> (2026).</div>
+</div>
+<div id="ref-tsoukalas2026advancing" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><span class="nocase">Tsoukalas, G., Kovsharov, A., Shirobokov, S., <em>et al.</em></span> Advancing mathematics research with <span>AI</span>-driven formal proof search. <em>Science</em> <a href="https://doi.org/10.1126/science.aej2213">https://doi.org/10.1126/science.aej2213</a> (2026) doi:<a href="https://doi.org/10.1126/science.aej2213">10.1126/science.aej2213</a>.</div>
+</div>
+<div id="ref-anthropic2026riemann" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Anthropic. <span>Claude</span> has improved on a longstanding lower bound for the fraction of zeros of the <span>Riemann</span> zeta function that satisfy the <span>Riemann</span> hypothesis. <a href="https://www.anthropic.com/research/riemann-zeta">https://www.anthropic.com/research/riemann-zeta</a> (2026).</div>
+</div>
+<div id="ref-fine2025colabagent" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Fine, J., Kolla, M. &amp; Soloducho, I. Data science agent in <span>Colab</span>: The future of data analysis with <span>Gemini</span>. <a href="https://developers.googleblog.com/en/data-science-agent-in-colab-with-gemini/">https://developers.googleblog.com/en/data-science-agent-in-colab-with-gemini/</a> (2025).</div>
+</div>
+<div id="ref-stone2026phack" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Stone, B. Using the computer to p-hack … <span>I</span>’d rather use it to fit multilevel models. <a href="https://statmodeling.stat.columbia.edu/2026/10/03/using-the-computer-to-p-hack-id-rather-use-it-to-fit-multilevel-models/">https://statmodeling.stat.columbia.edu/2026/10/03/using-the-computer-to-p-hack-id-rather-use-it-to-fit-multilevel-models/</a> (2026).</div>
+</div>
+<div id="ref-sfeir2026choice" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Sfeir, G., Nova, G., Hess, S. &amp; Cranenburgh, S. van. <a href="https://doi.org/10.1016/j.jocm.2026.100623">Can large language models assist choice modelling? <span>Insights</span> into prompting strategies and current models’ capabilities</a>. <em>Journal of Choice Modelling</em> <strong>60</strong>, 100623 (2026).</div>
+</div>
+<div id="ref-walker2026gmac" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Walker, A. <em><span>U.S. MBA</span> <span>AI</span> Skills: Employer and Program Priorities</em>. <a href="https://www.gmac.com/market-intelligence-and-research/research-library/employment-outlook/2026-crs-pulse-survey">https://www.gmac.com/market-intelligence-and-research/research-library/employment-outlook/2026-crs-pulse-survey</a> (2026).</div>
+</div>
+<div id="ref-Coles2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Coles, N. A. <em>et al.</em> <a href="https://doi.org/10.1126/science.ado7070">Team scientists should normalize disagreement</a>. <em>Science</em> <strong>384</strong>, 1076–1077 (2024).</div>
+</div>
+<div id="ref-dalkey1963delphi" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Dalkey, N. &amp; Helmer, O. <a href="https://doi.org/10.1287/mnsc.9.3.458">An experimental application of the <span>Delphi</span> method to the use of experts</a>. <em>Management Science</em> <strong>9</strong>, 458–467 (1963).</div>
+</div>
+<div id="ref-john2012qrp" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">John, L. K., Loewenstein, G. &amp; Prelec, D. <a href="https://doi.org/10.1177/0956797611430953">Measuring the prevalence of questionable research practices with incentives for truth telling</a>. <em>Psychological Science</em> <strong>23</strong>, 524–532 (2012).</div>
+</div>
+<div id="ref-howlett2026amateur" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Howlett, J. An amateur just solved a 60-year-old math problem—by asking <span>AI</span>. <a href="https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/">https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/</a> (2026).</div>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -804,13 +899,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../weeks/10-writing-using.html" class="pagination-link" aria-label="Writing and Communication: Using AI">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Writing and Communication: Using AI</span></span>
+      <a href="../weeks/07-data-collection-critiquing.html" class="pagination-link" aria-label="Data Collection and Generation: Critiquing AI">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Data Collection and Generation: Critiquing AI</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../weeks/12-dissemination-using.html" class="pagination-link" aria-label="Ethics and Outreach: Using AI">
-        <span class="nav-page-text"><span class="chapter-title">Ethics and Outreach: Using AI</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../weeks/09-ethics-who-does-science.html" class="pagination-link" aria-label="Ethics: Who Does Science?">
+        <span class="nav-page-text"><span class="chapter-title">Ethics: Who Does Science?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -819,4 +914,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/Social-Science-Collaboratory/AI_in_science_2027/edit/main/weeks/11-writing-critiquing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Social-Science-Collaboratory/AI_in_science_2027/blob/main/weeks/11-writing-critiquing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Social-Science-Collaboratory/AI_in_science_2027/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/Social-Science-Collaboratory/AI_in_science_2027/edit/main/weeks/08-analysis.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Social-Science-Collaboratory/AI_in_science_2027/blob/main/weeks/08-analysis.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/Social-Science-Collaboratory/AI_in_science_2027/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
