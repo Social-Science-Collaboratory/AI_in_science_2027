@@ -1,0 +1,16 @@
+statement,agrees,disagrees
+"How well an LLM helps with statistics depends a
+lot on the model and the prompt, so one good result
+should not be assumed to hold for other tools.",6,0
+"AI will make p-hacking much worse, because
+trying thousands of analyses now takes almost
+no effort.",5,0
+"When AI tests many analysis options,
+researchers should report all of them, not
+just the ones that worked.",5,2
+"Any result where AI helped choose the model
+should be labeled exploratory, never
+confirmatory.",3,2
+"An AI system that rates depression about as
+accurately as a human evaluator is ready to
+support real clinical decisions.",1,5
