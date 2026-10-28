@@ -114,7 +114,9 @@ week-summary/
 │  ├─ week-07-statements.csv       week 7 discussion points
 │  ├─ week-07-resources.csv        week 7 resources
 │  ├─ week-08-statements.csv       week 8 discussion points
-│  └─ week-08-resources.csv        week 8 resources
+│  ├─ week-08-resources.csv        week 8 resources
+│  ├─ week-09-statements.csv       week 9 discussion points
+│  └─ week-09-resources.csv        week 9 resources
 └─ figures/
    └─ week-NN-summary.png          300 dpi raster, for proofing
 ```
@@ -137,6 +139,7 @@ looks like it matches the week number.
 | 6 | [pol.is/6ncmz42nce](https://pol.is/6ncmz42nce) (no report yet) | [pol.is/3fetjrsr3d](https://pol.is/3fetjrsr3d) (no report yet) | tab "Wk 5 Use Data" |
 | 7 | [r8rav2rbxe8r9renuku3x](https://pol.is/report/r8rav2rbxe8r9renuku3x) | [pol.is/6kzczb6kwn](https://pol.is/6kzczb6kwn) (no report yet) | [gid=1379349204](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=1379349204) |
 | 8 | [r7fvae9dcbkdnhhuafdrc](https://pol.is/report/r7fvae9dcbkdnhhuafdrc) | [pol.is/2cvhhymema](https://pol.is/2cvhhymema) (no report yet) | [gid=43677910](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=43677910) |
+| 9 | [r7pxadfkedbhnjn8b5bbe](https://pol.is/report/r7pxadfkedbhnjn8b5bbe) | [pol.is/9yf9fdaktc](https://pol.is/9yf9fdaktc) (no report yet) | [gid=805361559](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=805361559) |
 
 Polis exports without a login, which is what makes the numbers checkable:
 
@@ -166,6 +169,11 @@ is deliberate. Resource votes are mostly passes — a participant who has not
 read a paper passes on it — so an agree *share* rewards a resource that two
 people saw and one liked over a resource that five people saw and four liked.
 The three resources drawn are the three with the most agree votes.
+
+They are drawn in CSV order, top to bottom, and the CSV lists them in the
+order the chapter prose first discusses them, so a reader moving from the text
+to the figure meets them in the same sequence. A resource the prose never
+mentions goes last.
 
 ### Statements are wrapped, not shortened
 

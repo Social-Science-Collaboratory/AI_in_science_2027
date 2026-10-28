@@ -222,9 +222,11 @@ resources_panel <- function(resources, statements_grob,
       credit_y   <- row_y[i] + 0.010 - body_lines * 0.036 - 0.012
 
       panel <- panel +
-        draw_label(paste("Identified by", r$credit),
+        # Smaller type fits more per line than the body, so wrap wider; two
+        # names stay on one line and a third wraps rather than running off.
+        draw_label(wrap_text(paste("Identified by", r$credit), wrap_at + 12),
                    x = text_x, y = credit_y,
-                   hjust = 0, vjust = 1, size = 9.5,
+                   hjust = 0, vjust = 1, size = 9.5, lineheight = 1.2,
                    fontface = "italic", colour = "grey45")
     }
   }

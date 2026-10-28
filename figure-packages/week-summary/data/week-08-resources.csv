@@ -1,4 +1,4 @@
 title,url,body,credit
 Data Science Agent in Colab,https://developers.googleblog.com/en/data-science-agent-in-colab-with-gemini/,"Gemini turns a plain-English request into a rerunnable notebook, but code that runs is still not a correct analysis.",Majed A. Arishi and Rui Jin
-Can LLMs Assist Choice Modelling?,https://doi.org/10.1016/j.jocm.2026.100623,"Across 12 versions of 7 LLMs, valid choice models depended on model and prompt; only GPT o3 estimated its own.",Jungjae Im and Jihyun Soh
 The Garden of Forking Paths Automated,https://statmodeling.stat.columbia.edu/2026/10/03/using-the-computer-to-p-hack-id-rather-use-it-to-fit-multilevel-models/,"AI agents search model specifications at machine speed: automated p-hacking, or a map of every reasonable analysis.",Zhongchi Li and Sooyeon Park
+Can LLMs Assist Choice Modelling?,https://doi.org/10.1016/j.jocm.2026.100623,"Across 12 versions of 7 LLMs, valid choice models depended on model and prompt; only GPT o3 estimated its own.",Jungjae Im and Jihyun Soh
