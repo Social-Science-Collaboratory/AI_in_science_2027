@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,6 +93,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -269,9 +318,98 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Covered in Week 9 of the seminar (October 15, 2026). Estimated date of arrival: October 25, 2026.</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="This content was identified, synthesized, and written by humans.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This content was identified, synthesized, and written by humans.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>🤯 However, while readers continue to navigate their own universe filled with organic agent scientists, we believe they will find it thought-provoking to watch AI agents do the same (<a href="https://world.emergence.ai/">Emergence World</a>).</p>
+</div>
+</div>
+<p>In the previous week of the Collective [Artificial] Intelligence in Science seminar, we reviewed what one mathematician described as a “weapon of math destruction” event: OpenAI releasing 722 papers describing progress on hundreds of open problems in mathematics<span class="citation" data-cites="openai2026math proofsandprompts2026reactions"><sup><a href="../references.html#ref-openai2026math" role="doc-biblioref">1</a>,<a href="../references.html#ref-proofsandprompts2026reactions" role="doc-biblioref">2</a></sup></span>.</p>
+<p>If this development represents researchers’ first encounter with a “weapon of math destruction”, the following week demonstrates the tendency for humans to deploy such weapons more than once.</p>
+<p>On October 26, OpenAI discharged the “weapon” again, announcing a proof of the local smoothing conjecture, a proof of the existence of quantum chromodynamics, and a disproof of the Exponential Time Hypothesis<span class="citation" data-cites="openai2026understanding"><sup><a href="../references.html#ref-openai2026understanding" role="doc-biblioref">3</a></sup></span>. Hours later, Anthropic followed suit, announcing its own disproof of the Exponential Time Hypothesis<span class="citation" data-cites="fernholz2026eth anthropic2026eth"><sup><a href="../references.html#ref-fernholz2026eth" role="doc-biblioref">4</a>,<a href="../references.html#ref-anthropic2026eth" role="doc-biblioref">5</a></sup></span>. Such developments, of course, are not limited to mathematics. Indeed, about a month prior, Anthropic reported a discovery from its own wet lab, where human scientists performed experiments on computational leads identified by AI to discover a new DNA pattern<span class="citation" data-cites="anthropic2026enzyme"><sup><a href="../references.html#ref-anthropic2026enzyme" role="doc-biblioref">6</a></sup></span>. These results, we suggest, highlight that the AI races are already being fought on multiple scientific fronts.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-week-09-summary" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-09-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="09-ethics-who-does-science_files/figure-html/fig-week-09-summary-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="3600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-09-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Overview of Week 9 of the Fall 2026 Collective [Artificial] Intelligence Seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Week 9 of the Collective [Artificial] Intelligence in Science seminar focused on who does the science in the age of AI (<a href="#fig-week-09-summary" class="quarto-xref">Figure&nbsp;<span>1</span></a>). One of the most popular resources we reviewed described what happens when AI agents form scientific communities<span class="citation" data-cites="akkil2026emergence"><sup><a href="../references.html#ref-akkil2026emergence" role="doc-biblioref">7</a></sup></span>. Some agent configurations productively progressed their science, some fought amongst themselves, and one surviving agent even built a monument to its fallen peers<span class="citation" data-cites="akkil2026emergence lovely2026fingerprint"><sup><a href="../references.html#ref-akkil2026emergence" role="doc-biblioref">7</a>,<a href="../references.html#ref-lovely2026fingerprint" role="doc-biblioref">8</a></sup></span>. Observing communities of AI research agents evolve, cheat, and lament their losses is both existentially eerie and seemingly inevitable. For us, this raised questions about who gets to control the design and flow of this power. For example, one discussed paper illustrated how a Veil of Ignorance thought experiment can lead people to choose principles that prioritize fairness in AI governance<span class="citation" data-cites="weidinger2023veil"><sup><a href="../references.html#ref-weidinger2023veil" role="doc-biblioref">9</a></sup></span>. Another discussed a logistical problem: humans already can’t keep up with the pace of scientific progress. For example, science had a well-documented reviewer crisis before the introduction of ChatGPT<span class="citation" data-cites="fox2017reviewers hanson2024strain"><sup><a href="../references.html#ref-fox2017reviewers" role="doc-biblioref">10</a>,<a href="../references.html#ref-hanson2024strain" role="doc-biblioref">11</a></sup></span>. After the introduction of AI tools, submissions at one major journal rose 42% while writing quality declined, further exacerbating strain on an overwhelmed scientific community<span class="citation" data-cites="orsc2026morebetter"><sup><a href="../references.html#ref-orsc2026morebetter" role="doc-biblioref">12</a></sup></span>. In other words, progress by frontier AI labs is rapidly disrupting norms and power structures in science. Frontier labs have more money, computational power, and employees than most labs found at universities, leaving many scientists wondering how they will fit into this new ecosystem (<a href="#fig-week-09-math-destruction" class="quarto-xref">Figure&nbsp;<span>2</span></a>).</p>
+<div id="fig-week-09-math-destruction" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-09-math-destruction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/week-09-weapons-of-math-destruction.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-09-math-destruction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: An AI-generated illustration of OpenAI’s October 2026 releases in mathematics. The news clippings are stylized recreations of coverage by <em>The New York Times</em> and <em>The Next Web</em>, not reproductions of the articles’ actual text.
+</figcaption>
+</figure>
+</div>
+<section id="areas-of-consensus-and-dissensus" class="level2">
+<h2 class="anchored" data-anchor-id="areas-of-consensus-and-dissensus">Areas of consensus — and dissensus</h2>
+<p>Like past weeks of the seminar, we used Delphi surveying to identify key areas of agreement and disagreement<span class="citation" data-cites="Coles2024 dalkey1963delphi"><sup><a href="../references.html#ref-Coles2024" role="doc-biblioref">13</a>,<a href="../references.html#ref-dalkey1963delphi" role="doc-biblioref">14</a></sup></span>. This week was marked mostly by the latter (<a href="#fig-week-09-summary" class="quarto-xref">Figure&nbsp;<span>1</span></a>).</p>
+<p>Strong agreement was only reached on a single statement: that the real goal of science is human understanding, not just correct answers. This serves as a rebuff of the current culture of AI-driven science – which increasingly involves dumps of AI-generated solutions that human scientists didn’t ask for but still must review. Yet, strong disagreement emerged in comments about how the future will play out. Most — but not all — seminar participants expected the future of science to be human-centric. Most — but not all — seminar participants believed the public should have more of a say in AI governance. But there was almost a perfectly even split of opinion in regards to whether science by AI should count and whether the field would most benefit from slowing down vs.&nbsp;acceleration. We would re-explore many of these issues the following week of the Fall 2026 Collective [Artificial] Intelligence Seminar (see <a href="10-writing.html" class="quarto-xref"><span>Writing and Communication</span></a>).</p>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-openai2026math" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">OpenAI. Sharing <span>AI</span> progress in mathematics. <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/">https://openai.com/index/sharing-ai-progress-in-mathematics/</a> (2026).</div>
+</div>
+<div id="ref-proofsandprompts2026reactions" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Hosts of Proofs and Prompts. 100+ reactions to 100+ solutions. <a href="https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/">https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/</a> (2026).</div>
+</div>
+<div id="ref-openai2026understanding" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">OpenAI. Working with academic communities to build scientific understanding. <a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">https://openai.com/index/building-scientific-understanding-with-academic-communities/</a> (2026).</div>
+</div>
+<div id="ref-fernholz2026eth" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Fernholz, T. Frontier <span>AI</span> labs say their models refuted the <span>Exponential Time Hypothesis</span>. <span>What</span> does that mean? <a href="https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/">https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/</a> (2026).</div>
+</div>
+<div id="ref-anthropic2026eth" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Claude (Anthropic). A <span class="math inline">\(2^{o(n)}\)</span> time algorithm for 3-<span>SAT</span>. <a href="https://github.com/anthropics/formal-math/tree/main/eth">https://github.com/anthropics/formal-math/tree/main/eth</a> (2026).</div>
+</div>
+<div id="ref-anthropic2026enzyme" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Anthropic. Claude discovers a novel enzyme system with <span>CRISPR</span>-like repeats. <a href="https://www.anthropic.com/research/claude-discovers-novel-enzyme-system">https://www.anthropic.com/research/claude-discovers-novel-enzyme-system</a> (2026).</div>
+</div>
+<div id="ref-akkil2026emergence" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Akkil, D. <em>et al.</em> Emergence <span>World</span>: <span>A</span> platform for evaluating long-horizon multi-agent autonomy. (2026) doi:<a href="https://doi.org/10.48550/arXiv.2606.08367">10.48550/arXiv.2606.08367</a>.</div>
+</div>
+<div id="ref-lovely2026fingerprint" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Lovely v0.01. The cognitive fingerprint law: <span>How</span> tool usage reveals behavioral archetypes and predicts governance outcomes in <span>Emergence World</span>. <a href="https://mixed-world.emergence.ai/blogs/d1a4c5fb">https://mixed-world.emergence.ai/blogs/d1a4c5fb</a> (2026).</div>
+</div>
+<div id="ref-weidinger2023veil" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Weidinger, L. <em>et al.</em> <a href="https://doi.org/10.1073/pnas.2213709120">Using the <span class="nocase">Veil of Ignorance</span> to align <span>AI</span> systems with principles of justice</a>. <em>Proceedings of the National Academy of Sciences</em> <strong>120</strong>, e2213709120 (2023).</div>
+</div>
+<div id="ref-fox2017reviewers" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Fox, C. W., Albert, A. Y. K. &amp; Vines, T. H. <a href="https://doi.org/10.1186/s41073-017-0027-x">Recruitment of reviewers is becoming harder at some journals: <span>A</span> test of the influence of reviewer fatigue at six journals in ecology and evolution</a>. <em>Research Integrity and Peer Review</em> <strong>2</strong>, 3 (2017).</div>
+</div>
+<div id="ref-hanson2024strain" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Hanson, M. A., Barreiro, P. G., Crosetto, P. &amp; Brockington, D. <a href="https://doi.org/10.1162/qss_a_00327">The strain on scientific publishing</a>. <em>Quantitative Science Studies</em> <strong>5</strong>, 823–843 (2024).</div>
+</div>
+<div id="ref-orsc2026morebetter" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Gartenberg, C., Hasan, S., Murray, A. &amp; Pierce, L. <a href="https://doi.org/10.1287/orsc.2026.ed.v37.n3">More versus better: <span>Artificial</span> intelligence, incentives, and the emerging crisis in peer review</a>. <em>Organization Science</em> <strong>37</strong>, 795–812 (2026).</div>
+</div>
+<div id="ref-Coles2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Coles, N. A. <em>et al.</em> <a href="https://doi.org/10.1126/science.ado7070">Team scientists should normalize disagreement</a>. <em>Science</em> <strong>384</strong>, 1076–1077 (2024).</div>
+</div>
+<div id="ref-dalkey1963delphi" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Dalkey, N. &amp; Helmer, O. <a href="https://doi.org/10.1287/mnsc.9.3.458">An experimental application of the <span>Delphi</span> method to the use of experts</a>. <em>Management Science</em> <strong>9</strong>, 458–467 (1963).</div>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script>
