@@ -107,8 +107,8 @@ book:
     - weeks/08-analysis.qmd
     - weeks/09-ethics-who-does-science.qmd
     - weeks/10-writing.qmd
-    - weeks/11-ethics-what-should-count.qmd
-    - weeks/12-outreach.qmd
+    - weeks/11-outreach.qmd
+    - weeks/12-ethics-what-should-count.qmd
     - weeks/13-epilogue.qmd
     - references.qmd
 

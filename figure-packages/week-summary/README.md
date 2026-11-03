@@ -116,7 +116,9 @@ week-summary/
 │  ├─ week-08-statements.csv       week 8 discussion points
 │  ├─ week-08-resources.csv        week 8 resources
 │  ├─ week-09-statements.csv       week 9 discussion points
-│  └─ week-09-resources.csv        week 9 resources
+│  ├─ week-09-resources.csv        week 9 resources
+│  ├─ week-10-statements.csv       week 10 discussion points
+│  └─ week-10-resources.csv        week 10 resources
 └─ figures/
    └─ week-NN-summary.png          300 dpi raster, for proofing
 ```
@@ -140,6 +142,7 @@ looks like it matches the week number.
 | 7 | [r8rav2rbxe8r9renuku3x](https://pol.is/report/r8rav2rbxe8r9renuku3x) | [pol.is/6kzczb6kwn](https://pol.is/6kzczb6kwn) (no report yet) | [gid=1379349204](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=1379349204) |
 | 8 | [r7fvae9dcbkdnhhuafdrc](https://pol.is/report/r7fvae9dcbkdnhhuafdrc) | [pol.is/2cvhhymema](https://pol.is/2cvhhymema) (no report yet) | [gid=43677910](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=43677910) |
 | 9 | [r7pxadfkedbhnjn8b5bbe](https://pol.is/report/r7pxadfkedbhnjn8b5bbe) | [pol.is/9yf9fdaktc](https://pol.is/9yf9fdaktc) (no report yet) | [gid=805361559](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=805361559) |
+| 10 | [r5dc7afbm2yhaesnhkm24](https://pol.is/report/r5dc7afbm2yhaesnhkm24) | [pol.is/3b4n7axwww](https://pol.is/3b4n7axwww) (no report yet) | tab "Wk 9 Writing" |
 
 Polis exports without a login, which is what makes the numbers checkable:
 

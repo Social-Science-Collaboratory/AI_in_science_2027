@@ -120,3 +120,9 @@ div.callout-note.callout {
 div.callout-note.callout-style-default > .callout-header {
   background-color: rgba($uf-blue, 0.07);
 }
+
+// Text that matches the page background, so it only shows when highlighted.
+// Used for the Week 10 footnote on hidden prompts aimed at AI readers.
+.hidden-note {
+  color: $body-bg;
+}
