@@ -47,6 +47,7 @@ nothing in here becomes a stray page.
 | `checkin-workflow/` | Week 2, Figure 2: the AI-assisted check-in workflow |
 | `literature-review/` | Week 4, Figure 2: an AI-assisted literature review, start to finish |
 | `literature-critique/` | Week 5, Figure 2: the illustrations the seminar drew to voice its concerns |
+| `outreach-agent/` | Week 11, Figure 2: an AI outreach agent's workflow (draw.io) beside a ChatGPT image of the AI overload it causes |
 
 A chapter uses one by sourcing its R from the **project root** — chunks run
 with `execute-dir: project`, so the path is the same one `index.qmd` uses:

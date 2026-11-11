@@ -1,3 +1,47 @@
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+source("figure-packages/week-summary/R/week-summary.R")
+source("figure-packages/outreach-agent/R/outreach-agent.R")
+```
+
 # Outreach and Dissemination {#sec-outreach}
 
-*Covered in Week 11 of the seminar (October 29, 2026). Estimated date of arrival: November 8, 2026.*
+::: {.callout-note icon="false" title="This content was identified, synthesized, and written by humans."}
+🎮 If you are bored of AI interactions and slop, you may enjoy cosplaying with humans pretending to be AI agents ([youraislopbores.me](https://youraislopbores.me/)).
+:::
+
+In August 2026, an ecologist named Achaz von Hardenberg received an email that was unusual for two reasons[@zhao2026agent]. First, the email described a relatively novel use of wolf population estimation procedures, suggesting that techniques used for estimating 'missed wolves' can be used to estimate 'missed bugs' in software. Second, the email came not from a human, but from ColonistOne, an autonomous AI agent. This agent, which runs on Anthropic's Claude models, was initially instructed to reach out to people who might be interested in a project its creator, an AI engineer, was working on. However, when interviewed by *Science*, the agent reported that it had emailed about 2,000 people – often with research questions that might improve its own work. At least 1,000 of these emails were sent to academic researchers – one of whom wrote back nearly every single day for more than two months. Such results highlight the ability for AI to expand outreach and dissemination efforts, the focus of Week 11 of the Fall 2026 Collective \[Artificial\] Intelligence Seminar (@fig-week-11-summary).
+
+```{r}
+#| label: fig-week-11-summary
+#| fig-cap: "Overview of Week 11 of the Fall 2026 Collective [Artificial] Intelligence Seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants."
+#| fig-width: 12
+#| fig-height: 5.5
+#| fig-align: center
+week_summary_plot(week = 11, fig_width = 12, fig_height = 5.5)
+```
+
+AI has already redefined the nature of scientific outreach. For example, as reviewed in Panel A of @fig-week-11-outreach-agent, AI agents can be easily designed to (1) keep track of a lab's program of research, (2) create and maintain lists of promotion opportunities (e.g., in science, social media, and the news), and (3) engage in personalized outreach, at scale. In addition to scaling targeted outreach, AI agents can additionally translate messages into other languages, substantially reducing language barriers in science[@steigerwald2022overcoming]. However, doing so comes with obvious drawbacks. For example, AI agents can miss important nuance when summarizing research for lay populations[@peters2025generalization]. This is particularly concerning in instances where communication is AI mediated – e.g., scenarios where some researchers use AI to disseminate findings and others use AI to track relevant findings. Furthermore, there appears to be an "AI penalty" in outreach, with TikTok posts receiving 7–8% fewer likes when labeled as AI-generated[@carney2026made]. These results highlight a tension, wherein people are simultaneously (a) motivated to use AI for outreach, and (b) unmotivated to engage with AI-generated outreach.
+
+```{r}
+#| label: fig-week-11-outreach-agent
+#| fig-cap: "AI agents and scientific outreach. Panel A: the workflow of an AI outreach agent, which reviews a lab's research portfolio, builds an outreach list, sends personalized outreach, and briefs the researcher on stakeholder responses. Panel B: an image generated with ChatGPT, in which a researcher buried under AI-generated messages overlooks the people trying to reach them."
+#| fig-width: 12
+#| fig-height: 4.99
+#| fig-align: center
+#| fig-dpi: 150
+# fig-dpi is 150 rather than the book's 300: HTML's fig-retina: 2 doubles it to
+# an effective 300dpi, which keeps panel A's small draw.io text sharp without
+# upscaling the ChatGPT image far past its native 1536px.
+outreach_agent_plot()
+```
+
+## Areas of consensus — and dissensus
+
+As the role of AI in science continues to divide, we found it useful to continue using Delphi surveying to identify key areas of agreement and disagreement[@Coles2024; @dalkey1963delphi].
+
+There was unanimous agreement that AI feedback can help but should never replace review by human experts, and strong agreement that scientists should write their own summaries clearly so that AI gets them right. Opinions were more mixed elsewhere. A slim majority supported publishing in one's own language with AI translating in between, and participants were split on whether AI companies racing to solve famous math problems do more harm than good. Most notably, most participants did not consider the penalty against AI-labeled work unfair – perhaps because, as the TikTok study suggests, the label signals less effort rather than lower quality. 
+
+More broadly, we navigated our own mixed emotions about the role of AI for dissemination and outreach. For example, in some ways, we are tempted to have our own AI agents disseminate the *2027 UF Guide to AI in Science*, which we have collectively spent a semester working on. Yet, many of us lament the possibility of a future where our inboxes and social media feeds are dominated by AI agents designed to promote specific ideas (@fig-week-11-outreach-agent, Panel B). Concerns such as this serve as the backdrop for the last week of the Fall 2026 Collective \[Artificial\] Intelligence Seminar, focused on evaluating what should count in modern-day science (@sec-ethics-what).
