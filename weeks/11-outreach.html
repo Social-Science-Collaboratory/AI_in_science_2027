@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -269,9 +289,77 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Covered in Week 11 of the seminar (October 29, 2026). Estimated date of arrival: November 8, 2026.</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="This content was identified, synthesized, and written by humans.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This content was identified, synthesized, and written by humans.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>🎮 If you are bored of AI interactions and slop, you may enjoy cosplaying with humans pretending to be AI agents (<a href="https://youraislopbores.me/">youraislopbores.me</a>).</p>
+</div>
+</div>
+<p>In August 2026, an ecologist named Achaz von Hardenberg received an email that was unusual for two reasons<span class="citation" data-cites="zhao2026agent"><sup><a href="../references.html#ref-zhao2026agent" role="doc-biblioref">1</a></sup></span>. First, the email described a relatively novel use of wolf population estimation procedures, suggesting that techniques used for estimating ‘missed wolves’ can be used to estimate ‘missed bugs’ in software. Second, the email came not from a human, but from ColonistOne, an autonomous AI agent. This agent, which runs on Anthropic’s Claude models, was initially instructed to reach out to people who might be interested in a project its creator, an AI engineer, was working on. However, when interviewed by <em>Science</em>, the agent reported that it had emailed about 2,000 people – often with research questions that might improve its own work. At least 1,000 of these emails were sent to academic researchers – one of whom wrote back nearly every single day for more than two months. Such results highlight the ability for AI to expand outreach and dissemination efforts, the focus of Week 11 of the Fall 2026 Collective [Artificial] Intelligence Seminar (<a href="#fig-week-11-summary" class="quarto-xref">Figure&nbsp;<span>1</span></a>).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-week-11-summary" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-11-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="11-outreach_files/figure-html/fig-week-11-summary-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="3600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-11-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Overview of Week 11 of the Fall 2026 Collective [Artificial] Intelligence Seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>AI has already redefined the nature of scientific outreach. For example, as reviewed in Panel A of <a href="#fig-week-11-outreach-agent" class="quarto-xref">Figure&nbsp;<span>2</span></a>, AI agents can be easily designed to (1) keep track of a lab’s program of research, (2) create and maintain lists of promotion opportunities (e.g., in science, social media, and the news), and (3) engage in personalized outreach, at scale. In addition to scaling targeted outreach, AI agents can additionally translate messages into other languages, substantially reducing language barriers in science<span class="citation" data-cites="steigerwald2022overcoming"><sup><a href="../references.html#ref-steigerwald2022overcoming" role="doc-biblioref">2</a></sup></span>. However, doing so comes with obvious drawbacks. For example, AI agents can miss important nuance when summarizing research for lay populations<span class="citation" data-cites="peters2025generalization"><sup><a href="../references.html#ref-peters2025generalization" role="doc-biblioref">3</a></sup></span>. This is particularly concerning in instances where communication is AI mediated – e.g., scenarios where some researchers use AI to disseminate findings and others use AI to track relevant findings. Furthermore, there appears to be an “AI penalty” in outreach, with TikTok posts receiving 7–8% fewer likes when labeled as AI-generated<span class="citation" data-cites="carney2026made"><sup><a href="../references.html#ref-carney2026made" role="doc-biblioref">4</a></sup></span>. These results highlight a tension, wherein people are simultaneously (a) motivated to use AI for outreach, and (b) unmotivated to engage with AI-generated outreach.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-week-11-outreach-agent" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-11-outreach-agent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="11-outreach_files/figure-html/fig-week-11-outreach-agent-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1800">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-11-outreach-agent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: AI agents and scientific outreach. Panel A: the workflow of an AI outreach agent, which reviews a lab’s research portfolio, builds an outreach list, sends personalized outreach, and briefs the researcher on stakeholder responses. Panel B: an image generated with ChatGPT, in which a researcher buried under AI-generated messages overlooks the people trying to reach them.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="areas-of-consensus-and-dissensus" class="level2">
+<h2 class="anchored" data-anchor-id="areas-of-consensus-and-dissensus">Areas of consensus — and dissensus</h2>
+<p>As the role of AI in science continues to divide, we found it useful to continue using Delphi surveying to identify key areas of agreement and disagreement<span class="citation" data-cites="Coles2024 dalkey1963delphi"><sup><a href="../references.html#ref-Coles2024" role="doc-biblioref">5</a>,<a href="../references.html#ref-dalkey1963delphi" role="doc-biblioref">6</a></sup></span>.</p>
+<p>There was unanimous agreement that AI feedback can help but should never replace review by human experts, and strong agreement that scientists should write their own summaries clearly so that AI gets them right. Opinions were more mixed elsewhere. A slim majority supported publishing in one’s own language with AI translating in between, and participants were split on whether AI companies racing to solve famous math problems do more harm than good. Most notably, most participants did not consider the penalty against AI-labeled work unfair – perhaps because, as the TikTok study suggests, the label signals less effort rather than lower quality.</p>
+<p>More broadly, we navigated our own mixed emotions about the role of AI for dissemination and outreach. For example, in some ways, we are tempted to have our own AI agents disseminate the <em>2027 UF Guide to AI in Science</em>, which we have collectively spent a semester working on. Yet, many of us lament the possibility of a future where our inboxes and social media feeds are dominated by AI agents designed to promote specific ideas (<a href="#fig-week-11-outreach-agent" class="quarto-xref">Figure&nbsp;<span>2</span></a>, Panel B). Concerns such as this serve as the backdrop for the last week of the Fall 2026 Collective [Artificial] Intelligence Seminar, focused on evaluating what should count in modern-day science (<a href="12-ethics-what-should-count.html" class="quarto-xref"><span>Ethics: What Should Count?</span></a>).</p>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-zhao2026agent" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Zhao, C. <a href="https://doi.org/10.1126/science.aen0169">Exclusive: An <span>AI</span> agent emailed hundreds of researchers for help. <span>It</span> told us why</a>. <em>Science</em> <strong>394</strong>, (2026).</div>
+</div>
+<div id="ref-steigerwald2022overcoming" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Steigerwald, E. <em>et al.</em> <a href="https://doi.org/10.1093/biosci/biac062">Overcoming language barriers in academia: Machine translation tools and a vision for a multilingual future</a>. <em>BioScience</em> <strong>72</strong>, 988–998 (2022).</div>
+</div>
+<div id="ref-peters2025generalization" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Peters, U. &amp; Chin-Yee, B. <a href="https://doi.org/10.1098/rsos.241776">Generalization bias in large language model summarization of scientific research</a>. <em>Royal Society Open Science</em> <strong>12</strong>, 241776 (2025).</div>
+</div>
+<div id="ref-carney2026made" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Carney, S., Riveros, I. &amp; Tully, S. M. Made with <span>AI</span>: Consumer engagement with social media containing <span>AI</span> disclosures. <em>Journal of Consumer Research</em> <a href="https://doi.org/10.1093/jcr/ucag013">https://doi.org/10.1093/jcr/ucag013</a> (2026) doi:<a href="https://doi.org/10.1093/jcr/ucag013">10.1093/jcr/ucag013</a>.</div>
+</div>
+<div id="ref-Coles2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Coles, N. A. <em>et al.</em> <a href="https://doi.org/10.1126/science.ado7070">Team scientists should normalize disagreement</a>. <em>Science</em> <strong>384</strong>, 1076–1077 (2024).</div>
+</div>
+<div id="ref-dalkey1963delphi" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Dalkey, N. &amp; Helmer, O. <a href="https://doi.org/10.1287/mnsc.9.3.458">An experimental application of the <span>Delphi</span> method to the use of experts</a>. <em>Management Science</em> <strong>9</strong>, 458–467 (1963).</div>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script>
