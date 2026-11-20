@@ -200,32 +200,60 @@ resources_panel <- function(resources, statements_grob,
   # Wrap to the text column's actual width. ~11 characters per inch at 10.5pt.
   wrap_at <- max(24, floor((1 - text_x) * right_width * 11))
 
+  # Each resource is a stack -- title, body, credit -- whose parts wrap to
+  # however many lines they need. The title is the resource's real published
+  # title, which can run long, so it wraps too, and everything below it moves
+  # down by the lines it took. The whole stack is centred on its QR code.
+  # The 1.2 is the device's own line spacing, measured off a render.
+  line_npc <- function(size, lineheight) 1.2 * size * lineheight / 72 / fig_height
+  n_lines  <- function(x) length(strsplit(x, "\n", fixed = TRUE)[[1]])
+  title_lh <- line_npc(11.5, 1.1)
+  body_lh  <- line_npc(10.5, 1.2)
+  cred_lh  <- line_npc(9.5, 1.2)
+  gap      <- 5 / 72 / fig_height
+
   panel <- ggdraw()
   for (i in seq_len(n)) {
     r <- resources[i, ]
 
+    title  <- wrap_text(r$title, wrap_at - 2)
+    body   <- if (!is.na(r$body) && nzchar(r$body)) wrap_text(r$body, wrap_at) else ""
+    # The credit line is the point of the exercise -- resources are attributed
+    # to the student who surfaced them -- so it is always drawn. Smaller type
+    # fits more per line than the body, so it wraps wider.
+    credit <- if (!is.na(r$credit) && nzchar(r$credit)) {
+      wrap_text(paste("Identified by", r$credit), wrap_at + 12)
+    } else ""
+
+    title_h <- n_lines(title) * title_lh
+    body_h  <- if (nzchar(body)) n_lines(body) * body_lh + gap else 0
+    cred_h  <- if (nzchar(credit)) n_lines(credit) * cred_lh + gap else 0
+    block_h <- title_h + body_h + cred_h
+    top <- row_y[i] + block_h / 2
+    # Warn only on a real collision: this stack's top running into the bottom
+    # of the stack above it (less a small gap).
+    if (i > 1 && top > prev_bottom - gap) {
+      warning(sprintf("Resource %d (\"%s\") collides with the one above; shorten a body.",
+                      i, substr(r$title, 1, 40)), call. = FALSE)
+    }
+    prev_bottom <- top - block_h
     panel <- panel +
       draw_grob(qr_grob(r$url),
                 x = qr_x, y = row_y[i] - qr_height / 2,
                 width = qr_width, height = qr_height) +
-      draw_label(r$title, x = text_x, y = row_y[i] + 0.075,
-                 hjust = 0, vjust = 1, size = 12, fontface = "bold") +
-      draw_label(wrap_text(r$body, wrap_at), x = text_x, y = row_y[i] + 0.010,
-                 hjust = 0, vjust = 1, size = 10.5, lineheight = 1.2,
-                 colour = "grey25")
+      draw_label(title, x = text_x, y = top,
+                 hjust = 0, vjust = 1, size = 11.5, lineheight = 1.1,
+                 fontface = "bold")
 
-    # The credit line is the point of the exercise -- resources are attributed
-    # to the student who surfaced them -- so it is always drawn, and drawn last
-    # so it sits below however many lines the body wrapped to.
-    if (!is.na(r$credit) && nzchar(r$credit)) {
-      body_lines <- length(strsplit(wrap_text(r$body, wrap_at), "\n")[[1]])
-      credit_y   <- row_y[i] + 0.010 - body_lines * 0.036 - 0.012
-
+    if (nzchar(body)) {
       panel <- panel +
-        # Smaller type fits more per line than the body, so wrap wider; two
-        # names stay on one line and a third wraps rather than running off.
-        draw_label(wrap_text(paste("Identified by", r$credit), wrap_at + 12),
-                   x = text_x, y = credit_y,
+        draw_label(body, x = text_x, y = top - title_h - gap,
+                   hjust = 0, vjust = 1, size = 10.5, lineheight = 1.2,
+                   colour = "grey25")
+    }
+    if (nzchar(credit)) {
+      panel <- panel +
+        draw_label(credit, x = text_x, y = top - title_h - body_h - gap,
                    hjust = 0, vjust = 1, size = 9.5, lineheight = 1.2,
                    fontface = "italic", colour = "grey45")
     }

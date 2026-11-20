@@ -71,7 +71,7 @@ below for why passes are not in that denominator.
 
 | column | meaning |
 | --- | --- |
-| `title` | resource title, drawn bold |
+| `title` | the resource's real title (see "Resource titles are real titles"), drawn bold |
 | `url` | encoded into the QR code — must be the real link |
 | `body` | one or two sentences; wraps to the text column automatically |
 | `credit` | the student who identified it, drawn as "Identified by …" |
@@ -120,7 +120,9 @@ week-summary/
 │  ├─ week-10-statements.csv       week 10 discussion points
 │  ├─ week-10-resources.csv        week 10 resources
 │  ├─ week-11-statements.csv       week 11 discussion points
-│  └─ week-11-resources.csv        week 11 resources
+│  ├─ week-11-resources.csv        week 11 resources
+│  ├─ week-12-statements.csv       week 12 discussion points
+│  └─ week-12-resources.csv        week 12 resources
 └─ figures/
    └─ week-NN-summary.png          300 dpi raster, for proofing
 ```
@@ -146,6 +148,7 @@ looks like it matches the week number.
 | 9 | [r7pxadfkedbhnjn8b5bbe](https://pol.is/report/r7pxadfkedbhnjn8b5bbe) | [pol.is/9yf9fdaktc](https://pol.is/9yf9fdaktc) (no report yet) | [gid=805361559](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=805361559) |
 | 10 | [r5dc7afbm2yhaesnhkm24](https://pol.is/report/r5dc7afbm2yhaesnhkm24) | [pol.is/3b4n7axwww](https://pol.is/3b4n7axwww) (no report yet) | tab "Wk 9 Writing" |
 | 11 | [pol.is/664ek97mr8](https://pol.is/664ek97mr8) (no report yet) | [pol.is/8mhxriwktf](https://pol.is/8mhxriwktf) (no report yet) | tab "Wk 10 Outreach" |
+| 12 | [r74m3redt5rwrmdcjzukw](https://pol.is/report/r74m3redt5rwrmdcjzukw) | [pol.is/6rdypxykvw](https://pol.is/6rdypxykvw) (no report yet) | [gid=403063907](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=403063907) |
 
 Polis exports without a login, which is what makes the numbers checkable:
 
@@ -189,10 +192,20 @@ literal newlines inside the quoted field — wrap at about 46 characters, to no
 more than three lines — rather than paraphrasing the statement shorter. The
 group voted on specific words and the figure should show them.
 
-Resource `title`, by contrast, is drawn on one unwrapped line, so it *does* need
-to be short (about 40 characters). Give the full title in the chapter prose. The
-`body` wraps automatically but only has room for about three lines: keep it near
-100 characters, or the credit line collides with the next resource's title.
+### Resource titles are real titles
+
+Resource `title` is the resource's **real title**, looked up from the DOI,
+arXiv record, or page itself, never the title a student wrote in the resource
+sheet (which can be a nickname, and whose link can turn out to be a different
+paper). Drop a subtitle after a colon. The title wraps at about 41 characters,
+and the body and credit move down beneath it. If the real title would still take
+**more than two lines**, write a short descriptive title in its place, kept
+close to the real title's own wording, and give the full title in the chapter
+prose.
+
+The `body` wraps automatically; keep it near 100 characters (about three
+lines). Each title-body-credit stack is centred on its QR code, and the script
+warns if a stack runs into the one above it.
 
 ## Regenerating
 
