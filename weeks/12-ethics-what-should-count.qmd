@@ -8,6 +8,10 @@ source("figure-packages/error-audit/R/error-audit.R")
 
 # Ethics: What Should Count? {#sec-ethics-what}
 
+::: {.callout-note icon="false" title="This content was identified, synthesized, and written by humans."}
+👽 Yet, the idea that super-intelligent beings can fundamentally change the nature of science was well-prophesied in a science fiction story published in *Nature* in 2000[@chiang2000crumbs].
+:::
+
 In November 2026, Stanford psychologist Michael C. Frank made a remarkable announcement on Bluesky: he had used Claude to audit every journal paper he had co-authored in the past five years, finding evidence of at least one error in more than half of those with shared code and data[@frank2026audit]. As described by a commentator, one reason this announcement was remarkable was because Frank helped advance the open science reform that makes the detection of such errors possible in the first place[@frank2025experimentology]. Another reason the announcement was remarkable was because it included an audit of work co-authored with the course instructor. This audit revealed that three columns of potentially sensitive data had been inadvertently uploaded to the repository, a mistake that was easy to correct but whose lessons feel difficult to ignore. Like Frank, the course instructor had dedicated their career to advocating for improvements in the quality of science — even once placing a $3,000 error detection bounty on their own research[@coles2020redteam]. Yet, errors remain, and were discovered *in the middle of* Week 12 of the Fall 2026 Collective \[Artificial\] Intelligence Seminar (@fig-week-12-summary).
 
 ```{r}
