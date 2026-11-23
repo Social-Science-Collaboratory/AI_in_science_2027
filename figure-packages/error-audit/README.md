@@ -15,22 +15,19 @@ Like `outreach-agent/`, this is a figure package rather than a chapter:
 | B | `images/panel-b-community-response.png` | Community points out that open science reform enables such discoveries in the first place |
 | C | `images/panel-c-supervisor-email.png` | Instructor receives email from previous supervisor |
 
-A and B share the first row and C has the second row to itself, at 12in total
-width to match `week_summary_plot()`. Row 1's columns are split in proportion
-to A's and B's aspect ratios, so both screenshots are drawn at the same height.
-Titles wrap to their column width (B's takes two lines), and the figure's
-height is computed from the wrapped titles and the image sizes. All three
-panels are screenshots: two Bluesky posts and one email.
+All three panels are screenshots: two Bluesky posts and one email. A and B
+share the first row, with columns split in proportion to their aspect ratios;
+C has the second row to itself. Total width is 12in. Titles wrap to their
+column width, and the figure's height is computed from the wrapped titles and
+the image sizes.
 
-Each title ends with an emoji (😱 A, 🙌 B, 💀 C). These are the
-`images/emoji-*.png` files, rendered once from Apple Color Emoji and drawn as
-images, because R's `pdf()` device cannot draw colour emoji as text. To swap
-one, render a new transparent PNG the same way and save over the file.
+Each title ends with an emoji (😱 A, 🙌 B, 💀 C), drawn from the
+`images/emoji-*.png` files (rendered from Apple Color Emoji). To swap one, save
+a new transparent PNG over the file.
 
 ## Using it in the chapter
 
-Because the height depends on measured title widths, ask for it rather than
-hard-coding it:
+The chunk's `fig-height` must equal `error_audit_height()`:
 
 ```r
 source("figure-packages/error-audit/R/error-audit.R")

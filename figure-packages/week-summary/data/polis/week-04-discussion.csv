@@ -1,0 +1,13 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+0,13,0,1,1,"AI can do the first pass of screening or extraction, but a human still has to verify the output before it enters a review."
+1,7,4,2,1,The hard part of a literature review is synthesis - connecting papers into an argument - and that is the part AI does worst.
+2,11,0,1,1,"Any AI-assisted review should state which tool did which step, so readers can judge the process."
+3,9,3,1,1,Requiring three different models to agree before accepting a screening decision is worth the extra cost.
+4,5,6,1,1,"If an AI agent matches expert performance on literature search, insisting on human search is nostalgia rather than rigor."
+5,4,6,2,1,Missing a few relevant studies is an acceptable price for screening 200 abstracts in 20 minutes.
+6,10,0,3,1,Students should have to do one literature review by hand before they are allowed to use AI for one.
+7,5,4,0,0,Published literature reviews are becoming obsolete because you can as LLMs to generate a lit review for you at any time.
+8,3,7,0,0,"We don't need to read scientific papers anymore, AI can read it for us."
+9,6,2,2,0,"AI can make the early stages of a literature review, but relying on it in the later stages may lead us to miss important studies."
+10,4,0,0,0,"AI makes things cognitively easy that should be difficult. For example, finding relevant articles, connecting findings, and conceptualizing."
+11,4,1,0,0,"AI tools can complement established review methods; it does not replace comprehensive searching, formal screening, or critical appraisal."

@@ -23,7 +23,7 @@ references.bib       the book's bibliography, cited from the chapters
 nature.csl           citation style
 figure-packages/     self-contained packages that draw the chapters' figures
 theme/               SCSS and the HTML partials _quarto.yml pulls in
-media/               audio served by the site itself (podcast episodes)
+media/               files served by the site itself (podcast audio, PDFs)
 cover.png            book cover art (not currently wired into the build)
 ```
 
@@ -35,7 +35,7 @@ at `02`: week 1 was the Foundations session, which the preface covers.
 
 Every non-trivial figure in the book lives in its own folder under
 `figure-packages/`, with its own README explaining what the figure shows and
-why it is drawn the way it is. They are *not* chapters — `project: render:` in
+how to edit it. They are *not* chapters — `project: render:` in
 `_quarto.yml` lists only `index.qmd`, `weeks/*.qmd` and `references.qmd`, so
 nothing in here becomes a stray page.
 
@@ -47,6 +47,7 @@ nothing in here becomes a stray page.
 | `checkin-workflow/` | Week 2, Figure 2: the AI-assisted check-in workflow |
 | `literature-review/` | Week 4, Figure 2: an AI-assisted literature review, start to finish |
 | `literature-critique/` | Week 5, Figure 2: the illustrations the seminar drew to voice its concerns |
+| `data-collection/` | Week 6, Figure 2: a grant proposal's "science with AI in five easy steps" workflow beside its title and abstract |
 | `outreach-agent/` | Week 11, Figure 2: an AI outreach agent's workflow (draw.io) beside a ChatGPT image of the AI overload it causes |
 | `error-audit/` | Week 12, Figure 2: an AI error audit of the instructor's former lab, from the public announcement to the email the instructor received |
 
@@ -60,7 +61,7 @@ week_summary_plot(week = 5, fig_width = 12, fig_height = 5.5)
 
 Read the package's README before changing a figure. Several of them require
 the calling chunk's `fig-width`/`fig-height` to match what the draw function is
-told, and say so for a reason.
+told.
 
 ## Building
 
@@ -69,6 +70,6 @@ quarto preview     # live-reloading local build
 quarto render      # full build into _book/ (HTML + PDF)
 ```
 
-The figure packages need R with `ggplot2`, `ggtext`, `cowplot`, `dplyr`,
+The figure packages need R with `ggplot2`, `cowplot`, `dplyr`,
 `tidyr`, `forcats`, `readr`, `png`, `ragg` and `qrcode`; the PDF build needs a
 TeX install. `_book/` and `.quarto/` are build output and are not committed.

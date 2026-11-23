@@ -1,39 +1,20 @@
-# data-collection.R -----------------------------------------------------
-#
-# Figure package for the grant case study used as Figure 2 of
-# weeks/06-data-collection-using.qmd.
-#
-# Two panels in a single row, at the same 12in width the week-summary figure
-# uses:
-#
-#   A  the grant's proposed workflow, as a five-step visual summary
-#   B  the grant's technical summary (its title and abstract), set as text
-#
-# Same construction as figure-packages/checkin-workflow/R/checkin-workflow.R:
-# panels are placed with grid rather than composited into a bitmap, so the
-# labels stay vector in the PDF build. Only png and grid are needed.
+# Grant case-study multipanel: Figure 2 of weeks/06-data-collection-using.qmd.
+# Usage: data_collection_plot(width); data_collection_save() writes figures/.
 
 library(grid)
 
-# Panel sources, in layout order. Paths are project-root relative because
-# _quarto.yml sets execute-dir: project.
+# Panel sources, in layout order (paths relative to the project root).
 DATACOLL_PANELS <- c(
   A = "figure-packages/data-collection/images/panel-a-grant-workflow.png"
 )
 
-# Panel B is text, not an image: the grant's title and abstract, one paragraph
-# each, kept in a plain file so the wording can be checked against the proposal.
-# Only the title and abstract are drawn -- the proposal's PI, department and
-# funding-request lines are deliberately left out of the file.
+# Panel B text: the grant's title and abstract, one paragraph each.
 DATACOLL_TEXT <- "figure-packages/data-collection/data/grant-summary.txt"
 
-# Panel B keeps the footprint the screenshot it replaced had (2099x1640px), so
-# the two columns split exactly as before.
+# Aspect ratio of the panel B text box.
 DATACOLL_B_ASPECT <- 2099 / 1640
 
-# Panel captions, drawn on the figure beside each bold letter. Kept here rather
-# than inline in the draw calls so the wording lives next to the sources it
-# describes.
+# Panel captions, drawn beside each bold letter.
 DATACOLL_LABELS <- c(
   A = "Visual summary of the proposed workflow",
   B = "Technical summary of the grant"
@@ -42,12 +23,7 @@ DATACOLL_LABELS <- c(
 
 #' Geometry for the two-panel row, in inches
 #'
-#' Panel A is a near-square diagram and panel B a wider screenshot of text, so equal
-#' halves would leave A towering over B with white space beside it. Splitting
-#' the row in proportion to the two aspect ratios instead makes both panels
-#' exactly the same height with no padding, at the cost of unequal column
-#' widths. Heights follow from the sources, so the layout cannot drift if a
-#' panel is later replaced with one of different proportions.
+#' Columns are split in proportion to the panels' aspect ratios.
 data_collection_layout <- function(width = 12,
                                      margin = 0.12,
                                      gap = 0.20,
@@ -79,10 +55,7 @@ data_collection_layout <- function(width = 12,
 
 #' Draw one labelled panel at an absolute position on the canvas
 #'
-#' `x`/`y` are the inch coordinates of the cell's top-left corner; the image
-#' hangs from the top so both panels share a baseline at the top. Images are
-#' drawn without a frame: panel A carries its own rounded boxes,
-#' and a hairline around either read as chart junk on the page.
+#' `x`/`y` are the inch coordinates of the cell's top-left corner.
 draw_datacoll_panel <- function(img, label, desc, x, y, img_w, img_h,
                                  label_height) {
   letter <- paste0(label, ".")
@@ -96,10 +69,7 @@ draw_datacoll_panel <- function(img, label, desc, x, y, img_w, img_h,
     hjust = 0, vjust = 0.5, gp = letter_gp
   )
 
-  # The description starts past the bold letter and a word space. That offset
-  # is measured off the rendered glyphs rather than guessed at, so the two runs
-  # stay butted together if the fontsize ever changes; grid counts a trailing
-  # space in a string's width, which is what makes this work.
+  # Offset the description by the rendered width of the letter and a space.
   lead <- convertWidth(
     grobWidth(textGrob(paste0(letter, " "), gp = letter_gp)),
     "in", valueOnly = TRUE
@@ -138,9 +108,7 @@ wrap_to_width <- function(txt, width, gp) {
 
 #' Draw the grant's title and abstract as text filling a box
 #'
-#' The font size is the largest that lets the wrapped title and abstract fit the
-#' box height, so the text block lines up with panel A however the box is
-#' resized. No frame is drawn, so the text sits flush under its panel label.
+#' Uses the largest font size at which the wrapped text fits the box.
 draw_datacoll_text <- function(x, y, w, h, label_height, pad = 0.04, drop = 0.1) {
   parts <- readLines(DATACOLL_TEXT, warn = FALSE)
   title <- parts[[1]]; body <- parts[[2]]
@@ -177,7 +145,7 @@ draw_datacoll_text <- function(x, y, w, h, label_height, pad = 0.04, drop = 0.1)
 
 #' Draw the data collection multipanel
 #'
-#' @param width Figure width in inches; 12 matches the week-summary figure.
+#' @param width Figure width in inches.
 #' @return Invisibly, the layout list (its `height` is the fig-height the
 #'   calling chunk should declare).
 data_collection_plot <- function(width = 12, ...) {
@@ -185,8 +153,6 @@ data_collection_plot <- function(width = 12, ...) {
   img_a <- png::readPNG(DATACOLL_PANELS[["A"]])
 
   grid.newpage()
-  # Panel A may carry transparency, so the canvas has to be painted white or the
-  # diagram's dark text lands on whatever the device leaves behind.
   grid.rect(gp = gpar(fill = "white", col = NA))
 
   top <- lay$height - lay$margin

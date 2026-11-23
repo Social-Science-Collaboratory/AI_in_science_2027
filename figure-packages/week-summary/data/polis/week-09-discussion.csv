@@ -1,0 +1,11 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+0,2,2,2,1,"AI should never be listed as an author, because it cannot take responsibility for the work."
+1,5,1,0,1,PhD students and postdocs face the biggest career risk when AI solves the open problems they work on.
+2,2,2,2,1,"Publish-or-perish incentives, not AI itself, are the main cause of the flood of low-quality papers."
+3,6,0,0,1,"The real goal of science is human understanding, not just correct answers."
+4,3,3,0,1,A result with no human author should still count as a real scientific contribution.
+5,3,3,0,1,"Science should deliberately slow down in the age of AI, even if it means fewer discoveries."
+6,3,3,0,1,Reviewers should be allowed to use AI to help write their peer reviews.
+7,3,3,0,1,Scientists who check and explain AI companies' results are doing free labor for those companies.
+8,4,2,0,1,"Rules for AI in science should be set by the public, not just by scientists and publishers."
+9,2,4,0,1,"Within 10 years, most new scientific findings will come from AI agents, not human scientists."

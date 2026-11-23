@@ -15,26 +15,21 @@ Like `literature-critique/`, this is a figure package rather than a chapter:
 | A | `images/panel-a-outreach-agent-workflow.png` | The agent's loop: review the research portfolio, build an outreach list, send personalized outreach, brief the PI, and the researcher adjusts |
 | B | `images/panel-b-ai-overload.png` | A researcher buried in AI-generated messages, missing the humans trying to reach them |
 
-The two panels sit side by side at 12in total width, matching
-`week_summary_plot()` so the two figures in the chapter align. The columns are
-split in proportion to the images' aspect ratios, so both panels are drawn at
-the same height with no padding. A is near-square (2028x1928) and B is 3:2
-(1536x1024), so A gets the narrower column (about 4.7in against 6.7in).
+The two panels sit side by side at 12in total width, with columns split in
+proportion to the images' aspect ratios so both are drawn at the same height.
+The chunk's `fig-height` must equal `outreach_agent_layout()$height`.
 
 ## Where the panels come from
 
 **Panel A** is drawn in draw.io. Its source is **not** in this folder: it is
-the `Page-5` tab of `figure-packages/class-structure/class-structure.drawio`,
+the `Wk11_Outreach` tab of `figure-packages/class-structure/class-structure.drawio`,
 alongside the seminar-structure diagram. To edit it, open that file, switch to
-the `Page-5` tab, then **File → Export as → PNG** (transparent background is
-fine; the figure paints its own white canvas) and save over
+the `Wk11_Outreach` tab, then **File → Export as → PNG** and save over
 `images/panel-a-outreach-agent-workflow.png`.
 
 **Panel B** was generated with ChatGPT. There is no source beyond the PNG;
 replacing it means generating a new image and saving it over
-`images/panel-b-ai-overload.png`. If the replacement has a different aspect
-ratio, the layout adjusts on its own, since the column split is computed from
-the files.
+`images/panel-b-ai-overload.png`.
 
 ## Regenerating the standalone copies
 

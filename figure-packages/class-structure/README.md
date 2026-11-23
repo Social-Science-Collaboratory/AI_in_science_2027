@@ -17,11 +17,8 @@ Intelligence in Science.](figure-packages/class-structure/figures/class-structur
 
 `class-structure.drawio` is the source; `figures/class-structure.png` is the
 export the book renders. Edit the source, then re-export the PNG over the old
-one — **File → Export as → PNG**, transparent background off, zoom 300% so the
-labels stay legible at the width the page gives it. Committing one without the
-other is the failure mode to watch for: the book will happily keep rendering a
-stale export.
+one — **File → Export as → PNG**, transparent background off, zoom 300% — and
+commit both together.
 
-draw.io writes a `.$class-structure.drawio.bkp` autosave beside the source
-while a tab is open. It is a *previous* state, not a newer one, and `.gitignore`
-holds it out of the repo.
+The `.$class-structure.drawio.bkp` autosave draw.io writes beside the source is
+an older state and is ignored by `.gitignore`.

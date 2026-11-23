@@ -1,0 +1,11 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+4,3,2,3,1,Scientists should write their papers so that AI tools are more likely to find and cite them.
+0,7,0,1,1,"Hiring and promotion committees should judge scientists by reading a few of their best papers, not by counting papers or citations."
+1,7,0,1,1,"Building shared datasets, software, and tools should count as much as writing papers for jobs and promotion."
+2,6,0,2,1,"The hype about fully autonomous ""AI scientists"" pulls money and attention away from the basic work science really needs."
+3,5,1,2,1,"Without deliberate action by funders, the benefits of AI in science will go mostly to wealthy universities and countries."
+5,4,1,3,1,"It is fine to have AI write a paper's abstract, as long as the science itself is the scientist's own."
+7,7,0,1,1,"If students can get answers from AI, teachers should spend less time on facts and more on curiosity and thinking skills."
+9,4,2,2,1,"Time a scientist spends following curiosity, with no clear output, should count as real work."
+6,6,1,1,1,"If AI makes it easy to produce papers, the number of papers someone publishes will stop meaning anything."
+8,6,0,2,1,Students should not use AI that gives direct answers while they are still learning a new skill.

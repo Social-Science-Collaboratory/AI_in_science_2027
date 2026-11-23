@@ -1,0 +1,11 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+0,6,0,0,1,Researchers must personally check every citation an AI tool gives them before they submit a paper.
+1,6,0,0,1,Using AI to polish writing you drafted yourself is different from having AI write the draft.
+2,4,1,1,1,Journals should require authors to say how they used AI in writing a paper.
+3,5,1,0,1,AI makes it easier for non-native English speakers to compete in science publishing.
+4,2,3,1,1,Students learn to write better when they practice with AI than without it.
+5,2,3,1,1,Journals should use AI as the first reviewer on every submitted paper.
+6,1,3,2,1,Caps on how many papers one person can submit are a fair response to the flood of AI-written papers.
+7,4,1,1,1,"AI-polished writing is erasing scientists' personal and cultural voices, and that is a real loss."
+8,0,2,4,1,A paper mostly written by AI is still the scientist's own work if the ideas are theirs.
+9,2,3,1,1,"Plain-language AI summaries of research do more good than harm, even when they lose nuance."

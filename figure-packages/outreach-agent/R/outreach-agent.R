@@ -1,21 +1,9 @@
-# outreach-agent.R ---------------------------------------------------------
-#
-# Figure package for Figure 2 of weeks/11-outreach.qmd.
-#
-# Two panels side by side at the same 12in width the week-summary figure uses:
-#
-#   A  the workflow of an AI outreach agent (draw.io export)
-#   B  the cost of that workflow: inboxes full of AI, human messages ignored
-#      (generated with ChatGPT)
-#
-# Same construction as figure-packages/literature-critique/R/literature-critique.R:
-# panels are placed with grid rather than composited into a bitmap, so the
-# labels stay vector in the PDF build. Only png and grid are needed.
+# Outreach agent multipanel: Figure 2 of weeks/11-outreach.qmd.
+# Usage: outreach_agent_plot(width); outreach_agent_save() writes figures/.
 
 library(grid)
 
-# Panel sources, in layout order. Paths are project-root relative because
-# _quarto.yml sets execute-dir: project.
+# Panel sources, in layout order (paths relative to the project root).
 OUTREACH_PANELS <- c(
   A = "figure-packages/outreach-agent/images/panel-a-outreach-agent-workflow.png",
   B = "figure-packages/outreach-agent/images/panel-b-ai-overload.png"
@@ -30,10 +18,7 @@ OUTREACH_LABELS <- c(
 
 #' Geometry for the multipanel, in inches
 #'
-#' The two columns are split in proportion to the panels' aspect ratios, so
-#' both images are drawn at exactly the same height with no padding. A is
-#' near-square (2028x1928) and B is 3:2 (1536x1024), so A's column is the
-#' narrower one (about 4.8in against 6.8in).
+#' Columns are split in proportion to the panels' aspect ratios.
 outreach_agent_layout <- function(width = 12,
                                   margin = 0.12,
                                   gap = 0.30,
@@ -71,8 +56,7 @@ draw_outreach_panel <- function(img, label, desc, x, y, img_w, img_h,
   grid.text(letter, x = unit(x, "in"), y = y_mid,
             hjust = 0, vjust = 0.5, gp = letter_gp)
 
-  # Offset the description by the measured width of the bold letter plus a
-  # space, so the two runs stay butted together if the fontsize changes.
+  # Offset the description by the rendered width of the letter and a space.
   lead <- convertWidth(
     grobWidth(textGrob(paste0(letter, " "), gp = letter_gp)),
     "in", valueOnly = TRUE
@@ -91,7 +75,7 @@ draw_outreach_panel <- function(img, label, desc, x, y, img_w, img_h,
 
 #' Draw the outreach multipanel
 #'
-#' @param width Figure width in inches; 12 matches the week-summary figure.
+#' @param width Figure width in inches.
 #' @return Invisibly, the layout list (its `height` is the fig-height the
 #'   calling chunk should declare).
 outreach_agent_plot <- function(width = 12, ...) {
@@ -99,8 +83,6 @@ outreach_agent_plot <- function(width = 12, ...) {
   imgs <- lapply(OUTREACH_PANELS, png::readPNG)
 
   grid.newpage()
-  # The draw.io export has a transparent background, so the canvas has to be
-  # painted white or its grey text lands on whatever the device leaves behind.
   grid.rect(gp = gpar(fill = "white", col = NA))
 
   top <- lay$height - lay$margin

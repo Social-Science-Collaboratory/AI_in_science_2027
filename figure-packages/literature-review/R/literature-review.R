@@ -1,30 +1,15 @@
-# literature-review.R -----------------------------------------------------
-#
-# Figure package for the literature review vignette used as Figure 2 of
-# weeks/04-literature-review-using.qmd.
-#
-# Two panels in a single row, at the same 12in width the week-summary figure
-# uses:
-#
-#   A  the workflow diagram, drawn for the seminar
-#   B  a screenshot of that workflow running
-#
-# Same construction as figure-packages/checkin-workflow/R/checkin-workflow.R:
-# panels are placed with grid rather than composited into a bitmap, so the
-# labels stay vector in the PDF build. Only png and grid are needed.
+# Literature review multipanel: Figure 2 of weeks/04-literature-review-using.qmd.
+# Usage: literature_review_plot(width); literature_review_save() writes figures/.
 
 library(grid)
 
-# Panel sources, in layout order. Paths are project-root relative because
-# _quarto.yml sets execute-dir: project.
+# Panel sources, in layout order (paths relative to the project root).
 LITREVIEW_PANELS <- c(
   A = "figure-packages/literature-review/images/panel-a-workflow.png",
   B = "figure-packages/literature-review/images/panel-b-demo.png"
 )
 
-# Panel captions, drawn on the figure beside each bold letter. Kept here rather
-# than inline in the draw calls so the wording lives next to the sources it
-# describes.
+# Panel captions, drawn beside each bold letter.
 LITREVIEW_LABELS <- c(
   A = "Overview of AI-assisted literature review workflow",
   B = "Demo of AI-assisted literature review workflow"
@@ -33,12 +18,7 @@ LITREVIEW_LABELS <- c(
 
 #' Geometry for the two-panel row, in inches
 #'
-#' Panel A is a near-square diagram and panel B a 16:9 screenshot, so equal
-#' halves would leave A towering over B with white space beside it. Splitting
-#' the row in proportion to the two aspect ratios instead makes both panels
-#' exactly the same height with no padding, at the cost of unequal column
-#' widths. Heights follow from the sources, so the layout cannot drift if a
-#' panel is later replaced with one of different proportions.
+#' Columns are split in proportion to the panels' aspect ratios.
 literature_review_layout <- function(width = 12,
                                      margin = 0.12,
                                      gap = 0.20,
@@ -72,10 +52,7 @@ literature_review_layout <- function(width = 12,
 
 #' Draw one labelled panel at an absolute position on the canvas
 #'
-#' `x`/`y` are the inch coordinates of the cell's top-left corner; the image
-#' hangs from the top so both panels share a baseline at the top. Images are
-#' drawn without a frame: panel B is a screenshot that carries its own window
-#' chrome, and a hairline around either read as chart junk on the page.
+#' `x`/`y` are the inch coordinates of the cell's top-left corner.
 draw_litreview_panel <- function(img, label, desc, x, y, img_w, img_h,
                                  label_height) {
   letter <- paste0(label, ".")
@@ -89,10 +66,7 @@ draw_litreview_panel <- function(img, label, desc, x, y, img_w, img_h,
     hjust = 0, vjust = 0.5, gp = letter_gp
   )
 
-  # The description starts past the bold letter and a word space. That offset
-  # is measured off the rendered glyphs rather than guessed at, so the two runs
-  # stay butted together if the fontsize ever changes; grid counts a trailing
-  # space in a string's width, which is what makes this work.
+  # Offset the description by the rendered width of the letter and a space.
   lead <- convertWidth(
     grobWidth(textGrob(paste0(letter, " "), gp = letter_gp)),
     "in", valueOnly = TRUE
@@ -114,7 +88,7 @@ draw_litreview_panel <- function(img, label, desc, x, y, img_w, img_h,
 
 #' Draw the literature review multipanel
 #'
-#' @param width Figure width in inches; 12 matches the week-summary figure.
+#' @param width Figure width in inches.
 #' @return Invisibly, the layout list (its `height` is the fig-height the
 #'   calling chunk should declare).
 literature_review_plot <- function(width = 12, ...) {
@@ -122,8 +96,6 @@ literature_review_plot <- function(width = 12, ...) {
   imgs <- lapply(LITREVIEW_PANELS, png::readPNG)
 
   grid.newpage()
-  # Panel A is a transparent PNG, so the canvas has to be painted white or the
-  # diagram's dark text lands on whatever the device leaves behind.
   grid.rect(gp = gpar(fill = "white", col = NA))
 
   top <- lay$height - lay$margin

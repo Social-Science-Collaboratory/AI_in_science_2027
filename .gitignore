@@ -1,7 +1,6 @@
 /.quarto/
 **/*.quarto_ipynb
 /_book/
-.playwright-mcp/console-2026-08-22T16-44-57-604Z.log
 
 # macOS finder cruft
 .DS_Store
@@ -11,12 +10,6 @@
 
 # stray R device output
 Rplots.pdf
-
-# output of rendering figure-packages/scale-ladder/figure-scale-ladder.qmd
-# on its own
-/figure-packages/scale-ladder/figure-scale-ladder.pdf
-/figure-packages/scale-ladder/figure-scale-ladder_files/
-/figure-packages/scale-ladder/figure-scale-ladder.tex
 
 # knitr figure dirs left beside a chapter when quarto renders it on its own
 # (the book's own copies live under _book/)

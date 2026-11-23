@@ -1,0 +1,9 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+0,9,0,2,1,Checking that a citation exists isn't enough. You also have to check that the source actually says what it's cited for.
+1,7,2,2,1,Any AI-assisted literature review should state which AI tools were used and for which steps.
+2,1,9,1,1,"Given its current error rates, AI should not be used to search the literature at all."
+3,3,6,1,1,Citation errors made by AI are no worse than the citation errors humans have always made.
+4,7,1,2,1,An AI that accurately summarizes manipulated sources is a bigger threat than an AI that makes things up.
+5,7,1,3,1,Letting AI read and summarize papers for us will weaken the deep reading skills that scientists need.
+6,2,8,2,1,We shouldn't say a report was written with AI unless the authors admit it. Clues like oaicite tags in links aren't proof.
+7,9,1,0,0,Continuing to use AI for literature searches will lead to papers reusing the same citations over and over again.

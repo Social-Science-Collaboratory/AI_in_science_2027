@@ -1,32 +1,17 @@
-# literature-critique.R ---------------------------------------------------
-#
-# Figure package for the illustrations used as Figure 2 of
+# Literature critique multipanel: Figure 2 of
 # weeks/05-literature-review-critiquing.qmd.
-#
-# Three illustrations, laid out as a 2-row multipanel at the same 12in width
-# the week-summary figure uses:
-#
-#   row 1   A  insights generated faster than anyone can read them
-#           B  the hazards between a literature search and the truth
-#   row 2   C  the exchange between AI and the literature it is fed
-#
-# Same construction as figure-packages/checkin-workflow/R/checkin-workflow.R:
-# panels are placed with grid rather than composited into a bitmap, so the
-# labels stay vector in the PDF build. Only png and grid are needed.
+# Usage: literature_critique_plot(width); literature_critique_save() writes figures/.
 
 library(grid)
 
-# Panel sources, in layout order. Paths are project-root relative because
-# _quarto.yml sets execute-dir: project.
+# Panel sources, in layout order (paths relative to the project root).
 LITCRITIQUE_PANELS <- c(
   A = "figure-packages/literature-critique/images/panel-a-insight-mountain.png",
   B = "figure-packages/literature-critique/images/panel-b-path-to-truth.png",
   C = "figure-packages/literature-critique/images/panel-c-hand-that-feeds.png"
 )
 
-# Panel captions, drawn on the figure beside each bold letter. Kept here rather
-# than inline in the draw calls so the wording lives next to the sources it
-# describes, and so a reader can check the two lists agree panel by panel.
+# Panel captions, drawn beside each bold letter.
 LITCRITIQUE_LABELS <- c(
   A = "Bracing for an onslaught of AI-generated insight",
   B = "Hazards on the path to the truth",
@@ -35,10 +20,6 @@ LITCRITIQUE_LABELS <- c(
 
 
 #' Geometry for the multipanel, in inches
-#'
-#' Panel heights follow from the source aspect ratios, so the layout cannot
-#' drift if an illustration is later replaced with one of different
-#' proportions.
 literature_critique_layout <- function(width = 12,
                                        margin = 0.12,
                                        gap = 0.20,
@@ -51,22 +32,13 @@ literature_critique_layout <- function(width = 12,
 
   inner <- width - 2 * margin
 
-  # Row 1: the two columns are split in proportion to the panels' aspect
-  # ratios rather than given equal halves. A is near-square and B is portrait,
-  # so equal halves would leave B towering over A; splitting by aspect makes
-  # both panels exactly the same height with no padding, at the cost of
-  # unequal column widths (about 7.3in against 4.2in).
+  # Row 1: columns split in proportion to the panels' aspect ratios.
   avail <- inner - gap
   w_a <- avail * aspect[["A"]] / (aspect[["A"]] + aspect[["B"]])
   w_b <- avail - w_a
   row1_image <- w_a / aspect[["A"]]
 
-  # Row 2: panel C is centred at row 1's height rather than spanning the inner
-  # width the way checkin-workflow's panel C does. That panel was 16:9; this
-  # one is 1.28:1, so spanning 11.76in would draw it 9.2in tall - half again
-  # as tall as the whole first row, and the figure would read as one big image
-  # with two thumbnails above it. Matching row 1's height instead costs a white
-  # gutter either side but keeps the three panels weighted alike.
+  # Row 2: panel C at row 1's height, centred in the inner width.
   h_c <- row1_image
   w_c <- min(h_c * aspect[["C"]], inner)
   h_c <- w_c / aspect[["C"]]
@@ -91,13 +63,8 @@ literature_critique_layout <- function(width = 12,
 
 #' Draw one labelled panel at an absolute position on the canvas
 #'
-#' `x`/`y` are the inch coordinates of the cell's top-left corner; the image is
-#' centred horizontally within a cell `cell_w` wide and hangs from the top so
-#' panels in the same row share a baseline at the top rather than the bottom.
-#' The label sits at the cell's left edge, not over the centred image, so the
-#' three letters line up down the page. Images are drawn without a frame: each
-#' source already carries its own white background, and a hairline around every
-#' panel read as chart junk.
+#' `x`/`y` are the inch coordinates of the cell's top-left corner; the image
+#' is centred within a cell `cell_w` wide.
 draw_litcritique_panel <- function(img, label, desc, x, y, cell_w, img_w, img_h,
                                    label_height) {
   letter <- paste0(label, ".")
@@ -111,10 +78,7 @@ draw_litcritique_panel <- function(img, label, desc, x, y, cell_w, img_w, img_h,
     hjust = 0, vjust = 0.5, gp = letter_gp
   )
 
-  # The description starts past the bold letter and a word space. That offset
-  # is measured off the rendered glyphs rather than guessed at, so the two runs
-  # stay butted together if the fontsize or the letter ever changes; grid
-  # counts a trailing space in a string's width, which is what makes this work.
+  # Offset the description by the rendered width of the letter and a space.
   lead <- convertWidth(
     grobWidth(textGrob(paste0(letter, " "), gp = letter_gp)),
     "in", valueOnly = TRUE
@@ -137,12 +101,7 @@ draw_litcritique_panel <- function(img, label, desc, x, y, cell_w, img_w, img_h,
 
 #' Warn if any label is wider than the column it sits over
 #'
-#' Panel B's column is only about 4in, which is narrow enough that a label of
-#' ordinary length overflows it and eats into the figure's right margin. The
-#' overflow is invisible in the layout arithmetic - grid just draws past the
-#' cell - so it is checked here rather than left for someone to notice on the
-#' rendered page. Measuring needs an open device, so this is a no-op if there
-#' is none.
+#' Measuring needs an open device, so this is a no-op if there is none.
 check_litcritique_labels <- function(lay) {
   if (dev.cur() == 1L) return(invisible(NULL))
   for (k in names(LITCRITIQUE_PANELS)) {
@@ -164,7 +123,7 @@ check_litcritique_labels <- function(lay) {
 
 #' Draw the literature critique multipanel
 #'
-#' @param width Figure width in inches; 12 matches the week-summary figure.
+#' @param width Figure width in inches.
 #' @return Invisibly, the layout list (its `height` is the fig-height the
 #'   calling chunk should declare).
 literature_critique_plot <- function(width = 12, ...) {
@@ -173,8 +132,6 @@ literature_critique_plot <- function(width = 12, ...) {
 
   grid.newpage()
   check_litcritique_labels(lay)
-  # Panel C carries transparent corners, so the canvas has to be painted white
-  # or its dark text lands on whatever the device leaves behind.
   grid.rect(gp = gpar(fill = "white", col = NA))
 
   top <- lay$height - lay$margin

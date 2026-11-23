@@ -17,11 +17,11 @@ source("figure-packages/week-summary/R/week-summary.R")
 ```
 :::
 
-In February 2026, an engineer running an online educational program used Claude Code[@anthropic2026claudecode] to help launch a new side project. Instead of launching something new, they ultimately deleted everything they had already built: servers, networks, and years of datasets. The failure point, the engineer would later suggest, was over-automation[@grigorev2026claudecode]. The engineer never checked whether backups could be restored; they never pushed back on questionable recommendations from the coding agent; and they allowed it to run irreversible commands completely unsupervised. Issues like these are bound to become more common as scientists increasingly rely on AI — the focus of Week 3 of the Fall 2026 Collective \[Artificial\] Intelligence Seminar (@fig-week-03-summary).
+In February 2026, an engineer running an online educational program used Claude Code[@anthropic2026claudecode] to help launch a new side project. Instead of launching something new, they ultimately deleted things they had already built: servers, networks, and years of datasets. The failure point, the engineer would later suggest, was over-automation[@grigorev2026claudecode]. The engineer never checked whether backups could be restored; they never pushed back on questionable recommendations from the coding agent; and they allowed it to run irreversible commands completely unsupervised. Issues like these are bound to become more common as scientists increasingly rely on AI — the focus of Week 3 of the Fall 2026 *Collective \[Artificial\] Intelligence in Science* seminar (@fig-week-03-summary).
 
 ```{r}
 #| label: fig-week-03-summary
-#| fig-cap: "Overview of Week 3 of the Fall 2026 Collective [Artificial] Intelligence Seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants."
+#| fig-cap: "Overview of Week 3 of the Fall 2026 *Collective [Artificial] Intelligence in Science* seminar. Left: top discussion points, along with estimated level of agreement among seminar participants. Right: three most popular resources identified by seminar participants."
 #| fig-width: 12
 #| fig-height: 5.5
 #| fig-align: center

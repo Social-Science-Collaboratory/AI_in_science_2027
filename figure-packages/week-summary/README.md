@@ -1,30 +1,21 @@
 # Week summary — the opening figure for every content chapter
 
 Self-contained figure package living inside the 2027 UF Guide to AI in Science.
-One figure that opens every content chapter (weeks 2–12),
-and is deliberately *not* used by the preface or by the epilogue
-chapter, neither of which has a Polis session or a resource vote behind it.
+One figure that opens every content chapter (weeks 2–12); the preface and
+epilogue do not use it.
 
 ## What it shows
 
 Two panels, one per half of what a week produced.
 
-**Left — "Top discussion points."** The statements put to the group, as a
-diverging bar: disagreement runs left of zero, agreement right. The two live in
-one picture on purpose. A week's consensus and its fault lines are the same
-vote read in two directions, and splitting them into two charts would let a
-reader see one without the other. Statements are drawn in CSV order, top to
-bottom, so sorting the CSV by agree share is what produces the wedge.
+**Left — "Top discussion points."** About five Polis statements as a diverging
+bar: disagreement left of zero, agreement right. They are chosen for relevance
+to the chapter (spanning consensus to disagreement), not by agreement rank, and
+are drawn in CSV order, top to bottom.
 
-**Right — "Top resources."** The three resources the seminar voted forward, each
-with a QR code to the thing itself and a credit line naming the student who
-surfaced it. The credit is not decoration: attribution to the person who found
-the resource is part of what the seminar is documenting, so the figure always
-draws it.
-
-Colour is a warm/cool pair rather than red/green, because the entire left panel
-is one bar split into exactly these two colours — red/green would collapse it
-for a red-green colourblind reader.
+**Right — "Top resources."** The three resources the seminar voted forward,
+each with a QR code to the resource and a credit line naming the student who
+surfaced it.
 
 ## How a chapter uses it
 
@@ -33,21 +24,12 @@ source("figure-packages/week-summary/R/week-summary.R")            # setup chunk
 week_summary_plot(week = 2, fig_width = 12, fig_height = 5.5)
 ```
 
-Pass `week_summary_plot()` **the same width and height you give the chunk**.
-Both, not just the width. A QR code has to be square on the page, but it is
-positioned in npc — a fraction of its panel — and the panel's width and height
-differ, so the function converts one into the other using the figure's aspect
-ratio. Give it dimensions that don't match the chunk and the codes render
-oblong, which is the one failure here that still scans and so goes unnoticed.
+Pass `week_summary_plot()` **the same width and height you give the chunk** —
+both — or the QR codes render non-square.
 
-Chunks run from the project root (`execute-dir: project` in `../../_quarto.yml`),
-so the root-relative `source()` path above works from `weeks/` as well as from
-the root. The R also resolves its own paths (see `week_summary_root` at the top
-of `R/week-summary.R`), so `data/` and `figures/` work whether the script is
-sourced from the project root or run from inside this folder.
-
-This folder is excluded from the book render via `project: render:` in
-`../../_quarto.yml`, so nothing here becomes a stray page.
+The R resolves its own paths (`week_summary_root` in `R/week-summary.R`), so
+`data/` and `figures/` work whether the script is sourced from the project root
+or run from inside this folder.
 
 ## Adding a week
 
@@ -62,10 +44,8 @@ code changes, no new figure.
 | `agrees` | number of agree votes on that Polis statement |
 | `disagrees` | number of disagree votes on that Polis statement |
 
-Record the **counts**, not a percentage. The bar is derived — `agrees /
-(agrees + disagrees)` — so there is no hand-typed number that can drift away
-from the vote it claims to summarize. See "Where a week's data comes from"
-below for why passes are not in that denominator.
+Record the **counts**, not a percentage. The bar is `agrees / (agrees +
+disagrees)`; passes are excluded.
 
 `week-NN-resources.csv`
 
@@ -76,24 +56,14 @@ below for why passes are not in that denominator.
 | `body` | one or two sentences; wraps to the text column automatically |
 | `credit` | the student who identified it, drawn as "Identified by …" |
 
-The panel is built for **three** resources and **about five** statements. It
-will draw other counts — rows are spaced evenly into the band that the left
-panel's plotting region occupies — but past roughly six statements the labels
-crowd, and past four resources the QR codes start to collide with the wrapped
-body text below them.
+The panel is built for **three** resources and **about five** statements;
+past roughly six statements or four resources, labels and QR codes collide.
 
 ### Keep the CSV text ASCII
 
 Use `-` and `:` rather than en/em dashes, and straight quotes rather than curly
-ones. Text *inside a figure* is drawn by a graphics device, not by LaTeX, and
-the book's PDF output goes through the stock `pdf()` device on any machine
-without a working cairo — which silently substitutes `-` for every em dash and
-warns about it. This constraint applies only to the CSVs; the chapter prose
-around the figure is typeset by LaTeX and can use whatever punctuation it likes.
-
-The same reasoning is why the x-axis title reads `<- Disagree   Agree ->` in
-ASCII rather than with unicode arrows: on that device the unicode arrows have no
-glyph at all.
+ones; the PDF build's `pdf()` device cannot draw them. This applies only to the
+CSVs, not to chapter prose.
 
 ## Contents
 
@@ -101,28 +71,9 @@ glyph at all.
 week-summary/
 ├─ R/week-summary.R                the figure, in ggplot2 + cowplot
 ├─ data/
-│  ├─ week-02-statements.csv       week 2 discussion points
-│  ├─ week-02-resources.csv        week 2 resources
-│  ├─ week-03-statements.csv       week 3 discussion points
-│  ├─ week-03-resources.csv        week 3 resources
-│  ├─ week-04-statements.csv       week 4 discussion points
-│  ├─ week-04-resources.csv        week 4 resources
-│  ├─ week-05-statements.csv       week 5 discussion points
-│  ├─ week-05-resources.csv        week 5 resources
-│  ├─ week-06-statements.csv       week 6 discussion points
-│  ├─ week-06-resources.csv        week 6 resources
-│  ├─ week-07-statements.csv       week 7 discussion points
-│  ├─ week-07-resources.csv        week 7 resources
-│  ├─ week-08-statements.csv       week 8 discussion points
-│  ├─ week-08-resources.csv        week 8 resources
-│  ├─ week-09-statements.csv       week 9 discussion points
-│  ├─ week-09-resources.csv        week 9 resources
-│  ├─ week-10-statements.csv       week 10 discussion points
-│  ├─ week-10-resources.csv        week 10 resources
-│  ├─ week-11-statements.csv       week 11 discussion points
-│  ├─ week-11-resources.csv        week 11 resources
-│  ├─ week-12-statements.csv       week 12 discussion points
-│  └─ week-12-resources.csv        week 12 resources
+│  ├─ week-NN-statements.csv       discussion points, weeks 02–12
+│  ├─ week-NN-resources.csv        resources, weeks 02–12
+│  └─ polis/                       de-identified Polis report data
 └─ figures/
    └─ week-NN-summary.png          300 dpi raster, for proofing
 ```
@@ -131,10 +82,8 @@ week-summary/
 
 Both CSVs are transcriptions of two Polis sessions per week — one to discuss,
 one to vote on resources — plus the shared sheet where students post what they
-found. Note that the shared sheet numbers its tabs one behind the book: the tab
-headed "Week 2 · Critiquing" is this book's chapter 3, and "Week 3 · Using" is
-chapter 4. Take the tab gid from the table below rather than from the tab that
-looks like it matches the week number.
+found. The sheet numbers its tabs one behind the book, so take the tab from the
+table below.
 
 | week | discussion report | resource vote report | resource sheet tab |
 | --- | --- | --- | --- |
@@ -150,7 +99,11 @@ looks like it matches the week number.
 | 11 | [pol.is/664ek97mr8](https://pol.is/664ek97mr8) (no report yet) | [pol.is/8mhxriwktf](https://pol.is/8mhxriwktf) (no report yet) | tab "Wk 10 Outreach" |
 | 12 | [r74m3redt5rwrmdcjzukw](https://pol.is/report/r74m3redt5rwrmdcjzukw) | [pol.is/6rdypxykvw](https://pol.is/6rdypxykvw) (no report yet) | [gid=403063907](https://docs.google.com/spreadsheets/d/1ANIdsjrg5aG4lP4E491NaluIDMXhNLgp/edit?gid=403063907) |
 
-Polis exports without a login, which is what makes the numbers checkable:
+De-identified copies of the published reports are in `data/polis/`
+(`week-NN-discussion.csv`, and `week-02-resource-vote.csv`), one row per Polis
+statement: `comment_id`, `agrees`, `disagrees`, `passes`, `moderated`,
+`statement`. Author and voter IDs and timestamps are dropped. They were built
+from these exports, which Polis serves without a login:
 
 ```
 https://pol.is/api/v3/reportExport/<report-id>/comments.csv   # per-statement agree/disagree
@@ -158,46 +111,31 @@ https://pol.is/api/v3/reportExport/<report-id>/votes.csv      # one row per vote
 https://pol.is/api/v3/reportExport/<report-id>/summary.csv    # n voters, n statements, n groups
 ```
 
-`agrees` and `disagrees` are copied straight from `comments.csv` (they agree
-exactly with a tally of `votes.csv`, which is worth re-running as a check). The
-bar is the **agree share of agree-and-disagree votes** — passes excluded, not
-counted as disagreement. That choice matters, because Polis participants pass
-often and statements submitted late in a session collect far fewer votes than
-the seed statements. Counting passes as disagreement would drag every late
-statement toward zero for a reason that has nothing to do with what anyone
-thought.
-
-The flip side is that a bar can sit on a denominator of nine, and the figure
-does not show it. The counts are in the CSV so the reader can find them, but a
-chapter quoting a percentage in prose should give the counts with it.
+`agrees` and `disagrees` are copied straight from `comments.csv` (a tally of
+`votes.csv` should match). The bar is the **agree share of agree-and-disagree
+votes** — passes are excluded, not counted as disagreement. A chapter quoting a
+percentage in prose should give the counts with it.
 
 ### Ranking resources uses raw agree counts
 
-Statements and resources are ranked on different quantities, and the difference
-is deliberate. Resource votes are mostly passes — a participant who has not
-read a paper passes on it — so an agree *share* rewards a resource that two
-people saw and one liked over a resource that five people saw and four liked.
-The three resources drawn are the three with the most agree votes.
-
-They are drawn in CSV order, top to bottom, and the CSV lists them in the
-order the chapter prose first discusses them, so a reader moving from the text
-to the figure meets them in the same sequence. A resource the prose never
+The three resources drawn are the three with the most agree votes (not the
+highest agree share). They are drawn in CSV order, and the CSV lists them in
+the order the chapter prose first discusses them; a resource the prose never
 mentions goes last.
 
-### Statements are wrapped, not shortened
+### Statements are rephrased and wrapped
 
-The left panel draws the axis label exactly as the CSV gives it, with no
-wrapping of its own, so a verbatim Polis statement would run off the panel. Put
-literal newlines inside the quoted field — wrap at about 46 characters, to no
-more than three lines — rather than paraphrasing the statement shorter. The
-group voted on specific words and the figure should show them.
+The CSV may rephrase a statement for clarity, keeping the claim the group
+voted on; the original wording is in `data/polis/`.
+
+The left panel does no wrapping of its own: put literal newlines inside the
+quoted field, wrapping at about 46 characters, to no more than three lines.
 
 ### Resource titles are real titles
 
 Resource `title` is the resource's **real title**, looked up from the DOI,
 arXiv record, or page itself, never the title a student wrote in the resource
-sheet (which can be a nickname, and whose link can turn out to be a different
-paper). Drop a subtitle after a colon. The title wraps at about 41 characters,
+sheet. Drop a subtitle after a colon. The title wraps at about 41 characters,
 and the body and credit move down beneath it. If the real title would still take
 **more than two lines**, write a short descriptive title in its place, kept
 close to the real title's own wording, and give the full title in the chapter
@@ -210,8 +148,7 @@ warns if a stack runs into the one above it.
 ## Regenerating
 
 The book does not use the files in `figures/` — it calls `week_summary_plot()`
-and lets Quarto draw the figure at chunk size. They are for proofing, slides,
-and posters:
+at chunk size. They are for proofing:
 
 ```
 Rscript R/week-summary.R 2      # writes figures/week-02-summary.png
@@ -219,11 +156,3 @@ Rscript R/week-summary.R 2      # writes figures/week-02-summary.png
 
 Requires `ggplot2`, `dplyr`, `tidyr`, `forcats`, `readr`, `cowplot`, and
 `qrcode`.
-
-## Provenance
-
-Grown from a layout mockup (`ai_figure_mockup.R`), whose geometry solution — the
-npc-to-inches QR conversion, and reading the left panel's gtable to find the
-band its plotting region occupies — is preserved here. The mockup's own
-fabricated survey statements were **not** carried over; they read as real
-findings, which is exactly what a wireframe must not do.

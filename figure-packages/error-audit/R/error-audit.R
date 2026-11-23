@@ -1,21 +1,9 @@
-# error-audit.R -------------------------------------------------------------
-#
-# Figure package for weeks/12-ethics-what-should-count.qmd.
-#
-# Three screenshots in two rows at the 12in width the week-summary figure uses:
-#
-#   row 1  A  the instructor's previous supervisor announces an AI error audit
-#          B  the community responds with admiration
-#   row 2  C  the instructor receives the supervisor's (AI-drafted) error email
-#
-# Same construction as figure-packages/outreach-agent/R/outreach-agent.R:
-# panels are placed with grid rather than composited into a bitmap, so the
-# titles stay vector in the PDF build. Only png and grid are needed.
+# AI error-audit multipanel for weeks/12-ethics-what-should-count.qmd.
+# Usage: error_audit_plot(width); error_audit_save() writes figures/.
 
 library(grid)
 
-# Panel sources. Paths are project-root relative because _quarto.yml sets
-# execute-dir: project.
+# Panel sources (paths relative to the project root).
 ERROR_AUDIT_PANELS <- c(
   A = "figure-packages/error-audit/images/panel-a-audit-post.png",
   B = "figure-packages/error-audit/images/panel-b-community-response.png",
@@ -29,8 +17,7 @@ ERROR_AUDIT_LABELS <- c(
   C = "Instructor receives email from previous supervisor"
 )
 
-# Emoji drawn after each title. They are PNGs (rendered from Apple Color Emoji)
-# rather than text, because R's pdf() device cannot draw colour emoji.
+# Emoji PNGs drawn after each title.
 ERROR_AUDIT_EMOJI <- c(
   A = "figure-packages/error-audit/images/emoji-a-scared.png",
   B = "figure-packages/error-audit/images/emoji-b-hands-raised.png",
@@ -52,8 +39,7 @@ wrap_error_audit_title <- function(text, width, lead) {
   current <- ""
   for (w in words) {
     trial <- if (nzchar(current)) paste(current, w) else w
-    # Every line is indented to align with line 1, and keeps room for the
-    # emoji that follows the last one.
+    # Width left after the indent and the trailing emoji.
     avail <- width - lead - ERROR_AUDIT_EMOJI_GAP - ERROR_AUDIT_EMOJI_SIZE
     trial_w <- convertWidth(grobWidth(textGrob(trial, gp = gp)),
                             "in", valueOnly = TRUE)
@@ -70,8 +56,6 @@ wrap_error_audit_title <- function(text, width, lead) {
 
 #' Geometry for the multipanel, in inches
 #'
-#' Row 1's columns are split in proportion to A's and B's aspect ratios so
-#' both screenshots are drawn at the same height; C spans the full width.
 #' Title heights are measured, so this needs an open graphics device.
 error_audit_layout <- function(width = 12, margin = 0.12, gap = 0.30,
                                row_gap = 0.30, title_pad = 0.08) {
@@ -149,8 +133,7 @@ draw_error_audit_panel <- function(img, emoji, letter, lines, x, y, img_w,
     width = unit(img_w, "in"), height = unit(img_h, "in"),
     hjust = 0, vjust = 0, interpolate = TRUE
   )
-  # Hairline frame: the screenshots have white backgrounds that would
-  # otherwise bleed into the page.
+  # Hairline frame around the screenshot.
   grid.rect(x = unit(x, "in"), y = unit(y - title_h - img_h, "in"),
             width = unit(img_w, "in"), height = unit(img_h, "in"),
             hjust = 0, vjust = 0, gp = gpar(fill = NA, col = "grey75", lwd = 0.6))

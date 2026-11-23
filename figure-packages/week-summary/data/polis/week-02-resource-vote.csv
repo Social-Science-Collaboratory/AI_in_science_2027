@@ -1,0 +1,13 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+0,0,5,7,1,Accelerating scientific discovery with Co-Scientist
+1,0,3,9,1,On the Planning Abilities of Large Language Models – A Critical Investigation
+2,7,1,4,1,Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers
+3,4,1,7,1,Generative Grounded Theory (GGT): Inductive Theory Building in the Age of Generative AI
+4,5,2,6,1,Automating Psychological Hypothesis Generation with AI: When Large Language Models Meet Causal Graph
+5,0,4,8,1,A Foundation Model to Predict and Capture Human Cognition
+6,4,1,7,1,Agency Configurations in Generative AI Ideation: How Textual and Visual Idea Concretizations Shape Idea Creativity and Ideator Effort
+7,2,4,6,1,Towards End-to-End Automation of AI Research
+8,3,2,7,1,SciSciGPT: Advancing Human–AI Collaboration in the Science of Science
+9,2,2,8,1,Ideation with Generative AI—in Consumer Research and Beyond
+10,0,4,9,1,The Virtual Lab of AI Agents Designs New SARS-CoV-2 Nanobodies
+11,1,3,8,1,ChatGPT for Automated Qualitative Research: Content Analysis

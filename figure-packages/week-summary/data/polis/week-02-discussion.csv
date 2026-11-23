@@ -1,0 +1,36 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+0,8,1,2,1,"AI should propose research ideas, but a human or formal check must verify them before they shape a project."
+1,9,1,1,1,"Structured, multi-step prompting yields better research ideas than a single open-ended prompt to a chatbot."
+2,5,5,2,1,We should treat fully autonomous AI scientists making Nobel-worthy discoveries by 2050 as a serious goal worth funding.
+3,2,4,4,1,"If an AI-generated manuscript passes peer review, it should be published with no human author listed."
+4,5,2,3,1,"AI ideas are rated as more novel mainly because they ignore feasibility, not because they are more creative."
+5,6,4,1,1,Making ideation effortless is bad for creativity; researchers need some friction to think well.
+6,8,1,2,1,An LLM is a legitimate second coder in qualitative research and should count toward intercoder reliability.
+7,3,3,5,1,"If we cannot explain how an AI produced an idea, that idea has no place in a research project."
+8,4,4,1,0,AI can engage in more flexible forms of thinking than typical humans
+9,8,2,0,0,I believe that prompt engineering will be one of the most important human led roles  in research going forward.
+10,7,0,1,0,Appreciate AI can be used to promote new manners of ideation however I also appreciated her comment on the need for human intervention.
+11,2,4,2,0,The institution of science would be better with more AI agents and fewer human agents
+12,7,2,2,0,"Using AI alone, without human intelligence, is more likely to broaden the pool of ideas than to deepen exploration within any specific area."
+13,5,1,3,0,I believe that if AI workflows are feasible if human data will only become more valuable in the future.
+14,8,0,1,0,One reason why AI science can outcompete human science is BECAUSE AI has fewer coordination costs and don't get exhausted
+15,6,3,1,0,"""Research's beauty lies in combining minds to spark novel, creative ideas—yet AI research now threatens researchers' sense of identity."
+16,9,1,1,0,Passing peer review is weak evidence of merit; flawed and even fabricated papers have cleared review long before AI wrote any of them.
+17,7,2,3,0,"LLMs score higher on novelty but lower on feasibility, so whose job is it to filter out AI's unworkable ideas before they reach a lab?"
+18,6,0,4,0,"When reviewers rate LLM proposals as more 'novel,' are they measuring originality, or just unfamiliarity with how AI recombines ideas?"
+19,2,0,7,0,"Despite ethical and validity concerns, is there any benefits of having AI-generated papers?"
+20,7,1,2,0,Mining causal graphs from published psychology papers risks encoding the field's own replication crisis into confident 'causal' claims.
+21,8,0,3,0,"If ChatGPT is trained on text sharing the coder's own theoretical assumptions, their 'agreement' is an echo, not independent validation."
+22,10,0,0,0,"As we use AI to generate new ideas and causal connections, researchers need to be more aware of hallucinations and misinformation."
+23,8,2,1,0,"ChatGPT's coding agreement with humans is prompt-dependent, small changes to the coding prompt can shift label distributions a lot."
+24,5,2,2,0,"Human validation only needs to verify a small subset of data, LLMs can qualitatively analyze large datasets without additional verification"
+25,5,2,3,0,LLM-based relation extraction for causal graphs is prone to hallucinating edges never explicitly stated in the source text.
+26,9,0,2,0,"If you are not using AI in your research, you will fall so far behind you will not be able to compete in academia"
+27,6,3,1,0,Prompting a LLM for qualitative research is similar to training an RA for the same task. It comes with the same potential biases.
+28,4,1,6,0,Embedding-space distance is a noisy proxy for conceptual diversity—LLM embedding spaces are known to be anisotropic and compressed.
+29,10,1,0,0,"Everybody has access to the power of AI. Therefore, the new selection pressure is who can ask the best questions and deploy it best?"
+30,6,3,1,0,Much of the work presented is limited to NLP and computer science topics. AI is more limited in research requiring field and clinical work.
+31,8,2,1,0,A literature-review agent is only as good as its retrieval embeddings—poor recall there silently biases which work gets cited.
+32,3,6,1,0,"AI is less error prone than humans, so much of the concern about AI usage is unwarranted hysteria"
+33,2,3,4,0,Chunking long transcripts to fit the context window can break the thematic continuity that grounded theory coding depends on.
+34,2,1,7,0,"RSA-style comparisons between hidden states and brain scans can be confounded by shared token-frequency statistics, not semantics."

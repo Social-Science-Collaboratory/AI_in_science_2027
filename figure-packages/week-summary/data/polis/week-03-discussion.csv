@@ -1,0 +1,16 @@
+comment_id,agrees,disagrees,passes,moderated,statement
+0,12,0,1,1,"Any AI-generated citation, benchmark, or result must be verified by a human before it leaves the project."
+1,10,1,2,1,Keeping a human in the loop matters more for research quality than how capable the AI model is.
+2,11,1,2,1,"Getting value from AI ideation is a learnable skill: critiquing and refining its output, not just asking it for more."
+3,10,2,1,1,"Because LLM use lowers engagement and ownership, students should not use AI for first drafts of their own writing."
+4,9,2,1,1,AI's homogenizing effect on ideas threatens science more than its hallucinations do.
+5,4,6,2,1,Higher individual productivity is worth it even if widespread AI use narrows the range of topics science explores.
+6,10,1,2,1,Papers that used AI agents should be required to publish full logs and code as a condition of peer review.
+7,5,7,0,1,Talking with AI to develop an idea doesn't actually help with critical thinking but merely reconfirming the directions already in your head.
+8,7,2,1,1,"Relying on AI, especially in auditing research, lowers a researcher’s vigilance towards their work."
+9,1,1,0,-1,Does GenAI is better at broadening the range of ideas than at narrowing and refining them?
+10,8,1,1,1,"Even in scenarios where AI does not improve average capabilities, it still often improves maximal capabilities"
+11,7,3,2,1,"Fully exploring specific topics in social science using AI is more useful than diverting into different, new subfields."
+12,8,2,0,1,"We punish AI way harsher, because we are good at attributing \easons why a human made mistake, yet don't know why when it happens to AI"
+13,10,0,1,1,"While LLMs can hallucinate, it is important to establish how often they hallucinate or how dangerous current systems are."
+14,10,0,0,1,Scientists should weigh cognitive debt against efficiency when making the decision to use AI

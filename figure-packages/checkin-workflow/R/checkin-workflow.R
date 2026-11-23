@@ -1,23 +1,9 @@
-# checkin-workflow.R ------------------------------------------------------
-#
-# Figure package for the check-in workflow vignette used as Figure 2 of
-# weeks/02-project-management-using.qmd.
-#
-# Three screenshots, laid out as a 2-row multipanel at the same 12in width the
-# week-summary figure uses:
-#
-#   row 1   A  weekly check-ins committed to a shared repository
-#           B  the LLM queried about those accumulated check-ins
-#   row 2   C  the mock-up figure sent back to the trainee
-#
-# Panels are placed with grid rather than composited into a bitmap, so the
-# labels and the MOCK watermark stay vector in the PDF build. Only png and
-# grid are needed; neither magick nor an ImageMagick CLI is required.
+# Check-in workflow multipanel: Figure 2 of weeks/02-project-management-using.qmd.
+# Usage: checkin_workflow_plot(width); checkin_workflow_save() writes figures/.
 
 library(grid)
 
-# Panel sources, in layout order. Paths are project-root relative because
-# _quarto.yml sets execute-dir: project.
+# Panel sources, in layout order (paths relative to the project root).
 CHECKIN_PANELS <- c(
   A = "figure-packages/checkin-workflow/images/panel-a-checkin-repo.png",
   B = "figure-packages/checkin-workflow/images/panel-b-llm-query.png",
@@ -25,9 +11,7 @@ CHECKIN_PANELS <- c(
              "panel-c-mobility-prepost-mockup.png")
 )
 
-# Panel captions, drawn on the figure beside each bold letter. Kept here rather
-# than inline in the draw calls so the wording lives next to the sources it
-# describes, and so a reader can check the two lists agree panel by panel.
+# Panel captions, drawn beside each bold letter.
 CHECKIN_LABELS <- c(
   A = "Trainee submits update to shared folder",
   B = "Adviser uses Claude to summarize and plan next steps",
@@ -36,11 +20,6 @@ CHECKIN_LABELS <- c(
 
 
 #' Geometry for the multipanel, in inches
-#'
-#' Panel heights follow from the source aspect ratios, so the layout cannot
-#' drift if a screenshot is later replaced with one of different proportions.
-#' Every panel spans its full column; nothing is padded or centred, so the
-#' figure has no white gutters.
 checkin_workflow_layout <- function(width = 12,
                                     margin = 0.12,
                                     gap = 0.20,
@@ -53,19 +32,13 @@ checkin_workflow_layout <- function(width = 12,
 
   inner <- width - 2 * margin
 
-  # Row 1: the two columns are split in proportion to the panels' aspect
-  # ratios rather than given equal halves. Equal halves would leave the wider
-  # screenshot (B) shorter than A and floating in white space; splitting by
-  # aspect makes both panels exactly the same height with no padding, at the
-  # cost of slightly unequal column widths.
+  # Row 1: columns split in proportion to the panels' aspect ratios.
   avail <- inner - gap
   w_a <- avail * aspect[["A"]] / (aspect[["A"]] + aspect[["B"]])
   w_b <- avail - w_a
   row1_image <- w_a / aspect[["A"]]
 
-  # Row 2: panel C spans the full inner width, matching row 1. It is a
-  # supplied 4800x2700 export, so at 11.76in wide it still lands near 408
-  # dpi; nothing is upscaled and spanning the width costs no resolution.
+  # Row 2: panel C spans the full inner width.
   w_c <- inner
   h_c <- w_c / aspect[["C"]]
 
@@ -88,11 +61,7 @@ checkin_workflow_layout <- function(width = 12,
 
 #' Draw one labelled panel at an absolute position on the canvas
 #'
-#' `x`/`y` are the inch coordinates of the cell's top-left corner; the image is
-#' centred horizontally within a cell `cell_w` wide and hangs from the top so
-#' panels in the same row share a baseline at the top rather than the bottom.
-#' Images are drawn without a frame: every source already has its own light
-#' background, and a hairline around each read as chart junk on the page.
+#' `x`/`y` are the inch coordinates of the cell's top-left corner.
 draw_panel <- function(img, label, desc, x, y, cell_w, img_w, img_h,
                        label_height) {
   letter <- paste0(label, ".")
@@ -106,10 +75,7 @@ draw_panel <- function(img, label, desc, x, y, cell_w, img_w, img_h,
     hjust = 0, vjust = 0.5, gp = letter_gp
   )
 
-  # The description starts past the bold letter and a word space. That offset
-  # is measured off the rendered glyphs rather than guessed at, so the two runs
-  # stay butted together if the fontsize or the letter ever changes; grid
-  # counts a trailing space in a string's width, which is what makes this work.
+  # Offset the description by the rendered width of the letter and a space.
   lead <- convertWidth(
     grobWidth(textGrob(paste0(letter, " "), gp = letter_gp)),
     "in", valueOnly = TRUE
@@ -133,21 +99,9 @@ draw_panel <- function(img, label, desc, x, y, cell_w, img_w, img_h,
 
 
 #' Single MOCK watermark across one panel's rectangle
-#'
-#' Scoped to a panel rather than the whole canvas: only panel C is simulated,
-#' and marking A and B would wrongly imply the screenshots are fabricated too.
-#' One mark laid diagonally across the panel, rather than a tiled lattice: the
-#' lattice competed with the plotted points for attention, and the point of the
-#' mark is to be read once and then ignored.
 draw_mock_watermark <- function(x, y, width, height,
                                 angle = 30, span = 0.70, alpha = 0.15) {
-  # Size the word to the panel rather than to a hard-coded point size, so it
-  # still fits if the panel is regenerated at another aspect. "MOCK FIGURE FOR
-  # TRAINEE" in bold is about 14.2 em wide and 0.72 em tall; rotating that box
-  # by `angle` spreads it over both axes, and the binding constraint is
-  # whichever axis runs out first. Solving only for width (the obvious
-  # version) overflows the short axis and clips the letters against the panel
-  # edge.
+  # Size the rotated text to fit within `span` of the panel on both axes.
   a <- angle * pi / 180
   em_w <- 14.2
   em_h <- 0.72
@@ -176,10 +130,8 @@ draw_mock_watermark <- function(x, y, width, height,
 
 #' Draw the check-in workflow multipanel
 #'
-#' @param width Figure width in inches; 12 matches the week-summary figure.
-#' @param watermark Draw the MOCK overlay on panel C. TRUE for anything
-#'   that leaves the seminar, since panel C is a simulated result rather than a
-#'   finding. Panels A and B are real screenshots and are never marked.
+#' @param width Figure width in inches.
+#' @param watermark Draw the MOCK overlay on panel C.
 #' @return Invisibly, the layout list (its `height` is the fig-height the
 #'   calling chunk should declare).
 checkin_workflow_plot <- function(width = 12, watermark = TRUE, ...) {

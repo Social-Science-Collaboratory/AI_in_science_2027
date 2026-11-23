@@ -1,4 +1,4 @@
 title,url,body,credit
-Can LLMs Generate Novel Research Ideas?,https://openreview.net/pdf?id=M23dTGWCZy,Over 100 NLP researchers judged LLM-generated ideas more novel than their own - but no more feasible.,Annabel V. Dang
-Automating psychological hypothesis generation with AI,https://www.nature.com/articles/s41599-024-03407-5,"A causal graph from 43,312 psychology papers matched doctoral students on novelty; the LLM alone did not.",Nabiha Iqbal
-Generative grounded theory (GGT),https://myscp.onlinelibrary.wiley.com/doi/10.1002/jcpy.70036,"A seven-step framework for inductive theory building, one prompt per stage - AI as bounded co-theorist.",Jungjae Im
+Can LLMs Generate Novel Research Ideas?,https://openreview.net/pdf?id=M23dTGWCZy,Blind reviews by NLP experts rated LLM ideas more novel than human experts' ideas - but slightly less feasible.,Annabel V. Dang
+Automating psychological hypothesis generation with AI,https://www.nature.com/articles/s41599-024-03407-5,"An LLM plus a causal graph from 43,312 psychology papers matched doctoral students on novelty; LLM alone did not.",Nabiha Iqbal
+Generative grounded theory (GGT),https://myscp.onlinelibrary.wiley.com/doi/10.1002/jcpy.70036,"A seven-step method for inductive theory building, with example prompts per step - AI as bounded cotheorist.",Jungjae Im
