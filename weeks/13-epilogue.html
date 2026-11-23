@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,7 +53,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../references.html" rel="next">
+<link href="../weeks/14-ai-philosophies.html" rel="next">
 <link href="../weeks/12-ethics-what-should-count.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -44,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-71f5029048d3959d22c937583b6e3974.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-128c848338612704874de0dd06dc4f3b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -237,6 +257,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../weeks/14-ai-philosophies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Personal AI Philosophies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -269,9 +294,143 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Covered in Week 13 of the seminar (November 12, 2026). Estimated date of arrival: November 22, 2026.</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="This was written by humans.">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This was written by humans.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>✨ But we hope you’ve enjoyed some of the AI-generated content we’ve added along the way.</p>
+</div>
+</div>
+<p>As reviewed throughout this guide, AI is radically redefining the nature of scientific inquiry — for better and for worse. This change is occurring extremely quickly, generating immense controversy, and producing a variety of conflicting messages about the future. We’ve been told that AI may one day cure cancer<span class="citation" data-cites="amodei2024machines"><sup><a href="../references.html#ref-amodei2024machines" role="doc-biblioref">1</a></sup></span>, and one day destroy society<span class="citation" data-cites="cais2023statement"><sup><a href="../references.html#ref-cais2023statement" role="doc-biblioref">2</a></sup></span>. That AI may one day make us better at our jobs<span class="citation" data-cites="brynjolfsson2025work"><sup><a href="../references.html#ref-brynjolfsson2025work" role="doc-biblioref">3</a></sup></span>, and one day take those jobs<span class="citation" data-cites="brynjolfsson2026canaries"><sup><a href="../references.html#ref-brynjolfsson2026canaries" role="doc-biblioref">4</a></sup></span>. And that AI may one day expand our intellectual capacities<span class="citation" data-cites="doshi2024creativity"><sup><a href="../references.html#ref-doshi2024creativity" role="doc-biblioref">5</a></sup></span>, and one day leave us unable to think for ourselves<span class="citation" data-cites="so2026collision"><sup><a href="../references.html#ref-so2026collision" role="doc-biblioref">6</a></sup></span>. As we watched frontier AI labs form increasingly large teams of humans and AI agents to catalyze such developments, we formed our own collaboration dedicated to understanding their implications. The result is this <em>2027 UF Guide to AI in Science</em>: an ethnographic-style summary of our top resources, takeaways, and disagreements.</p>
+<div id="tbl-epilogue-top-statements" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-epilogue-top-statements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: The top 10 points to carry forward, chosen from 30 summary statements of the semester.
+</figcaption>
+<div aria-describedby="tbl-epilogue-top-statements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 85%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">#</th>
+<th style="text-align: left;">Statement</th>
+<th style="text-align: right;">Votes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">The goal of science is human understanding, not just correct answers produced by machines.</td>
+<td style="text-align: right;">92%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">As fewer students review literature by hand, fewer people truly read the scientific record.</td>
+<td style="text-align: right;">67%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Working well with many humans and AI agents is now a core scientific skill, yet science rarely teaches it.</td>
+<td style="text-align: right;">58%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Leaning on AI may weaken critical thinking and cause researchers to miss more errors.</td>
+<td style="text-align: right;">58%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Telling real research from AI slop is getting harder, so readers must check sources carefully.</td>
+<td style="text-align: right;">58%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Humans already cannot review science fast enough, and floods of AI output make it worse.</td>
+<td style="text-align: right;">42%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">Researchers who use AI well gain a competitive edge, which changes how science competes.</td>
+<td style="text-align: right;">42%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">Frontier AI labs now outspend and out-compute universities, shifting who holds power in science.</td>
+<td style="text-align: right;">42%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">AI speeds up making and reading low-quality work, so science may need to change its practices.</td>
+<td style="text-align: right;">42%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">Automated pipelines could run whole studies with little human input, so scientists must define what human insight still adds.</td>
+<td style="text-align: right;">33%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>As our collaboration comes to an end, we provide a list of our top 10 takeaways (<a href="#tbl-epilogue-top-statements" class="quarto-xref">Table&nbsp;<span>1</span></a>) and turn our guide to the next generation. Next semester, an undergraduate honors seminar will study and build upon this guide. For example, two undergraduates mocked up a thematic analysis of hundreds of error reports posted to Vibe Graveyard<span class="citation" data-cites="vibegraveyard2026"><sup><a href="../references.html#ref-vibegraveyard2026" role="doc-biblioref">7</a></sup></span>, providing links to resources for the next generation to study more deeply (<a href="#fig-week-13-vibe-graveyard" class="quarto-xref">Figure&nbsp;<span>1</span></a>). Seminar participants also identified a variety of topics that we recommend exploring further: AI-text watermark regulations<span class="citation" data-cites="euaiact2024"><sup><a href="../references.html#ref-euaiact2024" role="doc-biblioref">8</a></sup></span> and workarounds<span class="citation" data-cites="krishna2023paraphrasing"><sup><a href="../references.html#ref-krishna2023paraphrasing" role="doc-biblioref">9</a></sup></span>, AI-assisted cheating scandals<span class="citation" data-cites="walsh2025cheating"><sup><a href="../references.html#ref-walsh2025cheating" role="doc-biblioref">10</a></sup></span>, AI replacing human relationships<span class="citation" data-cites="fang2025psychosocial"><sup><a href="../references.html#ref-fang2025psychosocial" role="doc-biblioref">11</a></sup></span>, and so on. We hope the next generation of academics will find our initial progress helpful. And regardless of whether this future generation includes humans, artificial agents, or some mix, we emphatically remind them of the principles that guided the development of this seminar: we are stronger together, as collaborators, as friends, and as members of a society that became so advanced it created artificial replications of its intelligence.</p>
+<div id="fig-week-13-vibe-graveyard" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-week-13-vibe-graveyard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/week-13-vibe-graveyard.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-week-13-vibe-graveyard-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A thematic analysis of hundreds of AI failure reports posted to Vibe Graveyard<span class="citation" data-cites="vibegraveyard2026"><sup><a href="../references.html#ref-vibegraveyard2026" role="doc-biblioref">7</a></sup></span>, mocked up by Hannah Johns and Luc NeJame. Each word cloud shows one of nine topics and its number of stories.
+</figcaption>
+</figure>
+</div>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-amodei2024machines" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Amodei, D. Machines of loving grace: How <span>AI</span> could transform the world for the better. <a href="https://darioamodei.com/essay/machines-of-loving-grace">https://darioamodei.com/essay/machines-of-loving-grace</a> (2024).</div>
+</div>
+<div id="ref-cais2023statement" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Center for AI Safety. Statement on <span>AI</span> risk. <a href="https://aistatement.com/">https://aistatement.com/</a> (2023).</div>
+</div>
+<div id="ref-brynjolfsson2025work" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Brynjolfsson, E., Li, D. &amp; Raymond, L. <a href="https://doi.org/10.1093/qje/qjae044">Generative <span>AI</span> at work</a>. <em>The Quarterly Journal of Economics</em> <strong>140</strong>, 889–942 (2025).</div>
+</div>
+<div id="ref-brynjolfsson2026canaries" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Brynjolfsson, E., Chandar, B. &amp; Chen, R. <em>Canaries in the Coal Mine? <span>Six</span> Facts about the Recent Employment Effects of Artificial Intelligence</em>. <a href="https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/">https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/</a> (2026).</div>
+</div>
+<div id="ref-doshi2024creativity" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Doshi, A. R. &amp; Hauser, O. P. <a href="https://doi.org/10.1126/sciadv.adn5290">Generative <span>AI</span> enhances individual creativity but reduces the collective diversity of novel content</a>. <em>Science Advances</em> <strong>10</strong>, eadn5290 (2024).</div>
+</div>
+<div id="ref-so2026collision" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">So, E. C. <em>The Collision: What <span>AI</span> Does to Us</em>. (W. W. Norton &amp; Company, 2026).</div>
+</div>
+<div id="ref-vibegraveyard2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Vibe Graveyard. Vibe graveyard: <span>AI</span> failure archive. <a href="https://vibegraveyard.ai/">https://vibegraveyard.ai/</a> (2026).</div>
+</div>
+<div id="ref-euaiact2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">European Parliament and Council of the European Union. <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">Regulation (<span>EU</span>) 2024/1689 laying down harmonised rules on artificial intelligence (<span>Artificial Intelligence Act</span>), <span>Article</span> 50: Transparency obligations for providers and deployers of certain <span>AI</span> systems</a>. (2024).</div>
+</div>
+<div id="ref-krishna2023paraphrasing" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Krishna, K., Song, Y., Karpinska, M., Wieting, J. &amp; Iyyer, M. <a href="https://arxiv.org/abs/2303.13408">Paraphrasing evades detectors of <span>AI</span>-generated text, but retrieval is an effective defense</a>. in <em>Advances in neural information processing systems</em> vol. 36 (2023).</div>
+</div>
+<div id="ref-walsh2025cheating" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Walsh, J. D. Everyone is cheating their way through college. <a href="https://nymag.com/intelligencer/article/openai-chatgpt-ai-cheating-education-college-students-school.html">https://nymag.com/intelligencer/article/openai-chatgpt-ai-cheating-education-college-students-school.html</a> (2025).</div>
+</div>
+<div id="ref-fang2025psychosocial" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Fang, C. M. <em>et al.</em> How <span>AI</span> and human behaviors shape psychosocial effects of extended chatbot use: A longitudinal randomized controlled study. <em>arXiv preprint arXiv:2503.17473</em> <a href="https://doi.org/10.48550/arXiv.2503.17473">https://doi.org/10.48550/arXiv.2503.17473</a> (2025) doi:<a href="https://doi.org/10.48550/arXiv.2503.17473">10.48550/arXiv.2503.17473</a>.</div>
+</div>
+</div>
 
 </main> <!-- /main -->
 <script>
@@ -771,8 +930,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../weeks/14-ai-philosophies.html" class="pagination-link" aria-label="Personal AI Philosophies">
+        <span class="nav-page-text"><span class="chapter-title">Personal AI Philosophies</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

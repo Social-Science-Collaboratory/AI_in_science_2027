@@ -22,7 +22,7 @@
 <meta name="author" content="Paola J. Sullivan">
 <meta name="author" content="Lyra G. Toohey">
 <meta name="author" content="Sofia C. Villanueva">
-<meta name="dcterms.date" content="2026-11-20">
+<meta name="dcterms.date" content="2026-11-23">
 
 <title>2027 UF Guide to AI in Science</title>
 <style>
@@ -80,7 +80,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-71f5029048d3959d22c937583b6e3974.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-128c848338612704874de0dd06dc4f3b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -273,6 +273,11 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./weeks/14-ai-philosophies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Personal AI Philosophies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -318,7 +323,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2026</p>
+      <p class="date">November 23, 2026</p>
     </div>
   </div>
   
@@ -344,7 +349,7 @@ div.csl-indent {
 </div>
 </div>
 <p>AI is radically redefining the nature of scientific inquiry — for better and for worse.</p>
-<p>In Fall 2026, faculty, graduate students, and postdocs across multiple departments at the University of Florida came together to understand this urgent development. In a seminar titled <em>Collective [Artificial] Intelligence in Science</em>, we documented and discussed how AI is changing each component of our research workflow. This includes project management, idea development, data analysis, writing, and dissemination. To push our understanding, we alternated between the perspectives of an AI zealot and an AI critic — identifying key resources, consensus statements, and areas of disagreement along the way. The result is a resource adopted in courses and labs the following semester: the <strong>2027 UF Guide to AI in Science</strong>.</p>
+<p>In Fall 2026, faculty, graduate students, and postdocs across multiple departments at the University of Florida came together to understand this urgent development. In a seminar titled <em>Collective [Artificial] Intelligence in Science</em>, we documented and discussed how AI is changing each component of our research workflow. This includes project management, idea development, data analysis, writing, and dissemination. To push our understanding, we alternated between the perspectives of an AI zealot and an AI critic — identifying key resources, consensus statements, and areas of disagreement along the way. The result is a resource adopted in courses and labs the following semester: the <em>2027 UF Guide to AI in Science</em>.</p>
 <p>The seminar began with an introduction to big-team science — its rise<span class="citation" data-cites="Coles2022"><sup><a href="references.html#ref-Coles2022" role="doc-biblioref">1</a></sup></span>, competitive advantages<span class="citation" data-cites="Coles2026"><sup><a href="references.html#ref-Coles2026" role="doc-biblioref">2</a></sup></span>, and relevance to the current moment. For instance, the paper describing OpenAI’s GPT-1 had 4 authors<span class="citation" data-cites="radford2018improving"><sup><a href="references.html#ref-radford2018improving" role="doc-biblioref">3</a></sup></span>; the paper describing GPT-3 had 31 authors<span class="citation" data-cites="brown2020language"><sup><a href="references.html#ref-brown2020language" role="doc-biblioref">4</a></sup></span>; and the paper describing GPT-5 had 483 authors<span class="citation" data-cites="openai2025gpt5"><sup><a href="references.html#ref-openai2025gpt5" role="doc-biblioref">5</a></sup></span> (<a href="#fig-scale-ladder" class="quarto-xref">Figure&nbsp;<span>1</span></a>). In the artificial realm, a prominent AI-led cybersecurity attack on the online community, Hugging Face, involved coordinated action among not one but <em>hundreds</em> of AI agents<span class="citation" data-cites="openai2026huggingface"><sup><a href="references.html#ref-openai2026huggingface" role="doc-biblioref">6</a></sup></span>. Similarly, over 10,000 AI agents recently exchanged approximately 5 million messages over 88 hours in order to solve the Navier–Stokes equations<span class="citation" data-cites="openai2026navierstokes"><sup><a href="references.html#ref-openai2026navierstokes" role="doc-biblioref">7</a></sup></span> — one of the seven Clay Millennium Prize Problems. Whether it be human or artificial, some of our most impressive accomplishments are requiring something rarely formally taught in science: large-scale collaboration<span class="citation" data-cites="nrc2015team"><sup><a href="references.html#ref-nrc2015team" role="doc-biblioref">8</a></sup></span>.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
@@ -354,20 +359,20 @@ div.csl-indent {
 <img src="index_files/figure-html/fig-scale-ladder-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="2250">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scale-ladder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Credited co-authors on flagship AI model reports from OpenAI, Google, and Meta, 2018–2025. One square is one credited person; each block’s area is its author list.
+Figure&nbsp;1: Credited co-authors on flagship AI model reports from OpenAI, Google, and Meta, 2018–2025<span class="citation" data-cites="radford2018improving radford2019language brown2020language chowdhery2022palm touvron2023llama openai2023gpt4 touvron2023llama2 gemini2023gemini gemini2024gemini15 dubey2024llama3 gemini2025gemini25 openai2025gpt5"><sup><a href="references.html#ref-radford2018improving" role="doc-biblioref">3</a>–<a href="references.html#ref-openai2025gpt5" role="doc-biblioref">5</a>,<a href="references.html#ref-radford2019language" role="doc-biblioref">9</a>–<a href="references.html#ref-gemini2025gemini25" role="doc-biblioref">17</a></sup></span>. One square is one credited person; each block’s area is its author list.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>After reviewing this backdrop, the course itself became a large-scale collaboration, dedicated to understanding how AI is changing the nature of science. Each week followed a consistent structure (<a href="#fig-seminar-structure" class="quarto-xref">Figure&nbsp;<span>2</span></a>). First, we would select a component of the research pipeline to examine (e.g., data analysis). Second, we would spend one week compiling resources for understanding the emerging role of AI in that part of the research pipeline. Third, we would engage in peer-to-peer teaching. Last, we would use a live online voting platform to solicit, debate, and vote upon key resources and takeaways for the week<span class="citation" data-cites="Coles2024 dalkey1963delphi"><sup><a href="references.html#ref-Coles2024" role="doc-biblioref">9</a>,<a href="references.html#ref-dalkey1963delphi" role="doc-biblioref">10</a></sup></span>. Through these exercises, seminar participants received hands-on experience with large-scale collaboration<span class="citation" data-cites="Baumgartner2023"><sup><a href="references.html#ref-Baumgartner2023" role="doc-biblioref">11</a></sup></span>. Along the way, they not only developed and debated their <em>personal</em> philosophy statements — but also the general direction of AI at UF. The collective effort culminated in this <strong>2027 UF Guide to AI in Science</strong>: a summary of our top resources, takeaways, and disagreements.</p>
+<p>After reviewing this backdrop, the course itself became a large-scale collaboration, dedicated to understanding how AI is changing the nature of science. Each week followed a consistent structure (<a href="#fig-seminar-structure" class="quarto-xref">Figure&nbsp;<span>2</span></a>). First, we would select a component of the research pipeline to examine (e.g., data analysis). Second, we would spend one week compiling resources for understanding the emerging role of AI in that part of the research pipeline. Third, we would engage in peer-to-peer teaching. Last, we would use a live online voting platform to solicit, debate, and vote upon key resources and takeaways for the week<span class="citation" data-cites="Coles2024 dalkey1963delphi"><sup><a href="references.html#ref-Coles2024" role="doc-biblioref">18</a>,<a href="references.html#ref-dalkey1963delphi" role="doc-biblioref">19</a></sup></span>. Through these exercises, seminar participants received hands-on experience with large-scale collaboration<span class="citation" data-cites="Baumgartner2023"><sup><a href="references.html#ref-Baumgartner2023" role="doc-biblioref">20</a></sup></span>. Along the way, they not only developed and debated their <em>personal</em> philosophy statements — but also the general direction of AI at UF. The collective effort culminated in this <em>2027 UF Guide to AI in Science</em>: a summary of our top resources, takeaways, and disagreements.</p>
 <div id="fig-seminar-structure" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-seminar-structure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figure-packages/class-structure/figures/class-structure.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-seminar-structure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Structure of the UF Fall 2026 seminar, titled Collective [Artificial] Intelligence in Science.
+Figure&nbsp;2: Structure of the UF Fall 2026 seminar, titled <em>Collective [Artificial] Intelligence in Science</em>.
 </figcaption>
 </figure>
 </div>
@@ -398,14 +403,41 @@ Figure&nbsp;2: Structure of the UF Fall 2026 seminar, titled Collective [Artific
 <div id="ref-nrc2015team" class="csl-entry" role="listitem">
 <div class="csl-left-margin">8. </div><div class="csl-right-inline">National Research Council. <em>Enhancing the Effectiveness of Team Science</em>. (National Academies Press, Washington, DC, 2015). doi:<a href="https://doi.org/10.17226/19007">10.17226/19007</a>.</div>
 </div>
+<div id="ref-radford2019language" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Radford, A. <em>et al.</em> <em>Language Models Are Unsupervised Multitask Learners</em>. <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf</a> (2019).</div>
+</div>
+<div id="ref-chowdhery2022palm" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><span class="nocase">Chowdhery, A., Narang, S., Devlin, J., <em>et al.</em></span> <span>PaLM</span>: Scaling language modeling with pathways. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2204.02311">https://doi.org/10.48550/arXiv.2204.02311</a> (2022) doi:<a href="https://doi.org/10.48550/arXiv.2204.02311">10.48550/arXiv.2204.02311</a>.</div>
+</div>
+<div id="ref-touvron2023llama" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><span class="nocase">Touvron, H., Lavril, T., Izacard, G., <em>et al.</em></span> <span>LLaMA</span>: Open and efficient foundation language models. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2302.13971">https://doi.org/10.48550/arXiv.2302.13971</a> (2023) doi:<a href="https://doi.org/10.48550/arXiv.2302.13971">10.48550/arXiv.2302.13971</a>.</div>
+</div>
+<div id="ref-openai2023gpt4" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">OpenAI. <span>GPT-4</span> technical report. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2303.08774">https://doi.org/10.48550/arXiv.2303.08774</a> (2023) doi:<a href="https://doi.org/10.48550/arXiv.2303.08774">10.48550/arXiv.2303.08774</a>.</div>
+</div>
+<div id="ref-touvron2023llama2" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><span class="nocase">Touvron, H., Martin, L., Stone, K., <em>et al.</em></span> <span>Llama 2</span>: Open foundation and fine-tuned chat models. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2307.09288">https://doi.org/10.48550/arXiv.2307.09288</a> (2023) doi:<a href="https://doi.org/10.48550/arXiv.2307.09288">10.48550/arXiv.2307.09288</a>.</div>
+</div>
+<div id="ref-gemini2023gemini" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Gemini Team, Google. <span>Gemini</span>: A family of highly capable multimodal models. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2312.11805">https://doi.org/10.48550/arXiv.2312.11805</a> (2023) doi:<a href="https://doi.org/10.48550/arXiv.2312.11805">10.48550/arXiv.2312.11805</a>.</div>
+</div>
+<div id="ref-gemini2024gemini15" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Gemini Team, Google. <span>Gemini 1.5</span>: Unlocking multimodal understanding across millions of tokens of context. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2403.05530">https://doi.org/10.48550/arXiv.2403.05530</a> (2024) doi:<a href="https://doi.org/10.48550/arXiv.2403.05530">10.48550/arXiv.2403.05530</a>.</div>
+</div>
+<div id="ref-dubey2024llama3" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Llama Team, AI @ Meta. The <span>Llama 3</span> herd of models. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2407.21783">https://doi.org/10.48550/arXiv.2407.21783</a> (2024) doi:<a href="https://doi.org/10.48550/arXiv.2407.21783">10.48550/arXiv.2407.21783</a>.</div>
+</div>
+<div id="ref-gemini2025gemini25" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Gemini Team, Google. <span>Gemini 2.5</span>: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities. <em>arXiv preprint</em> <a href="https://doi.org/10.48550/arXiv.2507.06261">https://doi.org/10.48550/arXiv.2507.06261</a> (2025) doi:<a href="https://doi.org/10.48550/arXiv.2507.06261">10.48550/arXiv.2507.06261</a>.</div>
+</div>
 <div id="ref-Coles2024" class="csl-entry" role="listitem">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline">Coles, N. A. <em>et al.</em> <a href="https://doi.org/10.1126/science.ado7070">Team scientists should normalize disagreement</a>. <em>Science</em> <strong>384</strong>, 1076–1077 (2024).</div>
+<div class="csl-left-margin">18. </div><div class="csl-right-inline">Coles, N. A. <em>et al.</em> <a href="https://doi.org/10.1126/science.ado7070">Team scientists should normalize disagreement</a>. <em>Science</em> <strong>384</strong>, 1076–1077 (2024).</div>
 </div>
 <div id="ref-dalkey1963delphi" class="csl-entry" role="listitem">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline">Dalkey, N. &amp; Helmer, O. <a href="https://doi.org/10.1287/mnsc.9.3.458">An experimental application of the <span>Delphi</span> method to the use of experts</a>. <em>Management Science</em> <strong>9</strong>, 458–467 (1963).</div>
+<div class="csl-left-margin">19. </div><div class="csl-right-inline">Dalkey, N. &amp; Helmer, O. <a href="https://doi.org/10.1287/mnsc.9.3.458">An experimental application of the <span>Delphi</span> method to the use of experts</a>. <em>Management Science</em> <strong>9</strong>, 458–467 (1963).</div>
 </div>
 <div id="ref-Baumgartner2023" class="csl-entry" role="listitem">
-<div class="csl-left-margin">11. </div><div class="csl-right-inline">Baumgartner, H. A. <em>et al.</em> <a href="https://doi.org/10.1098/rsos.230235">How to build up big team science: A practical guide for large-scale collaborations</a>. <em>Royal Society Open Science</em> <strong>10</strong>, 230235 (2023).</div>
+<div class="csl-left-margin">20. </div><div class="csl-right-inline">Baumgartner, H. A. <em>et al.</em> <a href="https://doi.org/10.1098/rsos.230235">How to build up big team science: A practical guide for large-scale collaborations</a>. <em>Royal Society Open Science</em> <strong>10</strong>, 230235 (2023).</div>
 </div>
 </div>
 
