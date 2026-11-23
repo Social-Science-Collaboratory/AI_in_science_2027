@@ -1,22 +1,13 @@
 project:
   type: book
-  # figure-packages/ holds the figure packages -- not chapters: their R, data
-  # and standalone drafts are sourced by the chapters, never rendered as pages
-  # of the book. theme/ holds the SCSS and the HTML partials the format below
-  # pulls in.
+  # Only chapters render; figure-packages/ and theme/ are sourced, not pages.
   render:
     - index.qmd
     - weeks/*.qmd
     - references.qmd
-  # Chunks run from the project root, not from the chapter's own folder, so a
-  # chapter in weeks/ can source a figure package by the same root-relative
-  # path index.qmd uses -- "figure-packages/week-summary/R/week-summary.R".
+  # Chunks run from the project root, so figure-package paths are root-relative.
   execute-dir: project
-  # The Weeks 2-3 podcast is served from the site itself rather than linked as
-  # a release asset: GitHub Pages sets audio/mp4 and honours range requests, so
-  # the player streams and seeks. Release assets are octet-stream + attachment.
-  # The Weeks 4-5 AI-generated review PDF sits there too, so it opens in the
-  # browser as application/pdf instead of forcing a download.
+  # Media served from the site itself (podcast audio, review PDF).
   resources:
     - media/**
 
@@ -81,15 +72,9 @@ book:
   sharing: [twitter, linkedin, facebook]
   sidebar:
     collapse-level: 1
-  # Chapter files are numbered by their seminar week in the syllabus, so the
-  # numbering starts at 02: week 1 (Aug 20) was the Foundations session, which
-  # the preface covers. weeks/NN- therefore always equals syllabus week NN.
-  # From Analysis and Modeling on, each topic gets one week and one chapter,
-  # not a using/critiquing pair, so those chapters stand alone without a part.
+  # weeks/NN- is syllabus week NN; week 1 is covered by the preface.
   chapters:
-    # The front page carries the book's own title, not a chapter title, so it
-    # has no `title:` of its own; without one the sidebar would fall back to
-    # the file name ("index.html"). Label the sidebar entry here instead.
+    # index.qmd has no title of its own, so label its sidebar entry here.
     - href: index.qmd
       text: "Preface"
     - part: "Ideation and Project Management"
@@ -110,6 +95,7 @@ book:
     - weeks/11-outreach.qmd
     - weeks/12-ethics-what-should-count.qmd
     - weeks/13-epilogue.qmd
+    - weeks/14-ai-philosophies.qmd
     - references.qmd
 
 number-sections: false
@@ -132,10 +118,6 @@ format:
     template-partials:
       - theme/title-metadata.html
     fig-dpi: 300
-    # No right-hand table of contents: every chapter is a single scroll with at
-    # most one `##`, so the TOC only ever listed the page's own title. Dropping
-    # it moves the repo-actions links into the page footer (Quarto relocates
-    # them automatically) and lets the wide figures use the freed column.
     toc: false
   pdf:
     documentclass: scrreprt

@@ -1,0 +1,21 @@
+# Personal AI Philosophies {#sec-ai-philosophies}
+
+::: {.callout-note icon="false" title="This content was identified, synthesized, and written by humans."}
+📜 Nonetheless, you may enjoy reading about Claude's constitution[@anthropic2026constitution], partly written by Claude.
+:::
+
+AI has thus far evolved quicker than scientific policies and norms, making it more important than ever to reflect upon values, principles, and personal goals. We thus have begun imagining a future wherein researchers are explicitly asked to articulate their philosophy on AI (e.g., in a document that accompanies research and teaching statements in job applications). Academics are bound to develop different philosophies around AI[@fehr2026objectors], and our seminar was no different. Fortunately, 8 seminar participants agreed to share drafts of their own AI philosophy statements — all in hopes that future generations of academics will continue the reflection (@tbl-ai-philosophies).
+
+<!-- Each column was shuffled once with Python's random.Random(2027) (named list
+     first, then anonymous), so no position reflects anything about the contributor.
+     Keep this order. Anonymous N is media/ai-philosophies/anonymous-N.pdf. -->
+
+| Named | Anonymous |
+|:--|:--|
+| [Sooyeon Park](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/park.pdf) | [Anonymous 1](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/anonymous-1.pdf) |
+| [Rui Jin](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/jin.pdf) | [Anonymous 2](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/anonymous-2.pdf) |
+| [Mariana G. Rebello](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/rebello.pdf) | [Anonymous 3](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/anonymous-3.pdf) |
+| [Paola J. Sullivan](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/sullivan.pdf) | [Anonymous 4](https://social-science-collaboratory.github.io/AI_in_science_2027/media/ai-philosophies/anonymous-4.pdf) |
+
+: Personal AI philosophy statements from seminar participants, shared with or without their names. Within each column, statements are listed in random order. {#tbl-ai-philosophies}
+
